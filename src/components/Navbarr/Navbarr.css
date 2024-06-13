@@ -68,21 +68,6 @@
     color: #9C4DF4 !important;
 }
 
-/* .navbar-collapse.collapse{
-    position: absolute !important;
-    width: 100% !important;
-    left: 0 !important;
-    margin: 0 !important;
-    
-} */
-/* .navbar-collapse.collapse.show{
-    position: absolute !important;
-    width: 100% !important;
-    left: 0 !important;
-    margin: 0 !important;
-    top:90px;
-    transition: 0.5s;
-} */
 
 
 @media (max-width:1280px){
@@ -189,7 +174,7 @@
     }
     .KG-Links{
         justify-content: center;
-        align-items: center ;
+        /* align-items: center ; */
         position: absolute !important;
         width: 100% !important;
         left: 0 !important;
@@ -200,6 +185,7 @@
         
     }
 }
+
 
 @keyframes KGmove {
     from{
