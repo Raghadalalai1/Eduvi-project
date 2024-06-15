@@ -1,15 +1,3 @@
-.Metropolis-font{
-    font-family: Metropolis-Bold ;
-}
-.Metropolis-font-medium{
-    font-family: Metropolis-Medium ;
-}
-.Metropolis-font-thin{
-    font-family: Metropolis-Light ;
-}
-.inter{
-    font-family: Inter ;
-}
 .KG-HeroHome{
     background-color: var(--clr-bg);
     width: 100%;
@@ -34,6 +22,7 @@
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500px;
+    font-family: Metropolis-Medium ;
 }
 .KG-Hero-PartLeft h1{
     font-size: 60px;
@@ -41,10 +30,12 @@
     margin-bottom: 30px;
     width: 90%;
     line-height: 75px;
+    font-family: Metropolis-Bold ;
 }
 .KG-Hero-PartLeft .KG-Paragraph-Eduvi{
     width: 90%;
     line-height: 30px;
+    font-family: Metropolis-Light ;
 }
 .KG-Form{
     background-color:var(--clr-primary);
@@ -64,6 +55,7 @@
     border:none ;
     text-indent: 20px;
     border-radius: 10px;
+    font-family: Metropolis-Light ;
 }
 .KG-Form input{
     width: 70%;
@@ -83,6 +75,7 @@
     height: 50px;
     border-radius: 10px;
     border: none;
+    font-family: Inter ;
 }
 .KG-Form button:hover{
     transition: 0.5s;

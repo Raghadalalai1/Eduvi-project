@@ -7,17 +7,17 @@ export default function KGHeroHome() {
     <>
     <div className='KG-HeroHome Metropolis-font' >
       <div className='KG-Hero-PartLeft'>
-        <p className='KG-Paragraph Metropolis-font-medium'> Never Stop Learning </p>
-        <h1 className='Metropolis-font'>Grow up your skills by online courses with Eduvi</h1>
-        <p className='Metropolis-font-thin KG-Paragraph-Eduvi'>Eduvi is a Global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the barriers togetting a degree.</p>
+        <p className='KG-Paragraph'> Never Stop Learning </p>
+        <h1>Grow up your skills by online courses with Eduvi</h1>
+        <p className='KG-Paragraph-Eduvi'>Eduvi is a Global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the barriers togetting a degree.</p>
         <form className='KG-Form'>
-          <select name='School' className='KG-Search-Select Metropolis-font-thin'>
+          <select name='School' className='KG-Search-Select'>
             <option>Kindergarten</option>
             <option>option2</option>
             <option>option3</option>
           </select>
           <input type='search' placeholder=' | Class/Course' className='Metropolis-font-thin'></input>
-          <button className='inter'>
+          <button>
             < FontAwesomeIcon icon={faMagnifyingGlass} className='KG-Search-Icon' />
             Search
           </button>
