@@ -4,7 +4,7 @@
     width: 100%;
     background-color: #F7F5FA;
     font-family: Metropolis-Thin !important;
-    padding: 80px 82px 70px 80px;
+    /* padding: 80px 82px 70px 80px; */
    /* display: none !important; */
  
     
@@ -96,27 +96,27 @@ text-decoration: underline;
     
      
 }
-@media (max-width:1288px){
+/* @media (max-width:1288px){
     .LK-footer{
        
         padding: 80px 82px 70px 80px;
     }
    
-}
-@media (max-width:1280px){
+} */
+/* @media (max-width:1280px){
     .LK-footer{
        
         padding: 80px 40px 70px 40px;
     }
    
-}
-@media (max-width:1200px){
+} */
+/* @media (max-width:1200px){
     .LK-footer{
        
         padding: 80px 20px 70px 20px;
     }
    
-}
+} */
 
 @media(max-width:768px){
     .LK-footer{
