@@ -1,0 +1,318 @@
+.KG-HeroHome{
+    background-color: var(--clr-bg);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap !important;
+    padding-top: 191px;
+}
+.KG-Hero-PartLeft{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 42%;
+    padding-bottom: 75px ;
+}
+.KG-Hero-PartLeft .KG-Paragraph{
+    color: var(--clr-icon);
+    background-color:var(--clr-primary);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: Metropolis-Medium ;
+}
+.KG-Hero-PartLeft h1{
+    font-size: 60px;
+    font-weight: 700px;
+    margin-bottom: 30px;
+    width: 90%;
+    line-height: 75px;
+    font-family: Metropolis-Bold ;
+}
+.KG-Hero-PartLeft .KG-Paragraph-Eduvi{
+    width: 90%;
+    line-height: 30px;
+    font-family: Metropolis-Light ;
+}
+.KG-Form{
+    background-color:var(--clr-primary);
+     width: 90%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap !important;
+    border-radius: 10px !important;
+}
+.KG-Search-Select{
+    background-color:var(--clr-primary);
+    color: var(--clr-texthome);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none ;
+    text-indent: 20px;
+    border-radius: 10px;
+    font-family: Metropolis-Light ;
+}
+.KG-Form input{
+    width: 70%;
+    height: 60px;
+    text-indent: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.KG-Form button{
+    background-color:var(--clr-sicon);
+    color:var(--clr-primary);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: Inter ;
+}
+.KG-Form button:hover{
+    transition: 0.5s;
+    color:var(--clr-primary);
+    background-color: var(--clr-icon);
+}
+.KG-Form button .KG-Search-Icon{
+    margin-right: 5px;
+}
+.KG-Hero-PartRight{
+    position: relative;
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.KG-Image-Background{
+    width: 77%;
+}
+.KG-Image-Boy{
+    width: 62%;
+    position: absolute;
+    right:30px;
+    bottom: 0px;
+}
+.KG-Bg-Small-Image-Cubs{
+    background-color: var(--clr-primary);
+    width: 13%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    border-radius: 10px;
+    animation: move-down 2s infinite;
+}
+.KG-Bg-Small-Image-Book{
+    background-color: var(--clr-primary);
+    width: 13%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -10px;
+    top: -40px;
+    border-radius: 10px;
+    animation: move-up 2s infinite;
+}
+.KG-Bg-Small-Image-Light{
+    background-color:var(--clr-primary);
+    width: 13%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: -10px;
+    border-radius: 10px;
+    animation: move-up 2s infinite;
+}
+.KG-Bg-Small-Image-Draw{
+    background-color: var(--clr-primary);
+    width: 13%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 10px;
+    animation: move-down 2s infinite;
+}
+.KG-Image-book ,
+.KG-Image-light ,
+.KG-Image-draw ,
+.KG-Image-cubs{
+    width: 62%;
+}
+@media(min-width:1201px) and (max-width:1300px){
+    .KG-Hero-PartLeft h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+@media(min-width:991px) and (max-width:1200px){
+        .KG-Hero-PartLeft{
+            padding-bottom: 75px;
+            
+        }
+        .KG-Hero-PartLeft h1{
+            font-size: 45px;
+            width: 100%;
+            line-height: 50px;
+        }
+        .KG-Hero-PartLeft .KG-Paragraph-Eduvi{
+            width: 100%;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .KG-Form{
+            width: 100%;
+            height:50px;
+        }
+}
+@media(min-width:789px) and (max-width:991px){
+    .KG-Hero-PartLeft h1{
+        font-size: 30px;
+        width: 100%;
+        line-height: 35px;
+    }
+    .KG-Hero-PartLeft .KG-Paragraph-Eduvi{
+        width: 100%;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .KG-Form{
+        width: 100%;
+        height:40px;
+
+    }
+    .KG-Hero-PartLeft .KG-Paragraph{
+        padding: 10px;
+    }
+}
+@media(max-width:788px) and (min-width:567px){
+    .KG-HeroHome{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .KG-Hero-PartRight{
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        margin: 50px 0 0;
+    }
+    .KG-Hero-PartLeft{
+        width: 70%;
+        margin: auto;
+        margin: 50px 0 0;
+    }
+    .KG-Hero-PartLeft h1{
+        font-size: 32px;
+        line-height: 40px;
+        width: 70%;
+    }
+    .KG-Hero-PartLeft .KG-Paragraph-Eduvi{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .KG-Image-Boy{
+        right:40px;
+    }
+    .KG-Search-Select{
+        width: 100%;
+        height: 50px;
+    }
+    .KG-Form input{
+        width: 100%;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .KG-Form button{
+        width: 100%;
+        top: 130px;
+        height: 50px;
+        right: 0;
+    }
+    .KG-Form{
+        width: 100%;
+        background-color: transparent;
+    }
+}
+@media(max-width:566px){
+    .KG-HeroHome{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .KG-Hero-PartRight{
+        width: 90%;
+        margin: auto;
+        margin: 50px 0 0;
+    }
+    .KG-Hero-PartLeft{
+        width: 90%;
+        margin: auto;
+        margin: 50px 0 0;
+    }
+    .KG-Hero-PartLeft h1{
+        width: 100%;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .KG-Hero-PartLeft .KG-Paragraph-Eduvi{
+    font-size: 16px;
+    line-height: 30px;
+    }
+  .KG-Image-Boy{
+        right:20px;
+    }
+    .KG-Search-Select{
+        width: 100%;
+        height: 50px;
+    }
+    .KG-Form input{
+        width: 100%;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .KG-Form button{
+        width: 100%;
+        top: 130px;
+        height: 50px;
+        right: 0;
+    }
+    .KG-Form{
+        width: 100%;
+        background-color: transparent;
+    }
+}
+@keyframes move-up{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+@keyframes move-down{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
