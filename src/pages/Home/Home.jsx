@@ -13,9 +13,16 @@ export default function Home() {
     <div className='main'>
     
       
-      <Section />
+   
       
-       <Footer />
+      
+      
+      
+      <Section />
+      <Footer />
+      
+      
+       
       
 
         
