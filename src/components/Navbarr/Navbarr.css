@@ -22,10 +22,13 @@
     padding-left: 40px !important;
 
 }
+.show-registering{
+    display: none;
+}
 .KG-Links .nav-link:hover{
     transition: 0.5s !important;
     color: #9C4DF4 !important;
-    
+
 }
 .KG-Sign-inUp .nav-link{
     color: #0A033C !important;
@@ -66,30 +69,47 @@
 }
 .KG-Links .dropdown-item:hover{
     color: #9C4DF4 !important;
+    border-radius: 10px !important;
+}
+.color-icon{
+    color: #9C4DF4 !important;
 }
 
 
 
-@media (max-width:1280px){
+
+
+
+@media(max-width:1024px){
     .KG-Navbar{
        
-        padding: 0px 40px;
+        padding: 0px 80px !important;
     }
-   
+
 }
+@media(max-width:1024px){
+    .KG-Navbar{
+       
+        padding: 0px 40px !important;
+    }
 
-
+}
 @media(min-width:992px) and (max-width:1200px){
     .KG-Navbar{
        
-        padding: 0px 20px;
+        padding: 0px 80px;
+    }
+    .show-registering{
+        display: block;
+    }
+    .KG-Sign-inUp{
+        display: none;
     }
    
    
     .KG-Links{
         justify-content: center;
         align-items: center ;
-        /* position: absolute !important; */
         width: 100% !important;
         left: 0 !important;
         margin: 0 !important;
@@ -132,7 +152,7 @@
     }
     .KG-Navbar{
        
-        padding: 0px 20px;
+        padding: 0px 40px;
     }
     .navbar-collapse.collapse{
         position: absolute !important;
@@ -168,13 +188,9 @@
         outline: none !important;
         box-shadow: none !important;
     }
-    .KG-Navbar{
-       
-        padding: 0px 20px;
-    }
+
     .KG-Links{
         justify-content: center;
-        /* align-items: center ; */
         position: absolute !important;
         width: 100% !important;
         left: 0 !important;
@@ -185,6 +201,24 @@
         
     }
 }
+@media (max-width:600px){
+
+
+    .KG-Navbar{
+       
+        padding: 0px 40px;
+    }
+
+}
+@media (max-width:375px){
+
+
+    .KG-Navbar{
+       
+        padding: 0px 20px !important;
+    }
+
+} 
 
 
 @keyframes KGmove {
