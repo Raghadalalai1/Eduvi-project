@@ -9,11 +9,11 @@ export default function Home() {
      <Navbarr />
     <div className='main'>
       <KGHeroHome />
-      
+      <Footer />
 
         
     </div>
-    <Footer />
+
     </>
   )
 }
