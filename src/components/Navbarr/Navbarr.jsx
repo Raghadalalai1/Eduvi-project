@@ -45,6 +45,10 @@ export default function Navbarr() {
             <NavDropdown.Item href="#action/3.2">option2</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">option3</NavDropdown.Item>
           </NavDropdown>
+          <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering'>
+            <NavDropdown.Item href="#action/3.1">Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon' /> </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Log In  <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  color-icon' /></NavDropdown.Item>
+          </NavDropdown>
           <Nav className='KG-Sign-inUp-hidden '>
             <Nav.Link href="/login" className='d-flex' >
               Log In <FontAwesomeIcon icon={faUser} className='KG-SignInUpIcon' />
