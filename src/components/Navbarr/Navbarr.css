@@ -80,6 +80,20 @@
 
 
 
+@media(max-width:1024px){
+    .KG-Navbar{
+       
+        padding: 0px 80px !important;
+    }
+
+}
+@media(max-width:1024px){
+    .KG-Navbar{
+       
+        padding: 0px 40px !important;
+    }
+
+}
 @media(min-width:992px) and (max-width:1200px){
     .KG-Navbar{
        
@@ -201,10 +215,10 @@
 
     .KG-Navbar{
        
-        padding: 0px 20px;
+        padding: 0px 20px !important;
     }
 
-}
+} 
 
 
 @keyframes KGmove {
