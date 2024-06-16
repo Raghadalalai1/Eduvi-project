@@ -1,8 +1,9 @@
 .main{
     background-color: var(--clr-bg);
+  
 }
 
-@media(max-width:1440px){
+@media(max-width:1900px){
     .main{
     padding: 0px 80px;
 }
