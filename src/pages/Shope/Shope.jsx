@@ -5,7 +5,7 @@ import Navbarr from '../../components/Navbarr/Navbarr'
 import Section2Shop from '../../components/Section2Shop/Section2Shop'
 
 
-git
+
 
 export default function Shope() {
   return (
