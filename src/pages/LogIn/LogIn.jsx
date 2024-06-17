@@ -1,10 +1,11 @@
 import React from 'react'
 import './LogIn.css'
-// import LogIn from '../../components/LogIn/LogIn'
+import LogInPopup from '../../components/LogInPopup/LogInPopup'
+
 export default function LogIn() {
   return (
     <div >
-      <LogIn />
+      <LogInPopup />
     </div>
   )
 }

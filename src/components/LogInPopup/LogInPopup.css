@@ -1,0 +1,75 @@
+.RA-LogInPopup {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.RA-logologin{
+    margin-bottom: 15px;
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+
+}
+
+.RA-parent-LogInPopup {
+    background-color: var(--clr-primary);
+    width: 74%;
+    height: 800px;
+    border-radius: 15px;
+    margin-top: 140px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.RA-parent-LogInPopup{
+display: flex;
+justify-content: space-between;
+padding:105px  79px 104px 80px;
+}
+.RA-titel-login{
+
+    font-weight: 700;
+    font-size: 40px;
+    width: 483px;
+    text-align: left;
+    font-family:Metropolis-Bold ;
+    line-height: 50px;
+     color: var(--clr-text);
+
+}
+.RA-part1-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+
+    
+
+}
+.RA-part1-login::after{
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 641px;
+  background: linear-gradient( to right ,#0A033C00 , #0A033C, #0A033C00);
+  right: 0;
+  /* left: 720px; */
+ 
+
+
+    
+
+}
+.RA-slier-img{
+    /* width: 32%; */
+    /* height: 336px; */
+
+}
+.RA-slider{
+    width: 32%;
+    margin-top: 30px;
+    padding-right: 110px;
+}
