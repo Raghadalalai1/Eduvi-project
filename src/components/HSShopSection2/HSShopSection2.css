@@ -1,4 +1,122 @@
-.hh{
-    color: blue;
- 
+.HS-LeftSection{
+    width: 85%;
+   
+    padding-top: 400px;
+}
+.HS-LeftSection-Button{
+    width: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.HS-Button1{
+    width: 21%;
+    height: 60px;
+    background-color: var( --clr-primary);
+    color:var(--clr-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter ;
+    border-radius: 10px;
+    border: none;
+}
+.HS-Button2{
+    width: 24%;
+    height: 60px;
+    background-color: var( --clr-primary);
+    color:var(--clr-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter ;
+    border-radius: 10px;
+    border: none;
+}
+.HS-Button3{
+    width: 24%;
+    height: 60px;
+    background-color: var( --clr-primary);
+    color:var(--clr-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter ;
+    border-radius: 10px;
+    border: none;
+}
+.HS-Button4{
+    width: 19%;
+    height: 60px;
+    background-color: var( --clr-primary);
+    color:var(--clr-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter ;
+    border-radius: 10px;
+    border: none;
+}
+.HS-Button1:hover,
+.HS-Button2:hover,
+.HS-Button3:hover,
+.HS-Button4:hover{
+    transition: 0.5s;
+    color:var(--clr-primary);
+    background-color: var(--clr-icon);
+}
+.HS-Form{
+    padding-top: 30px;
+    width: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.HS-input{
+    width: 71%; 
+    position: relative; 
+}
+.HS-Form input{
+    width: 100%;
+    height: 60px;
+    text-indent: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    position: relative;
+   
+}
+.HS-Form button{
+    background-color:var(--clr-sicon);
+    color:var(--clr-primary);
+    position: absolute;
+  top: 7px;
+  right: 7px;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    border: none;
+    font-family: Inter ;
+}
+.HS-Form button:hover{
+    transition: 0.5s;
+    color:var(--clr-primary);
+    background-color: var(--clr-icon);
+}
+.HS-Search-Select{
+    width: 27%;
+    height: 60px;
+    border-radius: 10px;
+    border: none !important;
+    font-size: 16px;
+    color: var(--clr-texthome);
+    font-family: Metropolis-Light ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HS-Search-Select span{
+    font-family: Metropolis ;
+    font-weight: 500;
+    font-size: 16px;
+    
 }

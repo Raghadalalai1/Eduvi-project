@@ -17,7 +17,7 @@ export default function Home() {
 
        <KGHeroHome />
         <Section />
-      <KGHeroHome />
+      
       
       <Footer />
    
