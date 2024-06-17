@@ -14,7 +14,7 @@
     z-index: 5;
     display: flex;
     align-items: center;
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
 }
 .KG-Links .nav-link{
     color: #0A033C !important;
@@ -104,7 +104,7 @@
 
 }
 @media(min-width:992px) and (max-width:1200px){
-    .KG-Navbar{
+     .KG-Navbar{
        
         padding: 0px 80px;
     }
@@ -159,56 +159,7 @@
         outline: none !important;
         box-shadow: none !important;
     }
-    .KG-Navbar{
-       
-        padding: 0px 40px;
-    }
-    .navbar-collapse.collapse{
-        position: absolute !important;
-        width: 100% !important;
-        left: 0 !important;
-        margin: 0 !important;
-        top:90px;
-    }
-}
-@media(min-width:320px) and (max-width:599px){
-    .KG-Sign-inUp .nav-link{
-        display: none !important;
-    }
-    .KG-Sign-inUp-hidden{
-        display: block !important;
-    }
-    .KG-Links{
-        background-color:  #ECECEC ;
-    }
-    .KG-Links .nav-link{
-        width: max-content !important;
-        margin: 15px auto;
-        padding: 8px 0 !important;
-    }
-    .KG-Links .nav-item .dropdown-menu{
-        transition: 0.5s !important;
-    }
-    .navbar-toggler{
-        border: none !important;
-        transition: 0.5s !important;
-    }
-    .navbar-toggler:focus{
-        outline: none !important;
-        box-shadow: none !important;
-    }
-
-    .KG-Links{
-        justify-content: center;
-        position: absolute !important;
-        width: 100% !important;
-        left: 0 !important;
-        margin: 0 !important;
-
-
-       
-        
-    }
+     
 }
 @media (max-width:600px){
 

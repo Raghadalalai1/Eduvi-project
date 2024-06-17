@@ -10,7 +10,7 @@ import KGHeroHome from '../../components/KGHeroHome/KGHeroHome'
 export default function Home() {
   return (
     <>
-     <Navbarr />
+    <Navbarr />
     <div className='main'>
 
 
