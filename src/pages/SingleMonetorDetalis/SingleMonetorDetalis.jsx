@@ -5,15 +5,14 @@ import Footer from '../../components/Footer/Footer';
 export default function SingleMonetorDetalis() {
   return (
     <>
-
     <Navbarr />
-        <div className='main'>
-      
-          <Footer />
-    
-            
-        </div>
-    
-    </>
+   <div className='main'>
+     
+     <Footer />
+
+       
+   </div>
+
+   </>
   )
 }

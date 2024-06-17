@@ -209,6 +209,7 @@
     .KG-HeroHome{
         padding-top: 100px;
         padding-bottom: 100px;
+        justify-content: center;
     }
     .KG-Hero-PartRight{
         width: 70%;

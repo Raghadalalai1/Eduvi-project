@@ -5,15 +5,14 @@ import Footer from '../../components/Footer/Footer'
 export default function Pricing() {
   return (
     <>
-
-    <Navbarr />
-        <div className='main'>
+     <Navbarr />
+    <div className='main'>
       
-          <Footer />
-    
-            
-        </div>
-    
+      <Footer />
+
+        
+    </div>
+
     </>
   )
 }

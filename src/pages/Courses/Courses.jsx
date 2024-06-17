@@ -4,16 +4,15 @@ import Navbarr from '../../components/Navbarr/Navbarr'
 import Footer from '../../components/Footer/Footer'
 export default function Courses() {
   return (
-<>
+    <>
+    <Navbarr />
+   <div className='main'>
+     
+     <Footer />
 
-<Navbarr />
-    <div className='main'>
-  
-      <Footer />
+       
+   </div>
 
-        
-    </div>
-
-</>
+   </>
   )
 }
