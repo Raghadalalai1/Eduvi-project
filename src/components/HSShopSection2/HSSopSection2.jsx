@@ -24,7 +24,7 @@ export default function HSShopSection2() {
         </button>
         </div>
         <select name='School' className='HS-Search-Select'>
-            <option>Sort by:<span>Latest</span> </option>
+            <option>Sort by:Latest </option>
             <option>Sort by: oldest</option>
             
           </select>
