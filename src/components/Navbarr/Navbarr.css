@@ -41,6 +41,7 @@
 .KG-Sign-inUp .nav-link .KG-SignInUpIcon{
     color: #9C4DF4;
     margin-left: 10px;
+    
     font-size: 19px;
 }
 .KG-Sign-inUp-hidden{
@@ -80,6 +81,14 @@
 
 
 
+@media(min-width:1201px) and (max-width:1219px){
+    .show-registering{
+        display: block;
+    }
+    .KG-Sign-inUp{
+        display: none;
+    }
+}
 @media(max-width:1024px){
     .KG-Navbar{
        
@@ -99,7 +108,7 @@
        
         padding: 0px 80px;
     }
-    .show-registering{
+    .show-registering {
         display: block;
     }
     .KG-Sign-inUp{
