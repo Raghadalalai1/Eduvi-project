@@ -63,7 +63,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 539px;
+  /* width: 539px; */
   position: relative;
   bottom: 7px;
 }
@@ -410,6 +410,24 @@
   .BKH-section-6{
     display:none;
   }
+}
+@media(max-width:1900px){
+  .RA-section6-homepage{
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+}
+@media(max-width:1024px){
+  .RA-section6-homepage{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+}
+@media(max-width:375px){
+  .RA-section6-homepage{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 }
 
 @keyframes move-up-down {

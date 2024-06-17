@@ -3,7 +3,7 @@ import "./Section6.css";
 export default function Section6() {
   return (
     <>
-      <section>
+      <section className="RA-section6-homepage">
         <div className="BKH-section-6">
         <div className="BKH-section-join">
           {/*images part 1*/}

@@ -80,6 +80,14 @@
 
 
 
+@media(min-width:1201px) and (max-width:1219px){
+    .show-registering{
+        display: block;
+    }
+    .KG-Sign-inUp{
+        display: none;
+    }
+}
 @media(max-width:1024px){
     .KG-Navbar{
        
@@ -99,7 +107,7 @@
        
         padding: 0px 80px;
     }
-    .show-registering{
+    .show-registering {
         display: block;
     }
     .KG-Sign-inUp{
