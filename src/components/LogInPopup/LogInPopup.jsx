@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 // import { faEnvelope} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 export default function LogInPopup() {
     return (
         <div className='RA-LogInPopup'>
@@ -30,8 +30,8 @@ export default function LogInPopup() {
                     </Carousel>
 
                 </div>
-                <div className='RA-login-form'>
-                    <form action="" >
+                <div >
+                    <form action="" className='RA-login-form' >
                         <div className='ra-CONTANAIR'>
 
                             <div className='RA-GOOGLE-ICON'>
@@ -46,7 +46,12 @@ export default function LogInPopup() {
                         <p className='RA-signin'>Or signin with your email</p>
                         <div className='RA-JOIN'>
                             <label>Email</label>
-                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} />       <input type="email" placeholder='bill.sanders@example.com' />
+                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />       <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
+
+                        </div>
+                        <div className='RA-JOIN'>
+                            <label>Password</label>
+                              <FontAwesomeIcon icon={faLock} style={{ color: "#5d5a6f", }} className='RA-letter' />     <input type="password" placeholder='***********' className='RA-email-input'/>
 
                         </div>
 
