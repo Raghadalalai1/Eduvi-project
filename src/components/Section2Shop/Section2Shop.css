@@ -1,6 +1,11 @@
-.RA-S2-Shop{
+/* .RA-S2-Shop{
     width: 100%;
     display: flex !important;
     justify-content: space-between;
 
-}
+} */
+/* @media(max-width:375px){
+    .RA-S2-Shop{
+        flex-wrap: wrap;
+    }
+} */
