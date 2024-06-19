@@ -126,7 +126,7 @@
   padding-bottom: 30px;
   display: grid;
   grid-template-columns: auto auto auto;
- align-items: center;
+
  
 }
 .HS-Card-Book {
@@ -172,7 +172,7 @@ padding-left: 15px;
   width: 100%;
 }
 .HS-side{
-  width: 100%;
+  width: 840px;
 }
 .HS-sidebar {
   width: 284px;
@@ -215,7 +215,7 @@ padding-left: 15px;
   .HS-Card-Book:nth-child(9){
     display: none;
   }
-  .kk{
+  .HS-side{
     width: 100%;
   }
   .HS-LeftSection{

@@ -129,7 +129,7 @@ export default function HSShopSection2() {
       </div>
 
 
-<div className="HS-side">
+      <div className="HS-side">
       <div className="HS-sidebar">
         <button>
           <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
