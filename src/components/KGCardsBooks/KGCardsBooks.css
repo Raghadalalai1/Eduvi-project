@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 28%;
+    width: 380px;
     background-color: var(--clr-bg);
     padding-top: 40px;
     padding-bottom: 20px;
@@ -15,6 +15,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 15px;
+   
 }
 .KG-Card-Title{
     width: max-content;
@@ -31,6 +32,7 @@
     background-color: var(--clr-primary);
     padding: 22px 56px 22px 25px;
     border-radius: 10px;
+     width: 100%;
 }
 .KG-Card-Info-Book img{
     /* width: 100%; */
@@ -77,6 +79,17 @@
     width: max-content;
     cursor: pointer;
 }
+
+
+
+/* @media(max-width:1440px){
+
+    .KG-Cards{
+ 
+        width: 400px;
+ 
+    }
+} */
 
 
 @media(max-width:788px) and (min-width:567px){
