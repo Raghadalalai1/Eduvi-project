@@ -33,11 +33,11 @@
     border-radius: 10px;
 }
 .KG-Card-Info-Book img{
-    width: 100%;
+    /* width: 100%; */
     width: 75px;
     height: 90px;
     border-radius: 5px;
-    height: 90px;
+    /* height: 90px; */
     margin-right: 15px;
 
 }
@@ -51,7 +51,7 @@
     font-size: 16px;
 }
 .KG-Text-Pargraph{
-    width: 100%;
+    /* width: 100%; */
     font-family:Metropolis-Bold;
     font-weight: 600px;
     font-size: 18px;
@@ -90,11 +90,15 @@
 }
 @media(max-width:566px){
     .KG-Card-Info-Book{
-        padding: 8px 0px 8px 5px !important;
+        padding: 10px  !important;
     }
     .KG-Card-Title{
         font-size: 24px;
         line-height: 24px;
+    }
+    .KG-Text-Pargraph{
+        width: 210px;
+
     }
 
 }

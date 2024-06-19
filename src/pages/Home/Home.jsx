@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer'
 
 import Section from '../../components/Section/Section6'
 import KGHeroHome from '../../components/KGHeroHome/KGHeroHome'
+import SECTION6 from '../../components/SECTION6/AM-SEC'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
 
 
        <KGHeroHome />
+       <SECTION6 />
         <Section />
       <Footer />
    
