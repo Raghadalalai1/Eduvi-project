@@ -27,8 +27,10 @@ function App() {
       <Route path='/login' element={<LogIn/>} />
       <Route path='/pricing' element={< Pricing/>} />
       <Route path='/SingleMonetorDetalis' element={< SingleMonetorDetalis />} />
-      <Route path='/signup' element={<SignUp/>} />
-
+      <Route path='/SignUp' element={<SignUp/>} />
+      <Route path='/OurMonetors' element={<OurMonetors/>} />
+      <Route path='/BecomeAnInstructor' element={<BecomeAnInstructor/>} />
+      <Route path='/CoursesDetalis' element={<CoursesDetalis/>} />
       
     </Routes>
     
