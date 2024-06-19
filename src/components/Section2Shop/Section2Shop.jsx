@@ -9,8 +9,9 @@ export default function Section2Shop() {
         <KGCardsBooks KGTitle = {'Popular Books'} />
         <KGCardsBooks KGTitle = {'New Arrivals'} />
       </div>
-      
+      <div>
       <HSShopSection2/>
+      </div>
     </div>
   )
 }
