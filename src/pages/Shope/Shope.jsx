@@ -11,6 +11,8 @@ export default function Shope() {
    <div className='main'>
      <Section2Shop />
      <Section />
+   
+     
      <Footer />
 
        

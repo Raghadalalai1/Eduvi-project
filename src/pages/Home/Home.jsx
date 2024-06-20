@@ -5,8 +5,13 @@ import Footer from '../../components/Footer/Footer'
 
 import Section from '../../components/Section/Section6'
 import KGHeroHome from '../../components/KGHeroHome/KGHeroHome'
+
 import AMSEC from '../../components/section-6/AM-SEC'
 import Registation from '../../components/Registation/Regstation'
+import SECTION6 from '../../components/SECTION6/AM-SEC'
+
+
+
 export default function Home() {
   return (
     <>
@@ -15,10 +20,14 @@ export default function Home() {
 
 
        <KGHeroHome />
-       <Registation />
+
+        <Registation />
        <AMSEC />
+       <SECTION6 />
 
         <Section />
+      
+      
       <Footer />
    
       
