@@ -238,6 +238,7 @@ label{
     transition: 0.5S;
 }
 .RA-button-form:hover{
+    
     background-color: transparent;
     color: #9C4DF4;
     cursor: pointer;
