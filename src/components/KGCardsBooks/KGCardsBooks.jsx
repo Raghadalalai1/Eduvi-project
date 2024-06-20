@@ -8,7 +8,7 @@ export default function KGCardsBooks({KGTitle}) {
      {
         id : 1 ,
         Image : './public/images/Shop/Shop-Section/Small-Image-1.svg' ,
-        stars : < FontAwesomeIcon icon={faStar} className='KG-Star-color' /> ,
+        stars : <FontAwesomeIcon icon={faStar} className='KG-Star-color' /> ,
         text : "The Three Musketeers, by Alexandre Dumas" ,
         price : '39$'
     },

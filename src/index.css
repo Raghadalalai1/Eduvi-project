@@ -23,12 +23,15 @@
     rgba( 10 , 3 , 60 , 1 )
     rgba( 10 , 3 , 60 , 0 ) ;
     --clr-googleicon: #E93E30;
-    --clr-borderinput: #DEDDE4 ;}
+    --clr-borderinput: #DEDDE4 ;
+    --border-color: linear-gradient( rgba( 10 , 3 , 60 , 0 ), rgba( 10 , 3 , 60 , 1 ), rgba( 10 , 3 , 60 , 0 )) 
+}
     
 *{
         padding: 0;
         margin: 0;
         box-sizing:border-box;
+      
 }
 
 

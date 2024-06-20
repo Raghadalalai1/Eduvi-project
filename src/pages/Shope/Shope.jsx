@@ -21,6 +21,8 @@ export default function Shope() {
       />
      <Section2Shop />
      <Section />
+   
+     
      <Footer />
 
        
