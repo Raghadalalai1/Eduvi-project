@@ -9,7 +9,7 @@ function AMSEC() {
         
 
 <div className="AM-ph2">
-<img src="./../../../../../../public/images/Home/Home-section6/male(1).png" alt="Sorry, the photo wasn't uploaded " />
+<img src="./../../../../../../public/images/Home/Home-section6/ImageYoung.png" alt="Sorry, the photo wasn't uploaded " />
 </div>
        
         <div className="AM-container2">
