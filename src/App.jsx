@@ -28,7 +28,6 @@ function App() {
       <Route path='/pricing' element={< Pricing/>} />
       <Route path='/SingleMonetorDetalis' element={< SingleMonetorDetalis />} />
       <Route path='/signup' element={<SignUp/>} />
-      <Route path='/signup' element={<SignUp/>} />
       <Route path='/BecomeAnInstructor' element={<BecomeAnInstructor/>} />
       <Route path='/CoursesDetalis' element={<CoursesDetalis/>} />
       <Route path='/OurMonetors' element={<OurMonetors/>} />

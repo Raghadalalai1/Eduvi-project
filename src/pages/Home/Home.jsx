@@ -17,29 +17,29 @@ import SECTION6 from '../../components/SECTION6/AM-SEC'
 export default function Home() {
   return (
     <>
-     <Navbarr />
-    <div className='main'>
+      <Navbarr />
+      <div className='main'>
 
 
-       <KGHeroHome />
+        <KGHeroHome />
 
-       <LKHomeSection2 />
-       <LKHomeSection3 />
+        <LKHomeSection2 />
+        <LKHomeSection3 />
 
 
         <Registation />
-       <AMSEC />
-       <SECTION6 />
+        <AMSEC />
+        {/* <SECTION6 /> */}
 
 
         <Section />
-      
-      
-      <Footer />
-   
-      
-  
-    </div>
+
+
+        <Footer />
+
+
+
+      </div>
 
     </>
   )

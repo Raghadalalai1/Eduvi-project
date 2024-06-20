@@ -154,6 +154,7 @@
     }
     .navbar-toggler{
         border: none !important;
+        padding-left: 0 !important;
     }
     .navbar-toggler:focus{
         outline: none !important;

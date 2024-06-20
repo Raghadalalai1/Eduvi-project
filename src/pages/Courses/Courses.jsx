@@ -13,6 +13,7 @@ export default function Courses() {
     <Navbarr />
 
    <div className='main' id='coruses'>
+    
     <LKCoursesSection2 />
      <Section />
     <Footer />
