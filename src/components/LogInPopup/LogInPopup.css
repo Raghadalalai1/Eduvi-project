@@ -128,7 +128,7 @@ padding-left: 65px;
 
 }
 .RA-login-form .RA-signin{
-.HS-Paragraph{
+
     font-family:Metropolis-ExtraLight ; 
     font-weight: 400;
     font-size: 16px;
@@ -154,6 +154,7 @@ left: 40px;
 
 }
 .HS-Paragraph:after{
+    
 position: absolute;
 content: "";
 width: 20px;
