@@ -1,6 +1,5 @@
 
 import "./AM-SEC.css";
-
 function AMSEC() {
   return (
     <section>
@@ -9,8 +8,7 @@ function AMSEC() {
         
 
 <div className="AM-ph2">
-<img src="./../../../../../../public/images/Home/Home-section6/ImageYoung.png" alt="Sorry, the photo wasn't uploaded " />
-</div>
+<img src="./../../../public/images/Home/Home-section6/male.png" alt="Sorry, the photo wasn't uploaded " /></div>
        
         <div className="AM-container2">
           <h1>Want to share your knowledge ? Join Us a Mentor</h1>

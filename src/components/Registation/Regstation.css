@@ -1,0 +1,320 @@
+
+.HS-Regst{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+    width: 100%;
+      
+    background-color:#EDE9F2 ;
+    position: relative;
+    border-radius: 20px;
+}
+.HS-Regst-left{
+    width: 50%;
+    padding: 113px 0 114px 70px;
+    
+}
+.HS-Regst-button{
+    background-color:  #E4E2F4 !important;
+    color: #9C4DF4 !important;
+    border: 1px solid #E4E2F4 !important;
+    width: 33%;
+    height: 50px;
+    border-radius: 10px;
+}
+.HS-Regst-title{
+    width: 447px;
+}
+.HS-Regst-h1{
+    width: 433px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+}
+.HS-Regst-pargraph{
+    width: 474px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #5D5A6F;
+    padding-top: 5px;
+
+}
+.HS-Regst-button2{
+    width: 40%;
+    height: 50px;
+    background-color: #9C4DF4 !important;
+    color:#FFFFFF !important ;
+    border: 1px solid #E4E2F4 !important;
+  
+  
+}
+.HS-Regst-Right {
+    width: 50%;
+    position: relative;
+  
+    
+}
+.HS-Regst-Right .student-image {
+    width: 100%;
+
+       
+}
+.HS-icon1{
+    position: absolute;
+    Top:51px;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.HS-icon2{
+    position: absolute;
+top:198px ;
+left: 85% ; 
+width: 50px;
+height: 50px;
+background-color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+
+}
+.HS-icon3{
+    position: absolute;
+    top:169px ;
+    left: 54%;
+    height: 50px;
+    width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.HS-icon1 img
+{
+    width: 26px;
+    height: 30px;
+}
+.HS-icon2 img
+{
+    width: 26px;
+    height: 30px;
+}
+.HS-icon3 img
+{
+    width: 26px;
+    height: 30px;
+}
+
+@media (max-width:1024px) {
+
+    .HS-Regst{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .HS-Regst-title{
+        width: 320px;
+    }
+    .HS-Regst-h1{
+        width: 337px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: left;
+    }
+    .HS-Regst-pargraph{
+        width: 350px;
+        font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: #5D5A6F;
+        padding-top: 5px;
+    
+    }
+    .HS-icon1{
+
+    
+        Top:204px;
+        left: 839px;
+    }
+    .HS-icon2{
+
+        Top:63px;
+        left: 796px;
+    }
+    .HS-icon3{
+
+        Top:54px;
+        left: 529px;
+    }
+}
+
+@media (max-width:991px)
+{
+    .HS-Regst{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       background-color:#EDE9F2 ;
+
+    }
+
+    .HS-Regst-left{
+        width: 100%;
+        padding: 30px 20px 0 20px;
+        
+    }
+    .HS-Regst-Right {
+        width: 70%;  
+    }
+
+    .HS-Regst-Right .student-image {
+        margin-top: 65px ; 
+        width: 100%;
+    }
+
+    .HS-Regst-title{
+        width: 293px !important;
+    }
+    .HS-Regst-h1{
+        
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+        font-size: 28px;
+        font-weight: 600;
+         line-height: 30px; 
+        text-align: left;
+        width: 284px !important;
+    }
+    .HS-Regst-pargraph{
+        width: 293px;
+        font-family: Metropolis;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #5D5A6F;
+       margin: 20px 0px 25px 0px;
+    
+    }
+    .HS-Regst-button{
+        background-color:  #E4E2F4 !important;
+        color: #9C4DF4 !important;
+        border: 1px solid #E4E2F4 !important;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .HS-Regst-button2{
+        width: 160px;
+        height: 50px;
+        background-color: #9C4DF4 !important;
+        color:#FFFFFF !important ;
+        border: 1px solid #E4E2F4 !important;
+      
+      
+    }
+
+    .HS-icon1 img
+    {
+        width: 16px;
+        height: 18px;
+    }
+    .HS-icon2 img
+    {
+        width: 16px;
+        height: 18px;
+    }
+    .HS-icon3 img
+    {
+        width: 16px;
+        height: 18px;
+    }
+    .HS-icon1{
+        display: none;
+    }
+    .HS-icon2{
+        display: none;
+    }
+    .HS-icon3{
+ display: none;
+    }
+
+
+}
+@media (max-width:375px)
+{
+    .HS-Regst-left{
+       
+        padding: 30px 20px 0 10px;
+        
+    } 
+    .HS-Regst-Right {
+        width: 100%;  
+    }
+
+    .HS-Regst-Right .student-image {
+        margin-top: 65px ; 
+        width: 100%;
+    }
+    .HS-icon1{
+        position: absolute;
+        top: 478px;
+        left: 268px ; 
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .HS-icon2{
+        position: absolute;
+
+    width: 30px;
+    height: 30px;
+    top: 571px;
+    left: 262px ; 
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .HS-icon3{
+        position: absolute;
+        top: 586px;
+        left: 32px ; 
+        height: 30px;
+        width: 30px;
+
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+

@@ -4,7 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 // import { faEnvelope} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope, faEye, faLock } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faEye, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 export default function LogInPopup() {
     return (
         <div className='RA-LogInPopup'>
@@ -48,16 +50,30 @@ export default function LogInPopup() {
                         </div>
                         <div className='RA-JOIN'>
                             <label>Email</label>
+                            
+                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />
+                                  <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
                             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />   
                                 <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
 
                         </div>
-                        <div className='RA-JOIN'>
+                        <div className='RA-JOIN1'>
                             <label>Password</label>
-                              <FontAwesomeIcon icon={faLock} style={{ color: "#5d5a6f", }} className='RA-letter' />     <input type="password" placeholder='***********' className='RA-email-input'/>
+                             
+                              <FontAwesomeIcon icon={faLock} style={{ color: "#5d5a6f", }} className='RA-lock' />
+                                  <input type="password" placeholder='***********' className='RA-email-input'/>
+                                  <FontAwesomeIcon icon={faEye} style={{ color: "#5d5a6f", }}   className='RA-eye' />
+                             
+                        </div>
+                        <input type="submit" value={'sign in'} className='RA-button-form' />
+                        <div className='RA-check-password' >
+                        <div className='RA-KEEP'>
+                        <FontAwesomeIcon icon={faSquareCheck} style={{color: "#9C4DF4" , fontSize:'20px'}}/>
+                        <p className='RA-PARAGHRAPH'>keep me signed in</p>
+                        </div>
+                        <p className='ra-FORGER'>Forgot password?</p>
 
                         </div>
-
 
 
                     </form>
