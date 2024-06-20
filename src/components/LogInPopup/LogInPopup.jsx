@@ -30,7 +30,7 @@ export default function LogInPopup() {
                     </Carousel>
 
                 </div>
-                <div >
+                <div className='part2'>
                     <form action="" className='RA-login-form' >
                         <div className='ra-CONTANAIR'>
 
@@ -43,10 +43,13 @@ export default function LogInPopup() {
 
 
                         </div>
+                        <div className='HS-Paragraph'>
                         <p className='RA-signin'>Or signin with your email</p>
+                        </div>
                         <div className='RA-JOIN'>
                             <label>Email</label>
-                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />       <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
+                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />   
+                                <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
 
                         </div>
                         <div className='RA-JOIN'>

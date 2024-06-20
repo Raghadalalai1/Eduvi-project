@@ -3,7 +3,8 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    
 
 }
 .RA-logologin{
@@ -16,7 +17,7 @@
 
 .RA-parent-LogInPopup {
     background-color: var(--clr-primary);
-    width: 74%;
+    width: 50%;
     height: 800px;
     border-radius: 15px;
     margin-top: 140px;
@@ -97,15 +98,17 @@ align-items:center ;
 justify-content: center;
 position: absolute;
 z-index: 1;
-left: 907px;
-top: 250px;
+left: 8px;
+top: 5px;
 
 }
 .ra-CONTANAIR{
-    display: flex;
+   
+    width: 100%;
+    position: relative;
 }
 .RA-gool{
-   width:339px ;
+   width:100%;
     height: 50px;
     border-radius: 10px;
     outline: none;
@@ -120,7 +123,7 @@ font-size: 16px;
 padding-left: 65px;
 
 }
-.RA-signin{
+.HS-Paragraph{
     font-family:Metropolis-ExtraLight ; 
     font-weight: 400;
     font-size: 16px;
@@ -132,40 +135,50 @@ padding-left: 65px;
 
 
 }
-.RA-signin::before{
+.HS-Paragraph:before{
 position: absolute;
 content: "";
 width: 20px;
 height: 1px;
 color:rgb(18, 0, 119) ;
+top: 13px;
+left: 40px;
 
 
 
 
 }
-.RA-signin::after{
+.HS-Paragraph:after{
 position: absolute;
 content: "";
 width: 20px;
 height: 1px;
 color:rgb(18, 0, 119) ;
+top: 13px;
+right: 40px;
 
 
 
 
+}
+.part2{
+    width:  50%;
+   
 }
 .RA-login-form{
     display: flex;
-    align-items: center;
-   margin-left: 80px;
+    align-items: start;
+    
     flex-direction: column;
+    justify-content: start;
+    padding: 185px 79px 185px 80px;
 }
 .RA-JOIN{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    width: 477px;
+    width: 100%;
 }
 .RA-email-input{
     width: 100%;
@@ -195,4 +208,41 @@ label{
     font-size: 16px;
     font-weight: 500;
     font-family:Metropolis-Medium ;
+}
+@media(max-width:1200px){
+   
+   .RA-titel-login{
+    width: 400px;
+   }
+   .RA-parent-LogInPopup {
+  
+    width: 50%;}
+    .carousel-inner{
+        width: 50%;
+    }
+    .RA-gool{
+        width:200px ;}
+        .RA-gool::placeholder{
+            padding-left: 45px;
+            font-size: 14px;
+            
+            }
+            .RA-JOIN{
+                width: 200px;
+            }
+            .RA-signin{
+              
+               width: 280px;}
+               .RA-email-input::placeholder{
+              
+                font-size: 14px;
+                padding-left:40px;
+                
+                }
+               .label{
+                font-size: 14px;
+               }
+              
+            
+   
 }
