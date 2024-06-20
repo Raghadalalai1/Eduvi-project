@@ -29,7 +29,7 @@ export default function Courses() {
         image={image2}
         imageclass="BKH-image-hero-page-Courses"
         imageclasstwo="BKH-calssimage-hero-page-Courses"
-        imageclassthree="BKH-imageplus-hero-page-Courses"
+        imageclassthree="BKH-imageplus-hero-page-Courses" />
     <LKCoursesSection2 />
      <Section />
     <Footer />
