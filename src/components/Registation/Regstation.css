@@ -87,6 +87,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    animation: move-down 2s infinite;
 }
 .HS-icon2{
 position: absolute;
@@ -99,6 +100,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 5px;
+animation: move-up 2s infinite;
 
 }
 .HS-icon3{
@@ -114,6 +116,7 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    animation: move-down 2s infinite;
 
 }
 .HS-icon1 img
@@ -177,28 +180,6 @@ border-radius: 5px;
         width: 100%;
     }
 
-    /* .HS-Regst-title{
-        width: 320px;
-    } */
-    /* .HS-Regst-h1{
-        width: 337px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 50px;
-        text-align: left;
-    } */
-    /* .HS-Regst-pargraph{
-        width: 350px;
-        font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: left;
-        color: #5D5A6F;
-        padding-top: 5px;
-    
-    } */
     .HS-icon1{
 
     
@@ -252,14 +233,14 @@ border-radius: 5px;
     .HS-Regst-h1{
         
         
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 600;
          line-height: 30px; 
         text-align: left;
-        width: 284px !important;
+        width: 100% !important;
     }
     .HS-Regst-pargraph{
-        width: 293px;
+        width: 100%;
         font-family: Metropolis;
         font-size: 13px;
         font-weight: 600;
@@ -365,7 +346,22 @@ border-radius: 5px;
         align-items: center;
     }
 }
-
+@keyframes move-up{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+@keyframes move-down{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
 
 
