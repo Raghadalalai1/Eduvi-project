@@ -3,8 +3,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
 
 }
 .RA-logologin{
@@ -17,7 +16,7 @@
 
 .RA-parent-LogInPopup {
     background-color: var(--clr-primary);
-    width: 50%;
+    width: 74%;
     height: 800px;
     border-radius: 15px;
     margin-top: 140px;
@@ -100,19 +99,14 @@ position: absolute;
 z-index: 1;
 left: 7px;
 top: 5px;
-left: 8px;
-top: 5px;
 
 }
 .ra-CONTANAIR{
     display: flex;
     position: relative;
-   
-    width: 100%;
-    position: relative;
 }
 .RA-gool{
-   width:100%;
+   width:339px ;
     height: 50px;
     border-radius: 10px;
     outline: none;
@@ -128,7 +122,6 @@ padding-left: 65px;
 
 }
 .RA-login-form .RA-signin{
-
     font-family:Metropolis-ExtraLight ; 
     font-weight: 400;
     font-size: 16px;
@@ -140,44 +133,33 @@ padding-left: 65px;
 
 
 }
-.HS-Paragraph:before{
+.RA-signin::before{
 position: absolute;
 content: "";
 width: 20px;
 height: 1px;
 color:rgb(18, 0, 119) ;
-top: 13px;
-left: 40px;
 
 
 
 
 }
-.HS-Paragraph:after{
-    
+.RA-signin::after{
 position: absolute;
 content: "";
 width: 20px;
 height: 1px;
 color:rgb(18, 0, 119) ;
-top: 13px;
-right: 40px;
 
 
 
 
-}
-.part2{
-    width:  50%;
-   
 }
 .RA-login-form{
     display: flex;
-    align-items: start;
-    
+    align-items: center;
+   margin-left: 80px;
     flex-direction: column;
-    justify-content: start;
-    padding: 185px 79px 185px 80px;
 }
 .RA-JOIN{
     display: flex;
@@ -196,7 +178,6 @@ right: 40px;
     width: 477px;
     position: relative;
     margin-bottom: 25px;
-    width: 100%;
 }
 .RA-email-input{
     width: 100%;
@@ -219,106 +200,65 @@ padding-left:51px;
     z-index: 1;
     left: 18px;
     top: 47px;
-    font-size: 18px;
-
-}
-.RA-lock{
-    position: absolute;
-    z-index: 1;
-    left: 18px;
-    top: 45px;
-    font-size: 18px;
-}
-.RA-eye{
-    position: absolute;
-    z-index: 1;
-  right: 18px;
-  top: 45px;
-    font-size: 18px;
-}
-label{
-    font-size: 16px;
-    font-weight: 500;
-    font-family:Metropolis-Medium ;
-    line-height: 30px;
-}
-.RA-button-form{
-    background-color: #9C4DF4;
-    color: white;
-    font-family:Metropolis-ExtraLight ;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    transition: 0.5S;
-}
-.RA-button-form:hover{
-    
-    background-color: transparent;
-    color: #9C4DF4;
-    cursor: pointer;
-    border: 1px solid #9C4DF4;
-
-}
-.RA-check-password{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.RA-KEEP{
-    display: flex;
-    align-items: center;
-}
-.RA-KEEP .RA-PARAGHRAPH{
-    margin-left: 10PX;
-    margin-bottom: 0;
-}
-.ra-FORGER{
-    margin-bottom: 0;
-}
-.ra-FORGER:hover{
-   cursor: pointer;
-}
-
-@media(max-width:1200px){
-   
-   .RA-titel-login{
-    width: 400px;
-   }
-   .RA-parent-LogInPopup {
-  
-    width: 50%;}
-    .carousel-inner{
-        width: 50%;
+    font-size: 18px;}
+    .RA-lock{
+        position: absolute;
+        z-index: 1;
+        left: 18px;
+        top: 45px;
+        font-size: 18px;
     }
-    .RA-gool{
-        width:200px ;}
-        .RA-gool::placeholder{
-            padding-left: 45px;
-            font-size: 14px;
-            
-            }
-            .RA-JOIN{
-                width: 200px;
-            }
-            .RA-signin{
-              
-               width: 280px;}
-               .RA-email-input::placeholder{
-              
-                font-size: 14px;
-                padding-left:40px;
-                
-                }
-               .label{
-                font-size: 14px;
-               }
-              
-            
-   
-}
+    .RA-eye{
+        position: absolute;
+        z-index: 1;
+      right: 18px;
+      top: 45px;
+        font-size: 18px;
+    }
+    label{
+        font-size: 16px;
+        font-weight: 500;
+        font-family:Metropolis-Medium ;
+        line-height: 30px;
+    }
+    .RA-button-form{
+        background-color: #9C4DF4;
+        color: white;
+        font-family:Metropolis-ExtraLight ;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        transition: 0.5S;
+    }
+    .RA-button-form:hover{
+        background-color: transparent;
+        color: #9C4DF4;
+        cursor: pointer;
+        border: 1px solid #9C4DF4;
+    
+    }
+    .RA-check-password{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .RA-KEEP{
+        display: flex;
+        align-items: center;
+    }
+    .RA-KEEP .RA-PARAGHRAPH{
+        margin-left: 10PX;
+        margin-bottom: 0;
+    }
+    .ra-FORGER{
+        margin-bottom: 0;
+    }
+    .ra-FORGER:hover{
+       cursor: pointer;
+    }
