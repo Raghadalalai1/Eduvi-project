@@ -94,6 +94,7 @@ let data1=[{id:'1',img:homeCardImg,h4:"Standard One",par:"Standard 1 is a founda
         <div className='LK-home-section3-son3'>
             <button className='LK-home-sec3-son3-button'>Visit More Classes</button>
         </div>
+        
 
     </section>
     </>
