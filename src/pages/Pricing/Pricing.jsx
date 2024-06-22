@@ -4,6 +4,7 @@ import Footer from '../../components/Footer/Footer'
 import Section from '../../components/Section/Section6'
 import PropsHero from '../../components/PropsHero/PropsHero'
 import imagepricing  from '../../../public/images/Pricing/Pricing-Hero/pricing-hero.svg'
+import LKPricingSection2 from '../../components/LK-Pricing-Section2/LK-Pricing-Section2'
 export default function Pricing() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Pricing() {
     image= {imagepricing}
     imageclass="BKH-image-hero-page-pricing"
     />
+    <LKPricingSection2 />
       <Section />
       <Footer />
 
