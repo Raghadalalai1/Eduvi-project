@@ -1,0 +1,131 @@
+
+.LK-footer{
+   justify-content: space-between;
+    width: 100%;
+    background-color: #F7F5FA;
+    font-family: Metropolis-Thin !important;
+    padding-top: 80px;
+    padding-bottom: 70px;
+ 
+    
+}
+.LK-footer-par-son2{
+    width: 170px;
+}
+.LK-footer-ul{
+    list-style-type: none;
+    margin-left: -29px !important;
+}
+.LK-footer-img{
+    margin-bottom: 20px;
+}
+.LK-footer-icon{
+    margin-left: -10px;
+    gap: 9px;
+}
+.LK-footer-img{
+    margin-bottom: 25px;
+}
+.LK-footer-father-icon2{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+}
+.LK-footer-father-icon2:hover{
+    background-color: #FF6652;
+    position: relative;
+    cursor: pointer;
+}
+.LK-footer-father-icon2:hover .LK-footer-icon1{
+    color: white !important; 
+}
+.LK-footer-icon1{
+    color: #0A033C;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 22px;
+}
+.LK-footer-par-son1{
+    margin-bottom: 15px;
+    color: #5D5A6F;
+    font-family: "Inter", sans-serif;
+}
+.LK-footer-par-son2{
+    color: #5D5A6F;
+}
+.LK-footer-icon{
+    margin-bottom: 40px;
+}
+.LK-footer-h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    color:#0A033C;
+}
+.LK-footer-li{
+    color: #5D5A6F;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  
+   
+}
+.LK-footer-li:hover{
+text-decoration: underline;
+
+
+
+}
+@media(min-width:769px) and (max-width:1024px){
+    .LK-footer-h4{
+        font-size: 18px;
+    }
+    .LK-footer-li{
+        font-size: 14px;
+    }
+    .LK-footer-par-son1,.LK-footer-par-son2{
+        font-size: 14px;
+    }
+    .LK-footer-icon{
+        margin-bottom: 25px;
+    }
+    
+     
+}
+/* @media (max-width:1288px){
+    .LK-footer{
+       
+        padding: 80px 82px 70px 80px;
+    }
+   
+} */
+/* @media (max-width:1280px){
+    .LK-footer{
+       
+        padding: 80px 40px 70px 40px;
+    }
+   
+} */
+/* @media (max-width:1200px){
+    .LK-footer{
+       
+        padding: 80px 20px 70px 20px;
+    }
+   
+} */
+
+@media(max-width:768px){
+    .LK-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: start !important;
+        /* margin: 20px auto; */
+    }
+
+  
+}

@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Metropolis-font {
+    font-family: metropolis;
+}
+
+.AM-content1 {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 130px;
+
+    align-items: center;
+
+    height: max-content;
+
+
+}
+
+.AM-ph2 {
+    height: 37.33%;
+    width: 37.33%;
+
+    background: url(./../../../../../../public/images/Home/Home-section6/background.png) center no-repeat;
+    background-size: cover;
+    border-radius: 50% 50% 0% 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AM-ph2 img {
+    width: 100%;
+    max-width: 403px;
+    border-radius: 0px 0px 0px 35%;
+
+}
+
+.AM-container2 {
+    margin-left: 75px;
+}
+
+.AM-container2 h1 {
+    width: 100%;
+    max-width: 455px;
+    font-size: 45px;
+    color: #0a033c;
+    font-weight: 700;
+    font-family: Metropolis;
+    list-style: 55px;
+}
+
+.AM-container2 p {
+    width: 100%;
+    max-width: 495px;
+    color: #5D5A6F;
+    font-family: Metropolis;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 19px 0px 37px 0px;
+    line-height: 30px;
+}
+
+.AM-container2 button {
+    width: 193px;
+    height: 56px;
+    color: #fff;
+    background-color: #9c4df4;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width:1024px) {
+    .AM-content1 {
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: max-content;
+    }
+
+
+    .AM-container2 h1 {
+        font-size: 35px;
+        width: 338px;
+    }
+
+    .AM-container2 p {
+        font-size: 14px;
+        width: 338px;
+    }
+
+    .AM-ph2 {
+        width: 38.6%;
+        height: 38.6%;
+    }
+
+    .AM-ph2 img {
+        width: 83.7%;
+        height: 357px;
+
+
+    }
+
+    .AM-container2 button {
+        width: 186px;
+        height: 50px;
+    }
+
+    .AM-container2 {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:991px) {
+    .AM-content1 {
+        flex-direction: column;
+        margin-top: 70px;
+        height: max-content;
+        margin-bottom: 50px;
+
+    }
+
+    .AM-ph2 img {
+        width: 250.43px;
+        height: 331.21px;
+
+
+    }
+
+    .AM-ph2 {
+        width: 316.92px;
+        height: 316.92px;
+    }
+
+    .AM-container2 {
+
+        margin: 30px 9px 0px 9px;
+    }
+
+    .AM-container2 h1 {
+        font-size: 28px;
+        width: 271px;
+    }
+
+    .AM-container2 p {
+        font-size: 16px;
+        width: 335px;
+    }
+
+    .AM-container2 button {
+        width: 176px;
+        height: 50px;
+    }
+}
