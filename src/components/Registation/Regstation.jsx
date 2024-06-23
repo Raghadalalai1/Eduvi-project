@@ -10,6 +10,7 @@ export default function Registation() {
   return (
     <>
     <div className=' HS-Regst '>
+      
         <div className=' HS-Regst-left'>
         <Button className='HS-Regst-button' variant="secondary">College Level</Button>
         <div className='HS-Regst-title'>
