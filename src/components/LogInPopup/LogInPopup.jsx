@@ -33,7 +33,7 @@ export default function LogInPopup({name,last ,agreed}) {
 
                 </div>
                 <div >
-                    <form action="" className='RA-login-form' >
+                    <form action="" className='RA-login-form ' >
                         <div className='ra-CONTANAIR'>
 
                             <div className='RA-GOOGLE-ICON'>
@@ -65,7 +65,7 @@ export default function LogInPopup({name,last ,agreed}) {
                         {agreed}
 
                         <input type="submit" value={'sign in'} className='RA-button-form' />
-                        
+
                         {last}
 
 

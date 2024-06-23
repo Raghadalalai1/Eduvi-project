@@ -13,7 +13,7 @@ export default function SignUp() {
       <img src={img} alt="icon" className="RA-letter" />
       <input
         type="email"
-        placeholder="bill.sanders@example.com"
+        placeholder="Esther Howard"
         className="RA-email-input"
       />
     </div>,
@@ -27,11 +27,11 @@ export default function SignUp() {
   const agreed = [
     <div className="RA-KEEP HS-paragraph">
       <img src={icon} />
-      <p className="RA-PARAGHRAPH ">I agreed to the Terms & Conditions</p>
+      <p className="RA-PARAGHRAPH ">I agreed to the<span className="HS-sign-Span2"> Terms & Conditions </span></p>
     </div>,
   ];
   return (
-    <div className="HS-signUp">
+    <div className="HS-signUp ">
       <LogInPopup name={name} agreed={agreed} last={last} />
     </div>
   );
