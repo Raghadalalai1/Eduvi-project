@@ -18,7 +18,7 @@ export default function LKHomeSection2() {
             480 vertical scan lines or 576 vertical lines is considered high-definition.</p>
         </div>
         <div className='LK-home-section2-son2'>
-        <div className='LK-home-sec2-son2-father-button' > <Link to='coruses'> <button className='LK-home-section2-son1-button'>Visit Courses</button></Link></div>
+        <div className='LK-home-sec2-son2-father-button' > <Link to={'/courses'}> <button className='LK-home-section2-son1-button'>Visit Courses</button></Link></div>
         <div className='LK-home-sec2-img'>
         <img  className='LK-home-section2-son2-img-up' src={pluse} alt='plus'/>
         </div>

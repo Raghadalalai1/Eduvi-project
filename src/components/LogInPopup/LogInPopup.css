@@ -1,0 +1,267 @@
+.RA-LogInPopup {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.RA-logologin{
+    margin-bottom: 15px;
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+
+}
+
+.RA-parent-LogInPopup {
+    background-color: var(--clr-primary);
+    width: 74%;
+    height: 800px;
+    border-radius: 15px;
+    margin-top: 140px;
+    margin-left: 190px;
+    margin-right: 190px;
+    /* background-color: #0A033C; */
+}
+.RA-parent-LogInPopup{
+display: flex;
+justify-content: space-between;
+padding:105px  79px 104px 80px;
+}
+.RA-titel-login{
+
+    font-weight: 700;
+    font-size: 40px;
+    width: 483px;
+    text-align: left;
+    font-family:Metropolis-Bold ;
+    line-height: 50px;
+     color: var(--clr-text);
+
+}
+.RA-part1-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid black;
+    
+}
+
+.RA-slider{
+    width: 32%;
+    margin-top: 30px;
+    padding-right: 110px;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 100% !important;
+    top: 826px;
+    left: 438px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 102, 82, 1);
+    transition: 0.5s;
+
+  
+}
+.carousel-indicators [data-bs-target]:hover{
+    
+    background-color: rgba(255, 102, 82, 0.5);
+   /* border: 1px solid rgba(255, 102, 82, 1); */
+
+  
+}
+.carousel-indicators{
+    width: max-content;
+    bottom: -53px;
+    left: 74px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    display: none;
+}
+
+
+.carousel-inner{
+    width: 74%;
+}
+
+.RA-GOOGLE-ICON{
+width: 40px;
+height: 40px;
+border-radius:7px ;
+background-color: var(--clr-googleicon);
+display: flex;
+align-items:center ;
+justify-content: center;
+position: absolute;
+z-index: 1;
+left: 7px;
+top: 5px;
+
+}
+.ra-CONTANAIR{
+    display: flex;
+    position: relative;
+}
+.RA-gool{
+   width:339px ;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(222, 221, 228, 1);
+  
+    
+}
+.RA-gool::placeholder{
+font-family:Metropolis-ExtraLight ;
+font-weight: 400;
+font-size: 16px;
+padding-left: 65px;
+
+}
+.RA-login-form .RA-signin{
+    font-family:Metropolis-ExtraLight ; 
+    font-weight: 400;
+    font-size: 16px;
+   text-align: center;
+   width: 323px;
+   color: rgba(93, 90, 111, 1);
+   position: relative;
+   margin-top: 20px;
+
+
+}
+.RA-signin::before{
+position: absolute;
+content: "";
+width: 20px;
+height: 1px;
+color:rgb(18, 0, 119) ;
+
+
+
+
+}
+.RA-signin::after{
+position: absolute;
+content: "";
+width: 20px;
+height: 1px;
+color:rgb(18, 0, 119) ;
+
+
+
+
+}
+.RA-login-form{
+    display: flex;
+    align-items: center;
+   margin-left: 80px;
+    flex-direction: column;
+}
+.RA-JOIN{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 477px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.RA-JOIN1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 477px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.RA-email-input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(222, 221, 228, 1);
+    border-radius: 10px;
+    /* position: relative; */
+
+}
+.RA-email-input::placeholder{
+font-weight: 400;
+font-family: Metropolis-ExtraLight;
+font-size: 16px;
+padding-left:51px;
+
+}
+.RA-letter{
+    position: absolute;
+    z-index: 1;
+    left: 18px;
+    top: 47px;
+    font-size: 18px;
+
+}
+.RA-lock{
+    position: absolute;
+    z-index: 1;
+    left: 18px;
+    top: 45px;
+    font-size: 18px;
+}
+.RA-eye{
+    position: absolute;
+    z-index: 1;
+  right: 18px;
+  top: 45px;
+    font-size: 18px;
+}
+label{
+    font-size: 16px;
+    font-weight: 500;
+    font-family:Metropolis-Medium ;
+    line-height: 30px;
+}
+.RA-button-form{
+    background-color: #9C4DF4;
+    color: white;
+    font-family:Metropolis-ExtraLight ;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: 0.5S;
+}
+.RA-button-form:hover{
+    
+    background-color: transparent;
+    color: #9C4DF4;
+    cursor: pointer;
+    border: 1px solid #9C4DF4;
+
+}
+.RA-check-password{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RA-KEEP{
+    display: flex;
+    align-items: center;
+}
+.RA-KEEP .RA-PARAGHRAPH{
+    margin-left: 10PX;
+    margin-bottom: 0;
+}
+.ra-FORGER{
+    margin-bottom: 0;
+}
+.ra-FORGER:hover{
+   cursor: pointer;
+}

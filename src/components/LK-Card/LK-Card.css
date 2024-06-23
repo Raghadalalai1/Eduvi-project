@@ -86,8 +86,8 @@
 
 @media (min-width:1441px) and (max-width:1900px){
     .LK-CARDS {
-        justify-content:center;
-        gap: 35px;
+        justify-content:space-evenly;
+        gap: 91px;
     }
     .LK-home-section3-son3{
         margin: 60px 0 120px 0;

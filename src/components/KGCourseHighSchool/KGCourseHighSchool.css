@@ -1,0 +1,121 @@
+.KG-Course-Form {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.KG-Course-Form .KG-Course-input {
+    width: 66%;
+    position: relative;
+    height: 60px;
+    text-indent: 20px;
+    border: none;
+    font-size: 16px;
+    font-family: Metropolis-Light;
+    background-color: var(--clr-primary) ;
+    border-radius: 10px;
+}
+.KG-Course-input input{
+    width: 98%;
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+}
+.KG-Course-Form button {
+    background-color: var(--clr-sicon);
+    color: var(--clr-primary);
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    height: 46px;
+    border: none;
+    font-family: Inter;
+    width : 143px;
+    border-radius: 10px;
+}
+.KG-Course-Form button:hover {
+    transition: 0.5s;
+    color: var(--clr-primary);
+    background-color: var(--clr-icon);
+}
+.KG-Icon-Glass{
+    margin-left: 5px;
+}
+.KG-Course-Search-Select {
+    width: 29%;
+    height: 60px;
+    border-radius: 10px;
+    border: none !important;
+    font-size: 16px;
+    color: var(--clr-texthome);
+    font-family: Metropolis-Light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.KG-Course-Search-Select {
+    font-family: Metropolis;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+.KG-side {
+    margin: auto;
+}
+
+
+@media(min-width:789px) and (max-width:991px){
+
+.KG-Course-input {
+    width: 470px !important;
+}
+.KG-Course-input input{
+    width: 450px !important;
+}
+.KG-Course-Search-Select {
+    width: 470px;
+    margin-top: 10px;
+}
+.KG-Course-Form button {
+    position: absolute ;
+    bottom: 50px;
+}
+}
+
+@media(max-width:788px) and (min-width:567px){
+
+.KG-Course-input {
+    width: 470px !important;
+}
+.KG-Course-input input {
+    width:450px !important;
+}
+.KG-Course-Search-Select {
+    width: 470px;
+    margin-top: 10px;
+}
+.KG-Course-Form button {
+    top: 7px;
+}
+}
+
+@media(max-width:566px){
+.KG-Course-input {
+    width: 100% !important;
+}
+.KG-Course-input input{
+    width: 90% !important;
+}
+.KG-Course-Search-Select {
+    width: 100%;
+    margin-top: 10px;
+}
+.KG-Course-Form button {
+    top: 7px;
+    width: 80px;
+    font-size: 14px;
+}
+}
