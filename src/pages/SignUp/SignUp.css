@@ -1,0 +1,9 @@
+.HS-signUp .HS-sign-Span {
+  color: var(--clr-semore);
+}
+.HS-signUp .HS-paragraph {
+  margin-bottom: 25px;
+}
+.RA-login-form{
+    padding-top: 0 !important;
+}
