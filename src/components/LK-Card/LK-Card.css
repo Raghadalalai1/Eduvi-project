@@ -30,7 +30,7 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--clr-primary);
-    box-shadow: 0px 50px 80px 0px #0000000D;
+   
     margin-bottom: 40px;
     border-radius: 15px;
     border: 1px solid var(--clr-primary);

@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Regstation.css'
 import Button from 'react-bootstrap/Button';
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,8 +19,8 @@ export default function Registation() {
         <p className='HS-Regst-pargraph'>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized
          meaning for high-definition, generally any video.</p>
          </div>
-
-         <Button className='HS-Regst-button2' variant="secondary">Registation Now</Button>
+         <Link to={'/login'}><Button className='HS-Regst-button2' variant="secondary">Registation Now</Button></Link>
+         
         </div>
 
         <div className='HS-Regst-Right'>
