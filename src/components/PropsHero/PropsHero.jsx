@@ -15,6 +15,7 @@ export default function PropsHero(props) {
     showImage2
   } = props;
 
+
   return (
     <section className="BKH-Props">
       <div className={Textclass}>

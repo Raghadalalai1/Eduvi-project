@@ -2,6 +2,7 @@ import './BecomeAnInstructor.css'
 import Navbarr from '../../components/Navbarr/Navbarr'
 import Footer from '../../components/Footer/Footer'
 import Section from '../../components/Section/Section6'
+import SectionBecomeApply from '../../components/SectionBecomeApply/SectionBecomeApply'
 import PropsHero from "../../components/PropsHero/PropsHero";
 import imagebecomeaninstructor from '../../../public/images/BecomeAnInstructor/BecomeAnInstructor-Hero/Hero-become.svg'
 import image3 from '../../../public/images/Courses/Courses-Hero/Pattern.svg'
@@ -22,11 +23,13 @@ export default function BecomeAnInstructor() {
       imageclass="BKH-image-hero-page-BecomeAnInstructor"
       imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
       imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
-      />
-        <Section />
+      /> </div>
+     <div className='section2'> <SectionBecomeApply /></div>
+       <div className='main'><Section />
         <Footer />
+        </div> 
 
-      </div>
+     
     </>
 
   )

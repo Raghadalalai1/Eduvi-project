@@ -604,7 +604,7 @@
     width: 300px !important;
     height: 80px !important;
     left: 45px !important;
-    top: 24px !important;
+    top: 50px !important;
   }
 
   .BKH-text-h1-page-pricing h1 {
@@ -616,8 +616,8 @@
 
   .BKH-image-hero-page-pricing {
     position: relative;
-    right: 30px !important;
-    top: 24px !important;
+    right: 10px !important;
+    top: 40px !important;
   }
 
   .BKH-image-hero-page-pricing img {
@@ -723,6 +723,12 @@
 
 }
 
+@media (min-width:1025px) and (max-width:1050px) {
+  .BKH-image-hero-page-pricing{
+    right: 30PX !important;
+  }
+  
+}
 @media (min-width:993px) and (max-width:1200px) {
 
   /* page shop */
@@ -1112,3 +1118,38 @@
 }
 
 /* media */
+
+.BKH-text-h1-page-shop,
+.BKH-text-h1-page-Courses,
+.BKH-text-h1-page-pricing,
+.BKH-text-h1-page-BecomeAnInstructor,
+.BKH-text-h1-page-OurMonetors {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100px);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.BKH-image-hero-page-shop,
+.BKH-image-hero-page-Courses,
+.BKH-image-hero-page-pricing,
+.BKH-calssimage-hero-page-BecomeAnInstructor,
+.BKH-imageplus-hero-page-BecomeAnInstructor,
+.BKH-image-hero-page-OurMonetors {
+  animation: bounce 1s ease-in-out forwards; 
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
