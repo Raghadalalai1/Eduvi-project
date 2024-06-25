@@ -9,7 +9,7 @@ export default function CoursesDetalis() {
     <>
     <Navbarr />
    <div className='main'>
-    <KGCourseComponent />
+    <KGCourseComponent/>
      <Section />
      <Footer />
 

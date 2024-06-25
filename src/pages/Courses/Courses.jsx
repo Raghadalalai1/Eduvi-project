@@ -36,7 +36,7 @@ export default function Courses() {
         imageclasstwo="BKH-calssimage-hero-page-Courses"
         imageclassthree="BKH-imageplus-hero-page-Courses" />
     <LKCoursesSection2 />
-          <KGCourseHighSchool KGCourseTitle = {'Other Courses For High School'} />
+    <KGCourseHighSchool KGCourseTitle = {'Other Courses For High School'} />
      <Section />
     <Footer />
 

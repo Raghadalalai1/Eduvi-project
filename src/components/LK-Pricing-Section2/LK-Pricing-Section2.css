@@ -149,6 +149,11 @@
     background-color: var(--clr-sicon) ;
     color: var(--clr-primary);
 }
+@media(max-width:1336px){
+    .LK-pricing-sec2-sonT-card-S{
+        margin-top: 20px;
+    }
+}
 
 
 
@@ -215,7 +220,7 @@
     }
     .LK-pricing-sec2-sonT-card-F{
         column-gap: 10px;
-        row-gap: 40px;
+        row-gap: 0px;
     }
     .LK-pricing-sec2-sonT-card-S{
         width: 300px;
@@ -287,7 +292,7 @@
     .LK-pricing-sec2-sonT-card-F{
         justify-content: center;
         column-gap: 20px;
-        row-gap: 30px;
+        row-gap: 0px;
     }
     .LK-pricing-sec2-sonT-card-S{
         width: 335px;

@@ -1,6 +1,7 @@
 .HS-LeftSection {
-  width: 72%;
+  width: calc(100%-405px);
   padding-top: 40px;
+  padding-left: 20px;
 
 }
 .HS-LeftSection-Button {
@@ -122,20 +123,21 @@
 }
 
 .HS-Cards-Books {
-  width: 840px;
+  width: 100%;
   background-color: var(--clr-bg);
   padding-top: 50px;
   padding-bottom: 30px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
 
- 
 }
 .HS-Card-Book {
 /* padding-left: 10px; */
   padding-bottom: 20px;
-  width: 100%;
+  width: 270px;
 }
 .HS-Card-Info-Book{
   width: 270px;
@@ -207,14 +209,6 @@
   line-height: 16px;
   color: var(--clr-text);
   margin-bottom: 0;
-}
-@media(max-width:1440px){
-
-  .HS-LeftSection {
-    width: calc(100% - 400px);
-  
-  
-  }
 }
 @media(max-width:1420px){
   /* .HS-Search-Select  {
@@ -307,9 +301,7 @@
   .HS-side{
     width: 100%;
   }
-  .HS-LeftSection{
-    width: 100%;
-  }
+
     .HS-LeftSection-Button {
         width: 548px;}
 
@@ -422,11 +414,18 @@
             background-color: var(--clr-bg);
             padding-top: 50px;
             padding-bottom: 30px;
-            display: grid;
-            grid-template-columns:  auto;
-           align-items: center;
-           width: 200px;
-           
+          }
+          .HS-LeftSection-Button
+          {
+            display: none;
+          }
+          .HS-Form
+          {
+            display: none;
+          }
+          .HS-side
+          {
+            display: none;
           }
 }
 @media(Max-width:590px){
@@ -439,16 +438,7 @@
            
         }
         
-        .HS-Form {
-            padding-top: 30px;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-           
-          }
+      
           .HS-input {
             width: 100%;
            
@@ -485,14 +475,7 @@
     font-size: 12px;
     font-weight: 600;
   }
-    .HS-Form {
-        padding-top: 30px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-       
-      }
+
       .HS-input {
         width: 100%;
         height: 50px;
@@ -506,8 +489,5 @@
             background-color: var(--clr-bg);
             padding-top: 50px;
             padding-bottom: 30px;
-            display: grid;
-            grid-template-columns:  auto;
-           align-items: center;
           }
 }
