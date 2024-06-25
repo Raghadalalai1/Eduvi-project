@@ -7,6 +7,7 @@ import Section from '../../components/Section/Section6'
 import KGCourseDetailsPlayList from '../../components/KGCourseDetailsPlayList/KGCourseDetailsPlayList'
 
 import KGCourseComponent from '../../components/KGCourseComponent/KGCourseComponent'
+import RASimilarCourses from '../../components/RASimilarCourses/RASimilarCourses'
 
 export default function CoursesDetalis() {
   return (
@@ -16,7 +17,7 @@ export default function CoursesDetalis() {
 
     <KGCourseDetailsPlayList />
 
-    <KGCourseComponent/>
+    <RASimilarCourses/>
 
      <Section />
      <Footer />
