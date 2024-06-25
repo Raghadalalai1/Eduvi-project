@@ -16,7 +16,7 @@ export default function KGHeroHome() {
             <option>option2</option>
             <option>option3</option>
           </select>
-          <input type='search' placeholder=' | Class/Course' className='Metropolis-font-thin'></input>
+          <input type='search' placeholder=' Class/Course' className='Metropolis-font-thin'></input>
           <button>
             < FontAwesomeIcon icon={faMagnifyingGlass} className='KG-Search-Icon' />
             Search

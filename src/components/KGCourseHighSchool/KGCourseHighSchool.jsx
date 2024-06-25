@@ -9,7 +9,7 @@ import KGCourseComponent from '../KGCourseComponent/KGCourseComponent'
 export default function KGCourseHighSchool({KGCourseTitle}) {
    
            return (
-            <section>
+            <section className='RA-section2-courses'>
                 <h3 className='KG-Courses-Title'>{KGCourseTitle}</h3>
                 <form className="KG-Course-Form ">
                     <div className="KG-Course-input">
@@ -34,8 +34,8 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                             <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
                         </button>
                         <p>pages</p>
-                        <button className="HS-back">5</button>
-                        <p>of 80</p>
+                        <button className="HS-back">1</button>
+                        <p>of 13</p>
                         <button className="HS-background">
                             <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
                         </button>

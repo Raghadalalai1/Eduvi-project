@@ -41,9 +41,9 @@ export default function Navbarr() {
             <NavDropdown.Item href="#action/3.3">option3</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Courses" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">option1</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">option2</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">option3</NavDropdown.Item>
+            <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
+            <NavDropdown.Item href="/CoursesDetalis">Courses Detalis</NavDropdown.Item>
+            
           </NavDropdown>
           <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering'>
             <NavDropdown.Item href="#action/3.1">Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon' /> </NavDropdown.Item>

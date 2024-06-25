@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 28%;
+    width: 405px;
     background-color: var(--clr-bg);
     padding-top: 40px;
     padding-bottom: 20px;
@@ -15,6 +15,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 15px;
+   
 }
 .KG-Card-Title{
     width: max-content;
@@ -31,13 +32,14 @@
     background-color: var(--clr-primary);
     padding: 22px 56px 22px 25px;
     border-radius: 10px;
+     width: 100%;
 }
 .KG-Card-Info-Book img{
-    width: 100%;
+    /* width: 100%; */
     width: 75px;
     height: 90px;
     border-radius: 5px;
-    height: 90px;
+    /* height: 90px; */
     margin-right: 15px;
 
 }
@@ -51,7 +53,7 @@
     font-size: 16px;
 }
 .KG-Text-Pargraph{
-    width: 100%;
+    /* width: 100%; */
     font-family:Metropolis-Bold;
     font-weight: 600px;
     font-size: 18px;
@@ -79,6 +81,83 @@
 }
 
 
+
+/* @media(max-width:1440px){
+
+    .KG-Cards{
+ 
+        width: 400px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 400px;
+    }
+}
+@media(min-width:1441px) and (max-width:1500px){
+    .KG-Cards{
+ 
+        width: 420px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 420px;
+    }
+  }
+@media(min-width:1501px) and (max-width:1600px){
+    .KG-Cards{
+ 
+        width: 477px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 477px;
+    }
+  }
+@media(min-width:1601px) and (max-width:1700px){
+    .KG-Cards{
+ 
+        width: 545px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 545px;
+    }
+  }
+@media(min-width:1701px) and (max-width:1800px){
+    .KG-Cards{
+ 
+        width: 630px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 630px;
+      
+    }
+    .KG-Card-Info-Book{
+justify-content: space-evenly;
+    }
+  }
+@media(min-width:1801px) and (max-width:1900px){
+    .KG-Cards{
+ 
+        width: 715px;
+ 
+    }
+    .KG-Card-Book{
+  
+        width: 715px;
+    }
+    .KG-Card-Info-Book{
+        justify-content: space-evenly;
+            }
+  } */
+
+
 @media(max-width:788px) and (min-width:567px){
 .KG-Card-Info-Book{
     padding: 22px 20px 22px 25px !important;
@@ -90,11 +169,15 @@
 }
 @media(max-width:566px){
     .KG-Card-Info-Book{
-        padding: 8px 0px 8px 5px !important;
+        padding: 10px  !important;
     }
     .KG-Card-Title{
         font-size: 24px;
         line-height: 24px;
+    }
+    .KG-Text-Pargraph{
+        width: 210px;
+
     }
 
 }

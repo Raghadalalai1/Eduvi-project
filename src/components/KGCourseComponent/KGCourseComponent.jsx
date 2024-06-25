@@ -94,7 +94,7 @@ export default function KGCourseComponent() {
                 <div className='KG-Part-Left'>
                    { KGCourseHighSchool.map((course) => {
                        return(
-                               <div className='KG-Course-Part KG-HiddenPartOne' key={course.id}>
+                               <div className='KG-Course-Part' key={course.id}>
                                    <div className='KG-Course-Info'>
                                        <img src={course.Image} alt='image-course-title'></img>
                                        <div>
@@ -117,7 +117,7 @@ export default function KGCourseComponent() {
                    <div  className='KG-Part-Right'>
                    { KGCourseHighSchooltwo.map((course) => {
                        return(
-                               <div className='KG-Course-Part KG-HiddenPart' key={course.id}>
+                               <div className='KG-Course-Part' id='KG-HiddenPart' key={course.id}>
                                    <div className='KG-Course-Info'>
                                        <img src={course.Image} alt='image-course-title'></img>
                                        <div>

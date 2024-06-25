@@ -1,3 +1,9 @@
+.RA-section2-courses{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
 .KG-Course-Form {
     margin-top: 30px;
     width: 100%;
@@ -23,6 +29,7 @@
     border: none;
     height: 60px;
     border-radius: 10px;
+    outline: none;
 }
 .KG-Course-Form button {
     background-color: var(--clr-sicon);
@@ -61,6 +68,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+    padding-left: 10px;
 }
 .KG-side {
     margin: auto;
@@ -83,6 +91,11 @@
     position: absolute ;
     bottom: 50px;
 }
+.RA-section2-courses{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
 }
 
 @media(max-width:788px) and (min-width:567px){
@@ -100,6 +113,11 @@
 .KG-Course-Form button {
     top: 7px;
 }
+.RA-section2-courses{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+ }
 }
 
 @media(max-width:566px){
@@ -118,4 +136,17 @@
     width: 80px;
     font-size: 14px;
 }
+.RA-section2-courses{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+ }
 }
+@media (max-width:400px){
+    .RA-section2-courses{
+        
+        align-items: start !important;
+        
+     }
+
+    }
