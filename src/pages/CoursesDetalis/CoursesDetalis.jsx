@@ -10,6 +10,7 @@ import AZcompobn from '../../components/Course Detail/AZ-compon'
 import KGCourseDetailsPlayList from '../../components/KGCourseDetailsPlayList/KGCourseDetailsPlayList'
 
 import KGCourseComponent from '../../components/KGCourseComponent/KGCourseComponent'
+import RASimilarCourses from '../../components/RASimilarCourses/RASimilarCourses'
 
 
 export default function CoursesDetalis() {
@@ -19,9 +20,13 @@ export default function CoursesDetalis() {
    <div className='main'>
 
 
+
     <KGCourseDetailsPlayList />
     <AZcompobn />
     <KGCourseComponent/>
+
+    <RASimilarCourses/>
+
 
 
      <Section />
