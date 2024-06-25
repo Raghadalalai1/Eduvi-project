@@ -21,13 +21,18 @@ function App() {
     <>
     <Routes >
     
-      <Route path='/' element={<Home/>}/>
+      < Route path='/' element={<Home/>}/>
       <Route path='/shope' element={<Shope/>}/>
       <Route path='/courses' element={<Courses/>} />
       <Route path='/login' element={<LogIn/>} />
       <Route path='/pricing' element={< Pricing/>} />
       <Route path='/SingleMonetorDetalis' element={< SingleMonetorDetalis />} />
       <Route path='/signup' element={<SignUp/>} />
+      <Route path='/BecomeAnInstructor' element={<BecomeAnInstructor/>} />
+      <Route path='/CoursesDetalis' element={<CoursesDetalis/>} />
+      <Route path='/OurMonetors' element={<OurMonetors/>} />
+
+
 
       
     </Routes>

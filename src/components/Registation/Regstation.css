@@ -1,7 +1,7 @@
 
 .HS-Regst{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     width: 100%;
@@ -11,8 +11,8 @@
     border-radius: 20px;
 }
 .HS-Regst-left{
-    width: 50%;
-    padding: 113px 0 114px 70px;
+    width: 500px;
+    padding-left:70px !important;
     
 }
 .HS-Regst-button{
@@ -22,27 +22,31 @@
     width: 33%;
     height: 50px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 .HS-Regst-title{
     width: 447px;
 }
 .HS-Regst-h1{
-    width: 433px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+    width: 457px;
+    font-family: Metropolis-Medium;
     font-size: 44px;
     font-weight: 600;
     line-height: 50px;
     text-align: left;
+    margin-bottom: 20px;
+    color: #0A033C;
 }
 .HS-Regst-pargraph{
     width: 474px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Metropolis-ExtraLight;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
     color: #5D5A6F;
     padding-top: 5px;
+    margin-bottom: 40px;
 
 }
 .HS-Regst-button2{
@@ -51,8 +55,15 @@
     background-color: #9C4DF4 !important;
     color:#FFFFFF !important ;
     border: 1px solid #E4E2F4 !important;
+    font-family: Metropolis-ExtraLight;
+    transition: 0.5s;
   
   
+}
+.HS-Regst-button2:hover{
+    background-color: transparent !important;
+    color:#9C4DF4 !important ;
+    border: 1px solid #9C4DF4 !important;
 }
 .HS-Regst-Right {
     width: 50%;
@@ -76,9 +87,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    animation: move-down 2s infinite;
 }
 .HS-icon2{
-    position: absolute;
+position: absolute;
 top:198px ;
 left: 85% ; 
 width: 50px;
@@ -88,6 +100,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 5px;
+animation: move-up 2s infinite;
 
 }
 .HS-icon3{
@@ -103,6 +116,7 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    animation: move-down 2s infinite;
 
 }
 .HS-icon1 img
@@ -120,6 +134,43 @@ border-radius: 5px;
     width: 26px;
     height: 30px;
 }
+@media(max-width:1260px){
+    .HS-Regst-Right {
+        width: 530px;
+       
+        
+    }
+    .HS-Regst-left {
+        width: 416px;
+        padding: 100px 0px;
+        
+    }
+    .HS-Regst-button {
+
+        width: 130px;
+   
+    }
+    .HS-Regst-button2 {
+        width: 170px;
+   
+    }
+    .HS-Regst-h1{
+        font-size: 35px;
+        line-height: 40px;
+        width: 355px;
+    }
+    .HS-Regst-pargraph{
+        margin-bottom: 20px;
+        width: 390px; 
+        line-height: 28px;
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+
+
+
+}
 
 @media (max-width:1024px) {
 
@@ -129,28 +180,6 @@ border-radius: 5px;
         width: 100%;
     }
 
-    .HS-Regst-title{
-        width: 320px;
-    }
-    .HS-Regst-h1{
-        width: 337px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 50px;
-        text-align: left;
-    }
-    .HS-Regst-pargraph{
-        width: 350px;
-        font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: left;
-        color: #5D5A6F;
-        padding-top: 5px;
-    
-    }
     .HS-icon1{
 
     
@@ -181,12 +210,16 @@ border-radius: 5px;
     }
 
     .HS-Regst-left{
-        width: 100%;
-        padding: 30px 20px 0 20px;
+        width: 80%;
+        
+    padding-left:0px !important;
+    
+
+        padding: 30px 29px 0 20px !important;
         
     }
     .HS-Regst-Right {
-        width: 70%;  
+        width: 100%;  
     }
 
     .HS-Regst-Right .student-image {
@@ -195,19 +228,19 @@ border-radius: 5px;
     }
 
     .HS-Regst-title{
-        width: 293px !important;
+        width:100% !important;
     }
     .HS-Regst-h1{
         
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
-        font-size: 28px;
+        
+        font-size: 25px;
         font-weight: 600;
          line-height: 30px; 
         text-align: left;
-        width: 284px !important;
+        width: 100% !important;
     }
     .HS-Regst-pargraph{
-        width: 293px;
+        width: 100%;
         font-family: Metropolis;
         font-size: 13px;
         font-weight: 600;
@@ -262,10 +295,21 @@ border-radius: 5px;
 
 
 }
+@media(max-width:458px){
+    .HS-Regst-left{
+        width: 100%;
+       
+        
+    }
+}
+
+
 @media (max-width:375px)
 {
+
+
     .HS-Regst-left{
-       
+        
         padding: 30px 20px 0 10px;
         
     } 
@@ -313,7 +357,22 @@ border-radius: 5px;
         align-items: center;
     }
 }
-
+@keyframes move-up{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+@keyframes move-down{
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
 
 
