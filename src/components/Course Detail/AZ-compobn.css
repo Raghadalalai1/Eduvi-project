@@ -1,0 +1,233 @@
+.AZ-courseDetails-content1{
+    display: flex;
+    justify-content: center;
+
+
+    width: 100%;
+    background-color: #F7F5FA;
+
+}
+.AZ-courseDetails-container1 , .AZ-courseDetails-container2
+{
+    margin-top: 71px;
+}
+
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 h1
+{
+    width: 100%;
+    max-width: 212px;
+    color: #0a033c;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p
+{
+    width: 100%;
+max-width: 840px;
+font-size: 16px;
+color: #5D5A6F;
+
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 h1
+{
+    width: 100%;
+    max-width: 179px;
+    color: #0a033c;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p
+{
+    width: 100%;
+    max-width: 840px;
+    font-size: 16px;
+    color: #5D5A6F;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 h1
+{
+    width: 100%;
+    max-width: 319px;
+    color: #0a033c;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;  
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p
+{
+    width: 100%;
+    max-width: 840px;
+    font-size: 16px;
+    color: #5D5A6F;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 h1
+{
+    width: 100%;
+    max-width: 458px;
+    color: #0a033c;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;  
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 li::marker
+{
+color: #ff6652;
+}
+.AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 li
+{
+    color: #0a033c;
+    font-size: 16px;
+    line-height: 30px; 
+    font-weight: 400;
+}
+
+.AZ-courseDetails-container2
+{
+    margin-left: 71px; 
+}
+.AZ-corse-top
+{
+    width: 400px;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 10px;
+    height: max-content;
+    padding: 0px 20px;
+}
+.AZ-courseDetails-container2 p
+{
+    color: #5D5A6F;
+   /* margin-left: 20px; */
+   font-size: 20px;
+   width: 600;
+   line-height: 20px;
+}
+.AZ-course-card1 {
+    margin-top: 32px;
+}
+.AZ-course-card1 , .AZ-course-card2 , .AZ-course-card3 , .AZ-course-card4 , .AZ-course-card5 , .AZ-course-card6 , .AZ-course-card7 , .AZ-course-card8 , .AZ-course-card9
+{
+    display: flex;
+justify-content: space-between;
+margin-bottom: 25px;
+
+}
+
+.AZ-course-card1 label
+{
+    color: #ff6652;
+    font-size: 20px;
+}
+
+.AZ-corse-top h5
+{
+color: #0a033c;
+font-size: 20px;
+line-height: 20px;
+font-weight: 600;
+
+}
+.AZ-courseDetails-container2 button
+{
+   width: 400px;
+   height: 60px;
+   border-radius: 5px;
+   background-color: #9c4df4; 
+   color: white;
+   font-size: 18px;
+   border: none;
+   font-weight: 500;
+   line-height: 20px;
+   margin-top: 20px;
+}
+@media (max-width:1024px) {
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 h1
+    {
+        font-size: 20px; 
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p{
+        width: 578px;
+        font-size: 14px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 h1
+    {
+        font-size: 20px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
+        width: 578px;
+        font-size: 14px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 h1
+    {
+        font-size: 20px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
+        width: 578px;
+        font-size: 14px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 h1
+    {
+        font-size: 20px;
+    }
+    .AZ-corse-top
+    {
+        width: 350px;
+    }
+    .AZ-courseDetails-container2 button
+    {
+        width: 350px;
+    }
+    .AZ-courseDetails-container2 p{
+        font-size: 18px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 li
+    {
+        font-size: 14px;
+        line-height: 28px;
+        color: #5D5A6F;
+    }
+}
+@media (max-width:991px) {
+    .AZ-courseDetails-content1
+    {
+flex-wrap: wrap-reverse;
+    }
+    .AZ-course-card1 , .AZ-course-card2 , .AZ-course-card3 , .AZ-course-card4 , .AZ-course-card5 , .AZ-course-card6 , .AZ-course-card7 , .AZ-course-card8 , .AZ-course-card9
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:650px)
+{
+    .AZ-corse-top
+    {
+        width: 335px;
+    }
+    .AZ-courseDetails-container2 button
+    {
+        width: 335px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p
+    {
+        width: 335px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
+        width: 335px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
+        width: 335px;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 li
+    {
+        color: #0a033c;
+    }
+}
