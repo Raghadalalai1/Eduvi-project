@@ -252,6 +252,11 @@ font-family:Metropolis-Thin;}
     left: 50%;
     transform: translate(-50%,-50%);
 }
+@media(max-width:1356px){
+    .LK-home-section2-son3-button1{
+        font-size: 18px ;
+    }
+}
 @media(min-width:993px) and (max-width:1200px){
     .LK-home-section2-father{
         width: 97%;
@@ -294,9 +299,9 @@ font-family:Metropolis-Thin;}
         justify-content: start;
         margin-left:3% ;
     }
-    .LK-home-section2-son3-button1{
-        font-size: 20px;
-    }
+    /* .LK-home-section2-son3-button1{
+        font-size: 18px !important;
+    } */
     .LK-home-section2-son3-icon1,.LK-home-section2-son3-icon2,.LK-home-section2-son3-icon3{
         width: 20px;
         height: 20px;

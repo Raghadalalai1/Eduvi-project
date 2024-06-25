@@ -442,7 +442,17 @@ label {
   }
   .ra-CONTANAIR {
     width: 100%;
+
   }
+
+
+.RA-button-form:hover{
+    
+    background-color: transparent;
+    color: #9C4DF4;
+    cursor: pointer;
+    border: 1px solid #9C4DF4;
+
 
   .RA-gool {
     width: 100%;

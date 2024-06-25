@@ -87,6 +87,11 @@
         margin: 50px 0 25px 0;
     }
 }
+@media(max-width:991px){
+    .LK-courses-sec3-son2-father-h2{
+        justify-content: center;
+    }
+}
 @media(max-width:768px){
     .LK-courses-sec3-son2-father-h2{
         margin:0 0 25px 0;
@@ -95,7 +100,7 @@
         display: none;
     }
     .LK-courses-sec3-son1-button1,.LK-courses-sec3-son1-button {
-        padding: 0 24px;
+        padding: 0 14px;
         height: 50px;
         border-radius: 5px;
         font-size: 14px;
