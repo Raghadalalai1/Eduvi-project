@@ -19,7 +19,7 @@ export default function LKHomeSection2() {
         </div>
         <div className='LK-home-section2-son2'>
         <div className='LK-home-sec2-son2-father-button' > <Link to='coruses'> <button className='LK-home-section2-son1-button'>Visit Courses</button></Link></div>
-        <div className='LK-home-sec2-img'>
+         <div className='LK-home-sec2-img'>
         <img  className='LK-home-section2-son2-img-up' src={pluse} alt='plus'/>
         </div>
         <div className='LK-home-section2-son2-imges'>

@@ -5,6 +5,7 @@ import Section from '../../components/Section/Section6'
 import PropsHero from "../../components/PropsHero/PropsHero";
 import imagebecomeaninstructor from '../../../public/images/BecomeAnInstructor/BecomeAnInstructor-Hero/Hero-become.svg'
 import image3 from '../../../public/images/Courses/Courses-Hero/Pattern.svg'
+import HSInstructor from '../../components/HSInstructor/HSSectionInstructor'
 export default function BecomeAnInstructor() {
   return (
     <>
@@ -23,6 +24,7 @@ export default function BecomeAnInstructor() {
       imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
       imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
       />
+         <HSInstructor/>
         <Section />
         <Footer />
 
