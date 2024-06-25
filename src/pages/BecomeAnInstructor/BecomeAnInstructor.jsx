@@ -23,11 +23,16 @@ export default function BecomeAnInstructor() {
       imageclass="BKH-image-hero-page-BecomeAnInstructor"
       imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
       imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
-      /> </div>
-     <div className='section2'> <SectionBecomeApply /></div>
-       <div className='main'><Section />
-        <Footer />
-        </div> 
+      /> 
+       <div className='section2'> <SectionBecomeApply /></div>
+       <Section />
+       <Footer />
+      
+      </div>
+    
+       
+       
+        
 
      
     </>

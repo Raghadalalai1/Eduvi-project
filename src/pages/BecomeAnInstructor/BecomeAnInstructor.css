@@ -17,7 +17,10 @@
     padding: 0px 20px;
 }
 }
-
+.section2{
+   margin-bottom: 130px;
+   margin-top:70px ;
+}
 /* القسم الي مشتغلو بشار هاد البادينك للريسبونسيف  */
 @media(max-width:1920px){
     .section2{
