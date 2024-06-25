@@ -25,6 +25,7 @@ export default function BecomeAnInstructor() {
       imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
       imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
 
+
       />
             <div className='section2'> <SectionBecomeApply /></div>
   <HSInstructor/>
@@ -36,6 +37,7 @@ export default function BecomeAnInstructor() {
        </div>
 
        
+
 
      
     </>
