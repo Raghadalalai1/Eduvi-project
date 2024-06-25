@@ -1,15 +1,22 @@
 .AZ-courseDetails-content1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
 
     width: 100%;
     background-color: #F7F5FA;
 
 }
+.AZ-courseDetails-container1{
+    width: 50%;
+}
 .AZ-courseDetails-container1 , .AZ-courseDetails-container2
 {
+   
     margin-top: 71px;
+}
+.AZ-courseDetails-container2{
+    margin-left: 20px;
 }
 
 .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 h1
@@ -28,6 +35,12 @@
 max-width: 840px;
 font-size: 16px;
 color: #5D5A6F;
+
+}
+.AZ-courseDetails-container2 button:hover{
+color:rgba(156, 77, 244, 1) ;
+border: 1px solid rgba(156, 77, 244, 1);
+background-color: transparent;
 
 }
 .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 h1
@@ -89,10 +102,7 @@ color: #ff6652;
     font-weight: 400;
 }
 
-.AZ-courseDetails-container2
-{
-    margin-left: 71px; 
-}
+
 .AZ-corse-top
 {
     width: 400px;
@@ -147,14 +157,16 @@ font-weight: 600;
    font-weight: 500;
    line-height: 20px;
    margin-top: 20px;
+   transition: 0.5s;
 }
+
 @media (max-width:1024px) {
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 h1
     {
         font-size: 20px; 
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p{
-        width: 578px;
+        
         font-size: 14px;
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 h1
@@ -162,7 +174,7 @@ font-weight: 600;
         font-size: 20px;
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
-        width: 578px;
+       
         font-size: 14px;
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 h1
@@ -170,7 +182,7 @@ font-weight: 600;
         font-size: 20px;
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
-        width: 578px;
+       
         font-size: 14px;
     }
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 h1
@@ -204,6 +216,47 @@ flex-wrap: wrap-reverse;
     {
         margin-bottom: 20px;
     }
+    .AZ-courseDetails-container1{
+        width: 562px !important;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
+       
+        width: 90% !important;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
+        width: 90% !important;
+   
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p{
+        
+        width: 90% !important;
+    }
+    .AZ-courseDetails-content1{
+        justify-content: center !important;
+    }
+    .AZ-courseDetails-container2{
+        margin-left: 0px !important;
+    }
+    
+}
+@media (max-width:990px)
+{
+    .AZ-courseDetails-container1{
+        width: 55% ;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
+       
+        width: 100% ;
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
+        width: 100% ;
+   
+    }
+    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p{
+        
+        width: 100% ;
+    }
+
 }
 
 @media (max-width:650px)
@@ -216,16 +269,7 @@ flex-wrap: wrap-reverse;
     {
         width: 335px;
     }
-    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Secondpar1 p
-    {
-        width: 335px;
-    }
-    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-firstpar1 p{
-        width: 335px;
-    }
-    .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-Therdpar1 p{
-        width: 335px;
-    }
+ 
     .AZ-courseDetails-content1 .AZ-courseDetails-container1 .AZthe-fourtypar1 li
     {
         color: #0a033c;

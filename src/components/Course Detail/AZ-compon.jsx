@@ -1,5 +1,6 @@
 import "./AZ-compobn.css";
-
+import { faStar} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function AZcompobn() {
   return (
     <>
@@ -63,11 +64,11 @@ function AZcompobn() {
             <div className="AZ-course-card3">
               <p>Ratings</p>
               <div className="AZ-cours-stars">
-                            <i class="fa-solid fa-star fa-2xl star1" style="color: #FFC107;"></i>
-                            <i class="fa-solid fa-star fa-2xl star2" style="color: #FFC107;"></i>
-                            <i class="fa-solid fa-star fa-2xl star3" style="color: #FFC107;"></i>
-                            <i class="fa-solid fa-star fa-2xl star4" style="color: #FFC107;"></i>
-                            <i class="fa-solid fa-star fa-2xl star5" style="color: #FFC107;"></i>
+              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}} />
+              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}}/>
+              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}}/>
+              <FontAwesomeIcon icon={faStar}  style={{color:'var(--clr-stars)'}}/>
+              <FontAwesomeIcon icon={faStar}  style={{color:'var(--clr-stars)'}}/>
               </div>
             </div>
             <div className="AZ-course-card4">

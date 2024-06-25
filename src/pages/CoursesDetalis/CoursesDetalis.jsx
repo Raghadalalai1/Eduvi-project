@@ -23,7 +23,7 @@ export default function CoursesDetalis() {
 
     <KGCourseDetailsPlayList />
     <AZcompobn />
-    <KGCourseComponent/>
+    
 
     <RASimilarCourses/>
 
