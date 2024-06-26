@@ -176,18 +176,15 @@ let data1=[{id:'1',img:homeCardImg,h4:"Standard One",par:"Standard 1 is a founda
     <>
     <section className='LK-courses-section2'>
     <div className='LK-courses-sec3-son1-Buttons'>
-                {/* <div className='LK-home-sec3-son1-Buttons-div1'> */}
                 <button onClick={LKchangcolorO} className={LKColorO ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>All Courses</button>
                 <button onClick={LKchangcolorS} className={LKColorS ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>Kindergarten</button>
                 <button onClick={LKchangcolorTH} className={LKColorTH ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>High School</button>
                 <button onClick={LKchangcolorF} className={LKColorF ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>College</button>
-                 {/* </div> */}
-                 {/* <div className='LK-home-sec3-son1-Buttons-div2'> */}
                 <button onClick={LKchangcolorFI} className={LKColorFI ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>Computer</button>
                 <button onClick={LKchangcolorSI} className={LKColorSI ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>Science</button>
                 <button onClick={LKchangcolorSE} className={LKColorSE ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>Engineering</button>
                 <button onClick={LKchangcolorE} className={LKColorE ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>More Courses</button>
-                {/* </div> */}
+            
             </div>
             <div className='LK-courses-sec3-son2-father-h2'><h2 className='LK-courses-sec3-son2-h2'>Standard Classes</h2></div>
             <LKCards data1={data1} pages={true}/>
