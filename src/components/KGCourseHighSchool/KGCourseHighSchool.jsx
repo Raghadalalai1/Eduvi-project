@@ -9,7 +9,7 @@ import KGCourseComponent from '../KGCourseComponent/KGCourseComponent'
 export default function KGCourseHighSchool({KGCourseTitle}) {
    
            return (
-            <section>
+            <section className='RA-section2-courses'>
                 <h3 className='KG-Courses-Title'>{KGCourseTitle}</h3>
                 <form className="KG-Course-Form ">
                     <div className="KG-Course-input">
