@@ -15,6 +15,14 @@
     color: rgba(10, 3, 60, 1);
    
 }
+.RA-SeeMore{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(156, 77, 244, 1);
+    font-family:Inter;
+    margin-top: 28px;
+    display: none;
+}
 @media(max-width:1024px){
     .RA-similar{
         font-size: 30px ;
@@ -35,4 +43,9 @@
     .RA-similar{
         font-size: 24px ;
     }
+    .RA-SeeMore{
+
+        display: block;
+    }
+
 }

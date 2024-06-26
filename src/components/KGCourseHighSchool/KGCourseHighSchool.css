@@ -73,6 +73,14 @@
 .KG-side {
     margin: auto;
 }
+.RA-SeeMore{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(156, 77, 244, 1);
+    font-family:Inter;
+    margin-top: 28px;
+    display: none;
+}
 
 
 @media(min-width:789px) and (max-width:991px){
@@ -149,4 +157,10 @@
         
      }
 
+    }
+@media (max-width:375px){
+    .RA-SeeMore{
+
+        display: block;
+    }
     }

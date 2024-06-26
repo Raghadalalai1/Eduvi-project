@@ -25,7 +25,7 @@ export default function CoursesDetalis() {
     <AZcompobn />
     
 
-    <RASimilarCourses/>
+    <RASimilarCourses />
 
 
 

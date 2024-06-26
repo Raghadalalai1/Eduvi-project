@@ -4,30 +4,34 @@
 }
 /* 1440 القياس */
 .BKH-section {
- 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
   width: 100%;
-  height: 620px;
-  position: relative;
+  margin-top: 70px;
+  padding: 0px 51px;
 }
 
 .BKH-image {
   width: 510px;
-  height: 100%;
+  height: 620px;
   border-radius: 15px;
 }
-
-.BKH-all-section {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.BKH-text-all {
-  position: absolute;
-  padding: 68px 0 0 570px;
+.BKH-image img{
   width: 100%;
   height: 100%;
+  
+}
+
+
+
+.BKH-text-all {
+
+  width: 50%;
+
   font-family: "Metropolis";
+  margin-left: 24px;
 }
 
 .BKH-part-one h1 {
@@ -140,48 +144,60 @@
   background-color: rgb(116, 37, 204);
   transform: scale(0.99);
 }
+@media(max-width:1024px){
+  .BKH-section {
+    padding: 0px 32px;
+  }
+  .BKH-section {
+    flex-wrap: wrap;
+      }
 
+
+
+}
+@media(max-width:375px){
+  .BKH-section {
+    padding: 0px 0px;
+  }
+}
+@media(max-width:1300px){
+  .BKH-image {
+    width: 400px;
+    height: 480px;
+    
+  }
+}
+@media(max-width:991px){
+  .BKH-section {
+   
+    justify-content: center;
+
+  }
+  .BKH-text-all {
+    margin-top: 20px;
+  }
+
+}
 /* 1440 القياس */
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .BKH-section {
-    width: 100%;
-    height: max-content;
-  }
 
-  .BKH-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
 
-  .BKH-image img {
-    width: 100%;
-    height: 100%;
-  }
 
-  .BKH-all-section {
-    flex-wrap: wrap;
-  }
 
-  .BKH-text-all {
-    padding: 20px 0 0 0;
-    position: relative;
-    width: 100%;
-    height: max-content;
-  }
+
 
   .BKH-part-one h1 {
-    width: 100%;
-    height: 24px;
+ 
+
     font-size: 24px;
     font-weight: 600;
-    line-height: 24px;
+ 
   }
   .BKH-part-one p {
     margin: 15px 0;
-    width: 100%;
-    height: max-content;
+    
+   
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -189,7 +205,7 @@
 
   .BKH-part-two {
     width: 100%;
-    height: max-content;
+ 
   }
 
   .BKH-span {
@@ -243,7 +259,7 @@
   }
 
   .BKH-input-submit input {
-    line-height: 20px;
+ 
     font-weight: 500;
     font-size: 14px;
     padding: 15px 25px;
@@ -251,46 +267,27 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .BKH-section {
-    width: 100%;
-    height: max-content;
-  }
+/* @media (min-width: 576px) and (max-width: 767px) {
 
-  .BKH-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
 
-  .BKH-image img {
-    width: 100%;
-    height: 100%;
-  }
 
-  .BKH-all-section {
-    flex-wrap: wrap;
-  }
 
-  .BKH-text-all {
-    padding: 16px 15px;
-    position: relative;
-    width: 100%;
-    height: max-content;
-  }
+
+
+
 
   .BKH-part-one h1 {
     width: 350px;
-    height: 40px;
+ 
     font-size: 35px;
     font-weight: 800;
-    line-height: 30px;
+   
   }
   .BKH-part-one p {
     margin-top: 20px;
-    width: 100%;
+ 
     max-width: 607px;
-    height: max-content;
+  
     font-size: 20px;
     line-height: 32px;
     font-weight: 600;
@@ -299,7 +296,7 @@
 
   .BKH-part-two {
     width: 100%;
-    height: max-content;
+
   }
 
   .BKH-span {
@@ -358,42 +355,27 @@
   }
 
   .BKH-input-submit input {
-    line-height: 20px;
+ 
     font-weight: 600;
     font-size: 18px;
     padding: 20px 35px;
     border-radius: 10px;
   }
-}
-@media (min-width: 768px) and (max-width: 839px) {
-  .BKH-section {
-    height: 400px;
-  }
-  .BKH-image {
-    width: 400px;
-    height: 400px;
-  }
-  .BKH-image img {
-    position: relative;
-    right: 35px;
-    width: 400px;
-    height: 400px;
-  }
-  .BKH-text-all {
-    padding: 10px 0 10px 350px;
-  }
+} */
+@media (max-width: 768px)  {
+ 
   .BKH-part-one h1 {
-    width: max-content;
-    height: max-content;
+   
+   
     font-size: 16px;
     font-weight: 600;
-    line-height: 20px;
+   
   }
   .BKH-part-one p {
     margin-top: 14px;
-    width: 100%;
+
     max-width: 400px;
-    height: max-content;
+  
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -444,41 +426,26 @@
   }
 
   .BKH-input-submit input {
-    line-height: 16px;
+   
     font-size: 12px;
     padding: 12px 18px;
     border-radius: 3px;
   }
 }
 @media (min-width: 840px) and (max-width: 900px) {
-  .BKH-section {
-    height: 450px;
-  }
-  .BKH-image {
-    width: 400px;
-    height: 450px;
-  }
-  .BKH-image img {
-    position: relative;
-    right: 15px;
-    width: 400px;
-    height: 450px;
-  }
-  .BKH-text-all {
-    padding: 10px 0 10px 390px;
-  }
+ 
   .BKH-part-one h1 {
-    width: max-content;
-    height: max-content;
+ 
+ 
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+    
   }
   .BKH-part-one p {
     margin-top: 14px;
     width: 100%;
     max-width: 431px;
-    height: max-content;
+   
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -530,41 +497,25 @@
   }
 
   .BKH-input-submit input {
-    line-height: 20px;
+
     font-size: 14px;
     padding: 15px 25px;
     border-radius: 5px;
   }
 }
 @media (min-width: 901px) and (max-width: 1020px) {
-  .BKH-section {
-    height: 480px;
-  }
-  .BKH-image {
-    position: relative;
-    right: 5px;
-    width: 400px;
-    height: 475px;
-  }
-  .BKH-image img {
-    width: 400px;
-    height: 475px;
-  }
-  .BKH-text-all {
-    padding: 15px 0 16px 410px;
-  }
+  
   .BKH-part-one h1 {
-    width: max-content;
-    height: max-content;
+
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+   
   }
   .BKH-part-one p {
     margin-top: 14px;
     width: 100%;
     max-width: 431px;
-    height: max-content;
+    
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -624,32 +575,19 @@
 }
 
 @media (min-width: 1020px) and (max-width: 1024px) {
-  .BKH-section {
-    height: 480px;
-  }
-  .BKH-image {
-    width: 400px;
-    height: 480px;
-  }
-  .BKH-image img {
-    width: 400px;
-    height: 480px;
-  }
-  .BKH-text-all {
-    padding: 15px 0 16px 447px;
-  }
+  
   .BKH-part-one h1 {
     width: max-content;
-    height: max-content;
+ 
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+
   }
   .BKH-part-one p {
     margin-top: 14px;
     width: 100%;
     max-width: 431px;
-    height: max-content;
+   
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
@@ -701,40 +639,27 @@
   }
 
   .BKH-input-submit input {
-    line-height: 20px;
+   
     font-size: 14px;
     padding: 17px 30px;
     border-radius: 5px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1300px) {
-  .BKH-section {
-    height: 500px;
-  }
-  .BKH-image {
-    height: 500px;
-  }
-  .BKH-image img {
-    height: 100%;
-    max-height: 500px;
-  }
-  .BKH-text-all {
-    padding-left: 450px;
-    padding-top: 50px;
-  }
+ 
   .BKH-part-one h1 {
     width: max-content;
-    height: max-content;
+ 
     font-size: 30px;
     font-weight: 600;
-    line-height: 30px;
+  
   }
   .BKH-part-one p {
     width: 100%;
   }
   .BKH-part-one p {
     max-width: 500px;
-    height: max-content;
+   
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -777,30 +702,29 @@
   }
 
   .BKH-input-submit input {
-    line-height: 10px;
+  
     font-size: 12px;
     padding: 15px 25px;
     border-radius: 5px;
   }
+
 }
 
 @media (min-width: 1441px) and (max-width: 1600px) {
-  .BKH-text-all {
-    padding: 25px 0 0 575px;
-  }
+  
   .BKH-part-one h1 {
     width: max-content;
-    height: max-content;
+   
     font-size: 45px;
     font-weight: 700;
-    line-height: 50px;
+
   }
   .BKH-part-one p {
     width: 100%;
   }
   .BKH-part-one p {
     max-width: 650px;
-    height: max-content;
+
     font-size: 20px;
     line-height: 34px;
     font-weight: 600;
@@ -839,38 +763,27 @@
   }
 
   .BKH-input-submit input {
-    line-height: 34px;
+ 
     font-size: 20px;
     padding: 17px 30px;
     border-radius: 10px;
   }
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
-  .BKH-section {
-    height: 700px;
-  }
-  .BKH-image {
-    height: 700px;
-  }
-  .BKH-image img {
-    height: 700px;
-  }
-  .BKH-text-all {
-    padding: 25px 0 0 700px;
-  }
+ 
   .BKH-part-one h1 {
     width: max-content;
-    height: max-content;
+
     font-size: 55px;
     font-weight: 800;
-    line-height: 75px;
+   
   }
   .BKH-part-one p {
     width: 100%;
   }
   .BKH-part-one p {
     max-width: 850px;
-    height: max-content;
+ 
     font-size: 22px;
     line-height: 40px;
     font-weight: 600;

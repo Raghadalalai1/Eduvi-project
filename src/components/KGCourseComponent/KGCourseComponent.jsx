@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar} from '@fortawesome/free-solid-svg-icons'
 import { faBagShopping} from '@fortawesome/free-solid-svg-icons'
 
-export default function KGCourseComponent() {
+export default function KGCourseComponent({bool}) {
     const KGCourseHighSchool = [
         {
            id : 1 ,
@@ -91,10 +91,10 @@ export default function KGCourseComponent() {
   return (
     <>
                 <div className='KG-Course-Teacher'>
-                <div className='KG-Part-Left'>
+                <div className={bool?'KG-Part-Left':'RA-Part-Left'}>
                    { KGCourseHighSchool.map((course) => {
                        return(
-                               <div className='KG-Course-Part' key={course.id}>
+                               <div className={bool?'KG-Course-Part':'RA-Course-Part'} key={course.id}>
                                    <div className='KG-Course-Info'>
                                        <img src={course.Image} alt='image-course-title'></img>
                                        <div>
@@ -114,10 +114,10 @@ export default function KGCourseComponent() {
                        );
                    })}
                    </div>
-                   <div  className='KG-Part-Right'>
+                   <div  className={bool?'KG-Part-Right':'RA-Part-Right'}>
                    { KGCourseHighSchooltwo.map((course) => {
                        return(
-                               <div className='KG-Course-Part' id='KG-HiddenPart' key={course.id}>
+                               <div className={bool?'KG-Course-Part':'RA-Course-Part'}  id='KG-HiddenPart' key={course.id}>
                                    <div className='KG-Course-Info'>
                                        <img src={course.Image} alt='image-course-title'></img>
                                        <div>

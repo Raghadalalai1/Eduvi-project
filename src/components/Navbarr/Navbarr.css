@@ -59,7 +59,7 @@
     transition: 0.5s !important;
 }
 .KG-Links .dropdown-menu{
-    background-color: #ECECEC !important;
+    background-color: var(--clr-bg) !important;
     transition: 0.5s;
     animation: .5s KGmove;
 }
@@ -176,7 +176,7 @@
         display: block !important;
     }
     .KG-Links{
-        background-color:  #ECECEC ;
+        background-color: var(--clr-bg) ;
     }
     .KG-Links .nav-link{
         width: max-content !important;

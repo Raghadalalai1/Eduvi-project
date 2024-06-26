@@ -27,7 +27,8 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                     <option>Sort by: oldest</option>
                     </select>
                 </form>
-                <KGCourseComponent />
+                <KGCourseComponent bool={true}/>
+                <p className='RA-SeeMore'>See More</p>
                 <div className="KG-side">
                     <div className="HS-sidebar">
                         <button>
