@@ -12,7 +12,7 @@ export default function SectionBecomeApply() {
             />
           </div>
           {/* قسم الصورة  */}
-          
+
           {/* قسم النصوص الكلي  */}
           <div className="BKH-text-all">
             {/*  قسم الأول النص الرئيسي والفرعي  */}

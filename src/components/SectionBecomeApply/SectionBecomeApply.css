@@ -915,3 +915,33 @@
     border-radius: 5px;
   }
 }
+
+@media(max-width:1920px){
+  .BKH-section{
+      padding: 0px 135px;
+}
+}
+
+@media(max-width:1440px){
+  .BKH-section{
+  padding: 0px 55px;
+}
+}
+@media(max-width:1024px){
+  .BKH-section{
+  padding: 0px 32px;
+}
+}
+@media(max-width:576px){
+  .BKH-section{
+  padding: 0px 20px !important;
+}
+}
+
+@media(max-width:375px){
+  .BKH-section{
+  padding: 0px 0px;
+}
+
+
+} 

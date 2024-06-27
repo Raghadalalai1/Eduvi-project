@@ -17,27 +17,3 @@
     padding: 0px 20px;
 }
 }
-
-/* القسم الي مشتغلو بشار هاد البادينك للريسبونسيف  */
-@media(max-width:1920px){
-    .section2{
-        padding: 0px 135px;
-}
-}
-
-@media(max-width:1440px){
-    .section2{
-    padding: 0px 135px;
-}
-}
-@media(max-width:1024px){
-    .section2{
-    padding: 0px 72px;
-}
-}
-@media(max-width:576px){
-    .section2{
-    padding: 0px 20px;
-}
-}
-/* القسم الي مشتغلو بشار هاد البادينك الو  */
