@@ -5,10 +5,18 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import "./HSShopSection2.css";
+import Pagination from "./Pagination.jsx";
+
+
 
 export default function HSShopSection2() {
+  
+  const [currentPage , setcurrentPage] = useState(1);
+
+  
+
   const HSCardsBooks = [
     {
       id: 1,
@@ -78,9 +86,160 @@ export default function HSShopSection2() {
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
     },
+    {
+      id: 10,
+      image: "./public/images/Shop/Shop-Section/book-2.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 11,
+      image: "./public/images/Shop/Shop-Section/book-6.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 12,
+      image: "./public/images/Shop/Shop-Section/book-1.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 13,
+      image: "./public/images/Shop/Shop-Section/book-5.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 14,
+      image: "./public/images/Shop/Shop-Section/book-3.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 15,
+      image: "./public/images/Shop/Shop-Section/book-4.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 16,
+      image: "./public/images/Shop/Shop-Section/book-1.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 17,
+      image: "./public/images/Shop/Shop-Section/book-6.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 18,
+      image: "./public/images/Shop/Shop-Section/book-2.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 19,
+      image: "./public/images/Shop/Shop-Section/book-6.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 20,
+      image: "./public/images/Shop/Shop-Section/book-5.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 21,
+      image: "./public/images/Shop/Shop-Section/book-1.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 22,
+      image: "./public/images/Shop/Shop-Section/book-2.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 23,
+      image: "./public/images/Shop/Shop-Section/book-3.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+
+    {
+      id: 24,
+      image: "./public/images/Shop/Shop-Section/book-4.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 25,
+      image: "./public/images/Shop/Shop-Section/book-6.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 26,
+      image: "./public/images/Shop/Shop-Section/book-5.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    {
+      id: 27,
+      image: "./public/images/Shop/Shop-Section/book-3.svg",
+      text: "The Three Musketeers",
+      price: "$40.00",
+      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+    },
+    
   ];
+  // pagination
+  const PRODUCT_PER_PAGE = 9;
+  const pages = Math.ceil (HSCardsBooks.length / PRODUCT_PER_PAGE);
+  const startIndex =(currentPage - 1)*PRODUCT_PER_PAGE;
+  const finishIndex = currentPage * PRODUCT_PER_PAGE;
+  const firstThreeCards = HSCardsBooks.slice(startIndex, finishIndex);
+
+
+  
+
+ // const orderedProducts = HSCardsBooks.slice(startIndex  ,finishIndex ) ;
+
+
 
   return (
+    
     <div className="HS-LeftSection">
       <div className="HS-LeftSection-Button">
         <button className="HS-Button1">All Book</button>
@@ -106,8 +265,10 @@ export default function HSShopSection2() {
       </form>
 
       <div className="HS-Cards-Books">
-        {HSCardsBooks.map((book) => {
+        
+        {firstThreeCards.map((book) => {
           return (
+            <>
             <div className="HS-Card-Book" key={book.id}>
               <div className="HS-Card-Info-Book">
                 <img src={book.image} alt="image-title"></img>
@@ -124,25 +285,13 @@ export default function HSShopSection2() {
                 </div>
               </div>
             </div>
+            </>
           );
         })}
       </div>
+      
+      <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} />
 
-
-      <div className="HS-side">
-      <div className="HS-sidebar">
-        <button>
-          <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
-        </button>
-        <p>pages</p>
-        <button className="HS-back">5</button>
-        <p>of 80</p>
-        <button className="HS-background">
-          <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
-        </button>
-      </div>
-
-      </div>
     </div>
   );
 }

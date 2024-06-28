@@ -6,6 +6,8 @@ import Section from '../../components/Section/Section6'
 import PropsHero from '../../components/PropsHero/PropsHero'
 import imageshop from '../../../public/images/Shop/Shop-Hero/bookcase.png'
 export default function Shope() {
+
+  
   return (
     <>
     <Navbarr />
@@ -19,10 +21,10 @@ export default function Shope() {
       image= {imageshop}
       imageclass="BKH-image-hero-page-shop "
       />
-     <Section2Shop />
+     <Section2Shop  />
      <Section />
    
-     
+   
      <Footer />
 
        

@@ -1,5 +1,5 @@
 .HS-LeftSection {
-  width: 72%;
+  width: 72% !important;
   padding-top: 40px;
 
 }
@@ -174,40 +174,9 @@
   justify-content: space-between;
   width: 100%;
 }
-.HS-side{
-  width: 840px;
-}
-.HS-sidebar {
-  width: 284px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 50px;
- margin: 0 auto;
-}
-.HS-sidebar button {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  border: none;
-  font-family: Metropolis-SemiBold;
-  font-weight: 500px;
-  font-size: 16px;
-}
-.HS-background {
-  background-color: var(--clr-sicon);
-}
-.HS-back {
-  background-color: var(--clr-primary);
-}
-.HS-sidebar p {
-  font-family: Metropolis-SemiBold;
-  font-weight: 500px;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--clr-text);
-  margin-bottom: 0;
-}
+
+
+
 @media(max-width:1440px){
 
   .HS-LeftSection {
@@ -346,7 +315,7 @@
           }
           .HS-Cards-Books {
   
-            background-color: var(--clr-bg);
+            
             padding-top: 50px;
             padding-bottom: 30px;
             width: 570px;
@@ -419,7 +388,7 @@
           }
           .HS-Cards-Books {
   
-            background-color: var(--clr-bg);
+           
             padding-top: 50px;
             padding-bottom: 30px;
             display: grid;
@@ -428,6 +397,7 @@
            width: 200px;
            
           }
+          
 }
 @media(Max-width:590px){
     .HS-LeftSection-Button {
@@ -478,6 +448,7 @@
           .HS-Card-Book:nth-child(5){
             display: none;
           }
+          
 }
 @media(Max-width:370px){
   .HS-Button2{
