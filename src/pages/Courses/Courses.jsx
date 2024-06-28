@@ -6,9 +6,13 @@ import LKCoursesSection2 from '../../components/LK-Courses-Section2/LK-Courses-S
 
 import Section from '../../components/Section/Section6'
 
+import KGCourseHighSchool from '../../components/KGCourseHighSchool/KGCourseHighSchool'
+
+
 import PropsHero from "../../components/PropsHero/PropsHero";
 import image2 from "../../../public/images/Courses/Courses-Hero/Image.png";
 import image3 from '../../../public/images/Courses/Courses-Hero/Pattern.svg'
+
 
 
 
@@ -16,6 +20,7 @@ export default function Courses() {
   return (
     <>
     <Navbarr />
+
 
    <div className='main' id='coruses'>
      <PropsHero
@@ -31,11 +36,13 @@ export default function Courses() {
         imageclasstwo="BKH-calssimage-hero-page-Courses"
         imageclassthree="BKH-imageplus-hero-page-Courses" />
     <LKCoursesSection2 />
+    <KGCourseHighSchool KGCourseTitle = {'Other Courses For High School'} />
      <Section />
     <Footer />
 
 
      
+
 
 
        

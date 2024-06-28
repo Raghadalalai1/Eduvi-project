@@ -122,17 +122,13 @@
         width: 100% !important;
         left: 0 !important;
         margin: 0 !important;
-
-
-       
-        
+  
     }
     .KG-Links .nav-link{
         padding-left: 15px !important;
     }
     .KG-Sign-inUp {
        width: 210px;
-      
     }
     .KG-Sign-inUp .nav-link{
        padding-right: 0;
@@ -144,8 +140,8 @@
         flex-direction: row !important;
     }
     .KG-Links{
-        background-color:  #ECECEC ;
-       padding: 0 ;
+        background-color:  var(--clr-bg) ;
+        padding: 0 ;
     }
     .KG-Links .nav-link{
         width: max-content;

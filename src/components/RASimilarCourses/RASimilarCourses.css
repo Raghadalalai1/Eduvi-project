@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.RA-section-similar{
+    margin-top: 80px;
+    margin-bottom: 120px ;
+}
+
+.RA-similar{
+    font-weight: 700;
+    font-size: 45px ;
+    font-family: Metropolis-Bold;
+    color: rgba(10, 3, 60, 1);
+   
+}
+@media(max-width:1024px){
+    .RA-similar{
+        font-size: 30px ;
+        font-weight: 600;
+    }
+}
+@media(max-width:991px){
+    .RA-similar{
+      text-align: center;
+    }
+}
+@media(max-width:400px){
+    .RA-similar{
+      text-align: left;
+    }
+}
+@media(max-width:375px){
+    .RA-similar{
+        font-size: 24px ;
+    }
+}

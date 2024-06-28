@@ -1,0 +1,279 @@
+
+.KG-Section-Hero{
+    background-color: var( --clr-heropages);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 90px;
+}
+.KG-Details-PartLeft{
+    margin-left: 30px;
+    margin-top: 27px;
+}
+.KG-Details-PartRight{
+    margin-top: 25px;
+    margin-right: 18px;
+    margin-bottom: 70px;
+}
+.KG-Details-PartLeft video{
+    width: 766px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px !important;
+}
+.KG-Details-Path{
+    font-family:Metropolis-Regular;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--clr-inputnewletter);
+}
+.KG-Path-Span{
+    color: var(--clr-sicon);
+}
+.KG-Details-Video{
+    font-family :Metropolis-SemiBold;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.KG-Title-PlayList{
+    font-family:Metropolis-SemiBold;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.KG-PlayList{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--clr-primary);
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+.KG-PlayList img{
+    width: 80px;
+    margin: 10px;
+}
+.KG-Details-CardInfo-Text{
+    margin-bottom: 3px;
+    font-family:Metropolis-SemiBold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--clr-text);
+    margin-top: 16px;
+}
+.KG-Details-CardInfo-Time{
+    font-family: Metropolis-SemiBold;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--clr-icon);
+}
+.KG-BG-Clock-Icon{
+    position: absolute;
+    left: 41px;
+    top: 26px;
+    background-color: var(--clr-primary) ;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.KG-Clock-Icon{
+    width: 10px;
+    color: #954AE9;
+}
+.KG-PlayList:nth-child(2) .KG-BG-Clock-Icon{
+    display: none;
+ }
+.KG-PlayList:nth-child(3) .KG-BG-Clock-Icon{
+    display: none;
+ }
+.KG-PlayList:nth-child(4){
+    opacity: 0.5;
+}
+.KG-PlayList:nth-child(5){
+    opacity:0.5;
+}
+.KG-PlayList:nth-child(6){
+    opacity: 0.5;
+}
+.KG-PlayList:nth-child(7){
+    opacity :0.5;
+    margin-bottom: 0;
+}
+@media(min-width:1613px) and (max-width:1920px){
+    .KG-Details-PartRight{
+       width: 600px;
+    }
+    /* .KG-Details-PartLeft video{
+        width: 100%;
+    } */
+}
+@media(min-width:1492px) and (max-width:1612px){
+    .KG-Details-PartRight{
+       width: 500px;
+    }
+   
+}
+@media (max-width:1491px){
+    .KG-Details-PartRight{
+       width: max-content !important;
+    }
+   
+}
+@media(min-width:1201px) and (max-width:1340px){
+    .KG-Details-PartLeft video{
+        width: 670px ;
+    }
+    .KG-Details-CardInfo-Text{
+        font-size: 16px;
+    }
+}
+@media(min-width:1025px) and (max-width:1200px){
+    .KG-Details-PartLeft video{
+        width: 450px !important;
+        height: 320px;
+    }
+    .KG-PlayList:nth-child(6){
+        display: none;
+    }
+    .KG-PlayList:nth-child(7){
+        display: none;
+    }
+    .KG-Details-Video{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .KG-PlayList:nth-child(5){
+       margin-bottom: 0;
+    }
+}
+
+@media(min-width:992px) and (max-width:1024px){
+    .KG-Details-PartLeft video{
+        width: 512px;
+        height: 328px;
+    }
+    .KG-PlayList:nth-child(6){
+        display: none;
+    }
+    .KG-PlayList:nth-child(7){
+        display: none;
+    }
+    .KG-Details-Video{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .KG-PlayList:nth-child(5){
+       margin-bottom: 0;
+    }
+
+}
+@media (max-width:991px){
+    .KG-Section-Hero{
+        justify-content: center;
+    }
+    .KG-Title-PlayList{
+        text-align: center;
+    }
+   
+}
+@media(min-width:789px) and (max-width:991px){
+    .KG-Details-PartLeft{
+        width: 600px;
+    }
+    .KG-Details-PartLeft video{
+        width: 550px;
+        height: 250px;
+    }
+    .KG-Details-PartRight{
+        width: 600px;
+    }
+    .KG-PlayList:nth-child(7){
+        display: none;
+    }
+
+}
+@media(max-width:788px) and (min-width:567px){
+    .KG-Details-PartLeft{
+        width: 450px;
+    }
+    .KG-Details-PartLeft video{
+        width:450px;
+        height: 250px;
+    }
+    .KG-Details-PartRight{
+        width: 450px;
+        margin-left: 30px;
+    }
+    .KG-PlayList:nth-child(7){
+        display: none;
+    }
+    .KG-Details-Video{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        width: 305px;
+    }
+    .KG-Details-CardInfo-Text{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}
+@media(max-width:566px){
+    .KG-Details-PartLeft{
+        width: 95%;
+    }
+    .KG-Details-PartLeft video{
+        width: 95%;
+        height: 200px;
+    }
+    .KG-Details-PartRight{
+        width: 95%;
+        margin-left: 30px;
+    }
+    .KG-PlayList:nth-child(7){
+        display: none;
+    }
+    .KG-Details-Video{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .KG-Details-CardInfo-Text{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    .KG-PlayList{
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width:483px){
+  
+    .KG-Title-PlayList{
+        text-align: left;
+    }
+   
+}
+

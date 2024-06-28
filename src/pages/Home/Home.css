@@ -1,12 +1,7 @@
 .main{
     background-color: var(--clr-bg);
+    padding: 0 80px ;
   
-}
-
-@media(max-width:1900px){
-    .main{
-    padding: 0px 80px;
-}
 }
 @media(max-width:1024px){
     .main{

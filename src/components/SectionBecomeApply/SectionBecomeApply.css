@@ -1,0 +1,917 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../../public/Fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+/* 1440 القياس */
+.BKH-section {
+ 
+  width: 100%;
+  height: 620px;
+  position: relative;
+}
+
+.BKH-image {
+  width: 510px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.BKH-all-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BKH-text-all {
+  position: absolute;
+  padding: 68px 0 0 570px;
+  width: 100%;
+  height: 100%;
+  font-family: "Metropolis";
+}
+
+.BKH-part-one h1 {
+  margin: 0;
+  width: 285px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #0a033c;
+}
+.BKH-part-one p {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 607px;
+  height: max-content;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #5d5a6f;
+}
+
+.BKH-part-two {
+  width: 100%;
+  height: 60%;
+  font-family: "Inter", sans-serif;
+}
+
+.BKH-span {
+  width: 342px;
+  height: 31px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BKH-span-one {
+  margin: 0;
+  height: 31px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #ff6652;
+}
+
+.BKH-span-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 191px;
+  height: 1px;
+  background-color: #ff6652;
+}
+
+.BKH-span-two {
+  margin: 0;
+  height: 31px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #5d5a6f;
+}
+
+.BKH-span-two::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 151px;
+  height: 1px;
+  background-color: #5d5a6f;
+}
+
+.BKH-unordered-list {
+  font-family: "Metropolis";
+  margin-top: 20px;
+  position: relative;
+  right: 15px;
+}
+
+.BKH-unordered li::marker {
+  color: #ff6652;
+  font-size: 20px;
+}
+
+.BKH-unordered li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #0a033c;
+}
+
+.BKH-input-submit {
+  position: relative;
+  top: 15px;
+}
+
+.BKH-input-submit input {
+  background-color: #9c4df4;
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 17px 30px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.BKH-input-submit input:hover {
+  background-color: rgb(116, 37, 204);
+  transform: scale(0.99);
+}
+
+/* 1440 القياس */
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .BKH-section {
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .BKH-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .BKH-all-section {
+    flex-wrap: wrap;
+  }
+
+  .BKH-text-all {
+    padding: 20px 0 0 0;
+    position: relative;
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-part-one h1 {
+    width: 100%;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .BKH-part-one p {
+    margin: 15px 0;
+    width: 100%;
+    height: max-content;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .BKH-part-two {
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-span {
+    width: 303px;
+    height: 36px;
+  }
+
+  .BKH-span-one {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 167px;
+    height: 1px;
+  }
+
+  .BKH-span-two {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .BKH-span-two::before {
+    width: 138px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    margin-top: 10px;
+    position: relative;
+    right: 15px;
+  }
+
+  .BKH-unordered li::marker {
+    color: #ff6652;
+    font-size: 20px;
+  }
+
+  .BKH-unordered li {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .BKH-input-submit {
+    position: relative;
+    top: 0px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .BKH-section {
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .BKH-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .BKH-all-section {
+    flex-wrap: wrap;
+  }
+
+  .BKH-text-all {
+    padding: 16px 15px;
+    position: relative;
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-part-one h1 {
+    width: 350px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 30px;
+  }
+  .BKH-part-one p {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 607px;
+    height: max-content;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #5d5a6f;
+  }
+
+  .BKH-part-two {
+    width: 100%;
+    height: max-content;
+  }
+
+  .BKH-span {
+    width: 390px;
+    height: 31px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .BKH-span-one {
+    height: 31px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 215px;
+    height: 1px;
+  }
+
+  .BKH-span-two {
+    height: 31px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .BKH-span-two::before {
+    width: 175px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    font-family: "Metropolis";
+    margin-top: 15px;
+    position: relative;
+    right: 15px;
+  }
+
+  .BKH-unordered li::marker {
+    color: #ff6652;
+    font-size: 20px;
+  }
+
+  .BKH-unordered li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  .BKH-input-submit {
+    position: relative;
+    top: 0px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 35px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 839px) {
+  .BKH-section {
+    height: 400px;
+  }
+  .BKH-image {
+    width: 400px;
+    height: 400px;
+  }
+  .BKH-image img {
+    position: relative;
+    right: 35px;
+    width: 400px;
+    height: 400px;
+  }
+  .BKH-text-all {
+    padding: 10px 0 10px 350px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .BKH-part-one p {
+    margin-top: 14px;
+    width: 100%;
+    max-width: 400px;
+    height: max-content;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .BKH-span {
+    width: 250px;
+    height: 31px;
+  }
+
+  .BKH-span-one {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .BKH-span-two {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 145px;
+    height: 1px;
+  }
+
+  .BKH-span-two::before {
+    width: 105px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    top: -15px;
+    right: 15px;
+  }
+
+  .BKH-unordered li {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 15px;
+  }
+
+  .BKH-input-submit {
+    top: -15px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 16px;
+    font-size: 12px;
+    padding: 12px 18px;
+    border-radius: 3px;
+  }
+}
+@media (min-width: 840px) and (max-width: 900px) {
+  .BKH-section {
+    height: 450px;
+  }
+  .BKH-image {
+    width: 400px;
+    height: 450px;
+  }
+  .BKH-image img {
+    position: relative;
+    right: 15px;
+    width: 400px;
+    height: 450px;
+  }
+  .BKH-text-all {
+    padding: 10px 0 10px 390px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .BKH-part-one p {
+    margin-top: 14px;
+    width: 100%;
+    max-width: 431px;
+    height: max-content;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .BKH-span {
+    margin-top: 15px;
+    width: 290px;
+    height: 31px;
+  }
+
+  .BKH-span-one {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .BKH-span-two {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 165px;
+    height: 1px;
+  }
+
+  .BKH-span-two::before {
+    width: 125px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    top: -10px;
+    right: 15px;
+  }
+
+  .BKH-unordered li {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 15px;
+  }
+
+  .BKH-input-submit {
+    top: 0px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 15px 25px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1020px) {
+  .BKH-section {
+    height: 480px;
+  }
+  .BKH-image {
+    position: relative;
+    right: 5px;
+    width: 400px;
+    height: 475px;
+  }
+  .BKH-image img {
+    width: 400px;
+    height: 475px;
+  }
+  .BKH-text-all {
+    padding: 15px 0 16px 410px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .BKH-part-one p {
+    margin-top: 14px;
+    width: 100%;
+    max-width: 431px;
+    height: max-content;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .BKH-span {
+    margin: 19px 0;
+    width: 342px;
+    height: 31px;
+  }
+
+  .BKH-span-one {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .BKH-span-two {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 191px;
+    height: 1px;
+  }
+
+  .BKH-span-two::before {
+    width: 151px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    top: 0;
+    right: 15px;
+  }
+
+  .BKH-unordered li {
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 20px;
+  }
+
+  .BKH-input-submit {
+    top: 10px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 17px 30px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .BKH-section {
+    height: 480px;
+  }
+  .BKH-image {
+    width: 400px;
+    height: 480px;
+  }
+  .BKH-image img {
+    width: 400px;
+    height: 480px;
+  }
+  .BKH-text-all {
+    padding: 15px 0 16px 447px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .BKH-part-one p {
+    margin-top: 14px;
+    width: 100%;
+    max-width: 431px;
+    height: max-content;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .BKH-span {
+    margin: 19px 0;
+    width: 342px;
+    height: 31px;
+  }
+
+  .BKH-span-one {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .BKH-span-two {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 191px;
+    height: 1px;
+  }
+
+  .BKH-span-two::before {
+    width: 151px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    top: 0;
+    right: 15px;
+  }
+
+  .BKH-unordered li {
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 20px;
+  }
+
+  .BKH-input-submit {
+    top: 10px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 17px 30px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .BKH-section {
+    height: 500px;
+  }
+  .BKH-image {
+    height: 500px;
+  }
+  .BKH-image img {
+    height: 100%;
+    max-height: 500px;
+  }
+  .BKH-text-all {
+    padding-left: 450px;
+    padding-top: 50px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .BKH-part-one p {
+    width: 100%;
+  }
+  .BKH-part-one p {
+    max-width: 500px;
+    height: max-content;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .BKH-span {
+    width: 275px;
+    height: 25px;
+  }
+
+  .BKH-span-one {
+    font-size: 13px;
+  }
+
+  .BKH-span-two {
+    font-size: 13px;
+  }
+
+  .BKH-span-one::before {
+    width: 157px;
+    height: 1px;
+  }
+
+  .BKH-span-two::before {
+    width: 120px;
+    height: 1px;
+  }
+
+  .BKH-unordered-list {
+    right: 18px;
+  }
+
+  .BKH-unordered li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 15px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 10px;
+    font-size: 12px;
+    padding: 15px 25px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .BKH-text-all {
+    padding: 25px 0 0 575px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  .BKH-part-one p {
+    width: 100%;
+  }
+  .BKH-part-one p {
+    max-width: 650px;
+    height: max-content;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+  }
+
+  .BKH-span {
+    width: 450px;
+    height: 35px;
+  }
+
+  .BKH-span-one {
+    font-size: 20px;
+  }
+
+  .BKH-span-two {
+    font-size: 20px;
+  }
+
+  .BKH-span-one::before {
+    width: 240px;
+    height: 3px;
+  }
+
+  .BKH-span-two::before {
+    width: 210px;
+    height: 3px;
+  }
+
+  .BKH-unordered li {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 20px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 34px;
+    font-size: 20px;
+    padding: 17px 30px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .BKH-section {
+    height: 700px;
+  }
+  .BKH-image {
+    height: 700px;
+  }
+  .BKH-image img {
+    height: 700px;
+  }
+  .BKH-text-all {
+    padding: 25px 0 0 700px;
+  }
+  .BKH-part-one h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 75px;
+  }
+  .BKH-part-one p {
+    width: 100%;
+  }
+  .BKH-part-one p {
+    max-width: 850px;
+    height: max-content;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+
+  .BKH-span {
+    width: 500px;
+    height: 40px;
+  }
+
+  .BKH-span-one {
+    font-size: 22px;
+  }
+
+  .BKH-span-two {
+    font-size: 22px;
+  }
+
+  .BKH-span-one::before {
+    width: 265px;
+    height: 3px;
+  }
+
+  .BKH-span-two::before {
+    width: 235px;
+    height: 3px;
+  }
+
+  .BKH-unordered li {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .BKH-unordered li::marker {
+    font-size: 25px;
+  }
+
+  .BKH-input-submit input {
+    line-height: 34px;
+    font-size: 22px;
+    padding: 20px 40px;
+    border-radius: 5px;
+  }
+}
