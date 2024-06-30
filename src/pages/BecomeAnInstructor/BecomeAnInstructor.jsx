@@ -26,10 +26,12 @@ export default function BecomeAnInstructor() {
       imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
 
 
+
       />
             <div className='section2'> <SectionBecomeApply /></div>
   <HSInstructor/>
        <Section />
+
 
         <Footer />
   
