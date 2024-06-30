@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap !important;
-    padding-top: 191px;
+    padding-top: 131px;
 }
 .KG-Hero-PartLeft{
     display: flex;
@@ -234,8 +234,8 @@
 }
 @media(max-width:788px) and (min-width:567px){
     .KG-HeroHome{
-        padding-top: 100px;
-        padding-bottom: 100px;
+        /* padding-top: 100px; */
+        /* padding-bottom: 100px; */
         justify-content: center;
     }
     .KG-Hero-PartRight{
@@ -297,10 +297,10 @@
 
 }
 @media(max-width:566px){
-    .KG-HeroHome{
+    /* .KG-HeroHome{
     padding-top: 100px;
     padding-bottom: 100px;
-    }
+    } */
     .KG-Hero-PartRight{
         width: 90%;
         margin: auto;

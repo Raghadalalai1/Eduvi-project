@@ -1,11 +1,13 @@
 .HS-Instructor{
     width: 100%;
-    padding: 108px 0 120px 0;
+    padding-top: 120px;
+padding-left: 40px;
+padding-right: 23px;
     background-color: var(--clr-bg);
 }
 .HS-Instructor-section2{
     margin: 0 auto;
-    width: 85%;
+    width: 100%;
 }
 .HS-Instructor-h2 h2{
 color: var(--clr-text);
@@ -25,7 +27,8 @@ text-align: center;}
 }
 .HS-Instructor-son-img-plus{
     margin-top: -65px;
-    margin-right: -4px;
+    margin-right: -75px;
+    width: 230px;
     
 }
 .HS-Instructor-son2{
@@ -62,13 +65,50 @@ text-align: center;}
     height: 100% !important;
     
 }
+@media(max-width:1366px){
+    .HS-Instructor{
+       
+        padding-top: 100px;
+      
+    }
+    
+}
+@media(max-width:1024px){
+    .HS-Instructor-h2 h2{
+ 
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .HS-Instructor-son-img-plus{
+  
+        width: 136px;
+        margin-top: -51px;
+        
+        
+    }
+    
+}
+
+@media(max-width:375px){
+    .HS-Instructor{
+       
+        padding-top: 50px;
+    
+    
+    }
+    .HS-Instructor-h2 h2{
+ 
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
 @media(min-width:993px) and (max-width:1200px){
     .HS-Instructor{
         width: 97%;
     }    
-    .HS-Instructor-section2{
+    /* .HS-Instructor-section2{
     margin-left: 32px;
-    }
+    } */
     .LK-home-section2-son1-h2{
         font-size: 35px;
         line-height: 40px;
@@ -78,20 +118,20 @@ text-align: center;}
         width: 94%;
         height: 488px;
     }
-    .HS-Instructor-son-img-plus{
-        margin-top: -65px;
-        margin-right: -4px;
-    }
+    /* .HS-Instructor-son-img-plus{
+        
+        margin-right: -100px;
+    } */
 }
 
     @media(min-width:769px) and (max-width:992px){
         .HS-Instructor-section2{
             width: 97%;
         }
-        .HS-Instructor{
+        /* .HS-Instructor{
             padding: 100px 0;
         }
-      
+       */
         .LK-home-section2-son1-h2{
             font-size: 35px;
             line-height: 40px;
@@ -101,15 +141,21 @@ text-align: center;}
             width: 94%;
             height: 488px;
         }
+        .HS-Instructor-son-img-plus{
+  
+            width: max-content;
+           
+            margin-right: -57px;
+            
+            
+        }
     }
 
     @media(max-width:768px){
         .HS-Instructor-section2{
             width: calc(100% + 5px);
         }
-        .HS-Instructo{
-            padding: 70px 0;
-        }
+   
         .LK-home-section2-son1-h2{
          width: 279px;
         font-size: 28px;
@@ -124,6 +170,12 @@ text-align: center;}
             margin-top: 0 !important;
             width: 98%;
             height: 250px;
+        }
+        .HS-Instructor{
+         
+        padding-left: 0px;
+        padding-right: 0px;
+            
         }
     }
 

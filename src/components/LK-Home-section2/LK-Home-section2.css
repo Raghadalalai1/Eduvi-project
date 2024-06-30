@@ -14,7 +14,7 @@
 font-family:Metropolis-Thin;}
 .LK-home-section2{
     width: 100%;
-    margin: 90px auto 0 auto;
+    /* margin: 90px auto 0 auto; */
     padding: 150px 0;
     background-color: var(--clr-bg);
 
@@ -311,6 +311,12 @@ font-family:Metropolis-Thin;}
         gap: 12px;
         width: 31%;
     }
+    .LK-home-section2{
+   
+        padding: 100px 0;
+        
+    
+    }
 
 }
 @media(min-width:769px) and (max-width:992px){
@@ -448,6 +454,12 @@ font-family:Metropolis-Thin;}
         height: 24px;
         margin-left: 10px;
         border-radius: 4px;
+    }
+    .LK-home-section2{
+   
+        padding: 70px 0;
+        
+    
     }
 }
 @keyframes moveUP-D{

@@ -22,7 +22,7 @@ function AMSEC() {
           <button type="submit">Career Information</button>
         </div>
       </div>
-<div className="Metropolis-font"></div>
+{/* <div className="Metropolis-font"></div> */}
     </section>
   );
 }

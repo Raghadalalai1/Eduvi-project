@@ -17,8 +17,8 @@ export default function LogIn() {
  </div>]
  
   return (
-    <div>
-      <LogInPopup last={last}/>
+    <div className="RRA-LOG">
+      <LogInPopup last={last} bool1={true} />
 
       
     </div>

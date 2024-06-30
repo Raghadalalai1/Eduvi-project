@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './LogInPopup.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
@@ -6,11 +6,33 @@ import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope, faEye, faLock } from '@fortawesome/free-regular-svg-icons';
 import { faEnvelope, faEye, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
-export default function LogInPopup({name,last ,agreed}) {
+import { faLock, faXmark } from '@fortawesome/free-solid-svg-icons';
+export default function LogInPopup({name , last , agreed , bool1 ,last1 ,showPopUp1 , setshowPopUp1 , setshowPopUp , showPopUp}) {
+
+function HandleShow(){
+    setshowPopUp(false);
+    setshowPopUp1(false);
+    console.log('test');
+}
+const  [ x , setx] = useState(true)
+
+    useEffect(()=>{
+        if(showPopUp1)
+            {
+                setx(true)
+            }
+            else
+                {
+                    setx(false)
+                }
+    }
+    ,[showPopUp1,setshowPopUp,x])
+
     return (
-        <div className='RA-LogInPopup'>
-            <div className='RA-parent-LogInPopup'>
+        
+        <div className={x ? 'RA-LogInPopup1':'RA-LogInPopup2'}>
+            <div className={x ? 'RA-parent-LogInPopup':'RA-parent1-LogInPopup'} >
+            <FontAwesomeIcon icon={faXmark}  onClick={HandleShow} className='RA-exit-icon' />
                 <div className='RA-part1-login'>
                     <img src="./images/Home/Home-Footer/Logo.svg" alt="logo" className='RA-logologin' />
                     <h2 className='RA-titel-login'>Welcome to
@@ -65,13 +87,15 @@ export default function LogInPopup({name,last ,agreed}) {
                         {agreed}
 
                         <input type="submit" value={'sign in'} className='RA-button-form' />
-
                         {last}
+
+                        {last1}
 
 
                     </form>
                 </div>
             </div>
         </div>
+    
     )
 }

@@ -456,17 +456,17 @@
     }
 
     .KG-Part-Left {
-        width: 330px !important;
+        width: 318px !important;
     }
     .RA-Part-Left {
-        width: 330px !important;
+        width: 318px !important;
     }
 
     .KG-Course-Form {
-        width: 330px !important;
+        width: 318px !important;
     }
-    .RA-Course-Form {
+    /* .RA-Course-Form {
         width: 330px !important;
-    }
+    } */
 
 }

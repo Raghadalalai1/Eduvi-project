@@ -1,8 +1,30 @@
-.RA-LogInPopup {
+/* #RA-LogInPopup {
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:center;
+}
+#RA-LogInPopup1 {
+  display: none;
+
+} */
+.RA-LogInPopup1 {
+  display: flex;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
+  background-color:rgba(191, 135, 255, 0.5);
+  height: 100vh;
+  
+}
+.RA-LogInPopup2 {
+  display: flex;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
+  background-color:rgba(191, 135, 255, 0.5);
+  height: 100vh;
+
 }
 .RA-logologin {
   margin-bottom: 15px;
@@ -12,24 +34,86 @@
 }
 
 .RA-parent-LogInPopup {
-  background-color: var(--clr-primary);
+  background-color: var( --clr-primary);
+  background-color: var( --clr-primary);
+  background-color: var( --clr-primary);
   width: 100%;
-  height: 800px;
+  height: 636px;
+  border-radius: 15px;
+  /* margin-top: 140px; */
+  margin-left: 190px;
+  margin-right: 190px;
+   display: flex;
+  justify-content: space-evenly;
+  padding: 105px 79px 104px 80px;
+  align-items: center;
+  position: relative;
+  transition: 0.5;
+  
+}
+/*  */
+.RA-parent-LogInPopup1 {
+  background-color: var( --clr-primary);
+  width: 100%;
+  height: 650px;
+  border-radius: 15px;
+  /* margin-top: 140px; */
+  margin-left: 190px;
+  margin-right: 190px;
+   display: flex;
+  justify-content: space-evenly;
+  padding: 105px 79px 104px 80px;
+  align-items: center;
+  position: relative;
+  /* transition: 0.5; */
+}
+/*  */
+.RA-parent-LogInPopup1 {
+display: none;
+  
+}
+
+.RA-parent1-LogInPopup {
+  background-color: var( --clr-primary);
+  width: 100%;
+  height: 636px;
+  border-radius: 15px;
+  /* margin-top: 140px; */
+  margin-left: 190px;
+  margin-right: 190px;
+   display: flex;
+  justify-content: space-evenly;
+  padding: 105px 79px 104px 80px;
+  align-items: center;
+  position: relative;
+  /* transition: 0.5; */
+  
+}
+.RA-parent1-LogInPopup1 {
+  background-color: burlywood;
+  width: 100%;
+  height: 750px;
   border-radius: 15px;
   margin-top: 140px;
   margin-left: 190px;
   margin-right: 190px;
-  /* background-color: #0A033C; */
-}
-.RA-parent-LogInPopup {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+  justify-content: space-evenly;
   padding: 105px 79px 104px 80px;
+  align-items: center;
+  position: relative;
+  
 }
+/*  */
+.RA-parent1-LogInPopup1 {
+ display: none;
+  
+}
+
 .RA-titel-login {
   font-weight: 700;
   font-size: 40px;
-  width: 470px;
+  width: 100%;
   text-align: left;
   font-family: Metropolis-Bold;
   line-height: 50px;
@@ -39,8 +123,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-right: 1px solid black;
+ 
   width: 400px;
+  position: relative;
+}
+.RA-part1-login::after {
+position: absolute;
+content: "";
+background:linear-gradient(0 ,rgba( 10 , 3 , 60 , 0 ),rgba( 10 , 3 , 60 , 1 ),rgba( 10 , 3 , 60 , 0 ));
+width: 1px;
+height: 641px;
+right: calc(100% - 460px);
+
 }
 
 .RA-slider {
@@ -60,7 +154,7 @@
 }
 .carousel-indicators [data-bs-target]:hover {
   background-color: rgba(255, 102, 82, 0.5);
-  /* border: 1px solid rgba(255, 102, 82, 1); */
+  
 }
 .carousel-indicators {
   width: max-content;
@@ -94,7 +188,7 @@
   position: relative;
 }
 .RA-gool {
-  width: 477px;
+  width: 340px;
   height: 50px;
   border-radius: 10px;
   outline: none;
@@ -135,7 +229,7 @@
   display: flex;
   align-items: center;
   justify-content: center !important;
-  margin-left: 80px;
+
   flex-direction: column;
   width: max-content;
   padding-top: 105px;
@@ -145,7 +239,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 477px;
+  width: 340px;
   position: relative;
   margin-bottom: 15px;
 }
@@ -154,7 +248,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 477px;
+  width: 340px;
   position: relative;
   margin-bottom: 25px;
 }
@@ -164,7 +258,14 @@
   outline: none;
   border: 1px solid rgba(222, 221, 228, 1);
   border-radius: 10px;
-  /* position: relative; */
+
+}
+.RA-exit-icon{
+ color: #c2c2c2;
+ font-Size:25px;
+ position:absolute;
+ right:40px;
+ top:40px;
 }
 .RA-email-input::placeholder {
   font-weight: 400;
@@ -223,12 +324,16 @@ label {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .RA-KEEP {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
+/* .RA-KEEP{
+  margin-bottom: 10px;
+} */
 .RA-KEEP .RA-PARAGHRAPH {
   margin-left: 10px;
   margin-bottom: 0;
@@ -239,7 +344,53 @@ label {
 .ra-FORGER:hover {
   cursor: pointer;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1700px) {
+  .RA-part1-login::after {
+
+right: calc(100% - 440px);
+
+}
+}
+@media (max-width: 1600px) {
+  .RA-part1-login::after {
+
+right: calc(100% - 430px);
+
+}
+}
+@media (max-width: 1615px) {
+  .RA-part1-login::after {
+
+right: calc(100% - 416px);
+
+}
+}
+@media (max-width: 1500px) {
+  .RA-part1-login::after {
+
+right: calc(100% - 425px);
+
+}
+.RA-parent-LogInPopup {
+
+    justify-content: space-between;
+  
+}
+.RA-parent1-LogInPopup {
+
+    justify-content: space-between;
+  
+}
+}
+@media (max-width: 1400px) {
+  .RA-part1-login::after {
+
+right: calc(100% - 400px);
+
+}
+
+}
+@media (max-width: 1360px) {
   .RA-gool {
     width: 300px;
   }
@@ -259,8 +410,13 @@ label {
   .RA-login-form {
     width: 300px;
 
-    padding: 23px 0 23px 60px;
+    /* padding: 23px 0 23px 60px; */
   }
+    .RA-part1-login::after {
+
+right: calc(100% - 400px);
+
+}
 
   .RA-PARAGHRAPH {
     font-size: 13px;
@@ -279,7 +435,7 @@ label {
     font-size: 12px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .RA-gool {
     width: 250px;
   }
@@ -301,7 +457,7 @@ label {
   .RA-login-form {
     width: 300px;
 
-    padding: 23px 0 23px 60px;
+    /* padding: 23px 0 23px 60px; */
   }
   .RA-titel-login {
     width: 350px;
@@ -310,31 +466,44 @@ label {
   .RA-check-password {
     width: 100%;
   }
+  .RA-gool::placeholder {
+
+  font-size: 14px;
+
+}
+.RA-email-input::placeholder {
+
+  font-size: 14px;
+ 
+}
+    .RA-part1-login::after {
+
+right: calc(100% - 370px);
+
+}
 }
 @media (max-width: 992px) {
   .RA-gool {
-    width: 200px;
+    width: 250px;
   }
   .RA-email-input {
-    width: 220px;
+    width: 250px;
   }
   .RA-button-form {
-    width: 200px;
-    display: contents;
+    width: 250px;
+    /* display: contents; */
   }
   .RA-check-password {
     width: 100% !important;
   }
   .RA-JOIN1 {
-    width: 200px;
+    width: 250px;
   }
   .RA-JOIN {
-    width: 200px;
+    width: 250px;
   }
   .RA-login-form {
-    width: 200px;
-
-    padding: 23px 0 23px 0;
+    width: 280px;
   }
   .RA-titel-login {
     width: 350px;
@@ -350,6 +519,87 @@ label {
 
     font-size: 14px;
     padding-left: 51px;
+  }
+}
+@media (max-width: 840px) {
+  .RA-part1-login {
+    display: none;
+  }
+  .RA-parent-LogInPopup {
+    display: flex;
+    justify-content: center;
+
+  }
+  .RA-parent-LogInPopup {
+
+    height: 530px;
+  
+    
+  }
+  .RA-check-password {
+    width: 100%;
+    flex-direction: column;
+  }
+  .RA-parent-LogInPopup {
+    display: flex;
+    justify-content: center;
+
+  }
+  .RA-parent1-LogInPopup {
+    display: flex;
+    justify-content: center;
+
+  }
+  .ra-CONTANAIR {
+    width: 100%;
+  }
+  .RA-gool {
+    width: 100%;
+  }
+  .RA-email-input {
+    width: 100%;
+  }
+  .RA-button-form {
+    width: 100%;
+  }
+
+    .RA-KEEP{
+    margin-bottom: 10px;
+  }
+  .RA-PARAGHRAPH {
+    margin-bottom: 5px;
+  }
+  .RA-JOIN1 {
+    width: 100%;
+  }
+  .RA-JOIN {
+    width: 100%;
+  }
+  .RA-login-form {
+    width: 100%;
+    
+  }
+
+  .RA-gool::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 55px;
+  }
+  .RA-email-input::placeholder {
+    font-weight: 600;
+
+    font-size: 14px;
+    padding-left: 51px;
+  }
+  .RA-parent1-LogInPopup {
+
+    height: 635px;
+
+    
+  }
+  .RA-exit-icon{
+    top: 17px !important;
+    right: 20px !important;
   }
 }
 @media (max-width: 800px) {
@@ -383,12 +633,18 @@ label {
 }
 
 @media (max-width: 768px) {
-  .RA-part1-login {
+  /* .RA-part1-login {
     display: none;
-  }
+  } */
   .RA-parent-LogInPopup {
     display: flex;
-    padding: 0 !important;
+    justify-content: center;
+
+  }
+  .RA-parent1-LogInPopup {
+    display: flex;
+    justify-content: center;
+
   }
   .ra-CONTANAIR {
     width: 100%;
@@ -402,9 +658,9 @@ label {
   .RA-button-form {
     width: 100%;
   }
-  .RA-check-password {
-    width: 100%;
-    flex-direction: column;
+
+    .RA-KEEP{
+    margin-bottom: 10px;
   }
   .RA-PARAGHRAPH {
     margin-bottom: 5px;
@@ -417,7 +673,7 @@ label {
   }
   .RA-login-form {
     width: 100%;
-    display: contents;
+    
   }
 
   .RA-gool::placeholder {
@@ -431,6 +687,19 @@ label {
     font-size: 14px;
     padding-left: 51px;
   }
+
+}
+@media (max-width: 450px) {
+  .RA-parent-LogInPopup{
+    width: 90%;
+  }
+  .RA-parent1-LogInPopup{
+    width: 90%;
+  }
+  .RA-check-password{
+    align-items: flex-start;
+  }
+
 }
 @media (min-width: 350px) and (max-width: 567px) {
   .RA-part1-login {
@@ -438,12 +707,15 @@ label {
   }
   .RA-parent-LogInPopup {
     display: flex;
-    padding: 0 !important;
+  }
+  .RA-parent1-LogInPopup {
+    display: flex;
   }
   .ra-CONTANAIR {
     width: 100%;
 
   }
+
 
 
 .RA-button-form:hover{
@@ -493,4 +765,4 @@ label {
     font-size: 14px !important;
     padding-left: 65px;
   }
-}
+}}
