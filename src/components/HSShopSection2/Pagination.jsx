@@ -15,8 +15,8 @@ const Pagination = ( {pages ,currentPage , setcurrentPage}) => {
     <button className="HS-btn1"
 
              disabled = {currentPage === 1}
-            onClick={() => setcurrentPage (prev => prev -1)}>
-           <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
+             onClick={() => setcurrentPage (prev => prev -1)}>
+             <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
     </button><p>pages</p> 
      
       {generatedPages.map(page =>
