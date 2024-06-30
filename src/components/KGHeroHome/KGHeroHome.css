@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap !important;
-    padding-top: 191px;
+    padding-top: 131px;
 }
 .KG-Hero-PartLeft{
     display: flex;
@@ -54,15 +54,21 @@
     align-items: center;
     border:none ;
     text-indent: 20px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     font-family: Metropolis-Light ;
+    font-size: 16px;
 }
 .KG-Form input{
     width: 70%;
     height: 60px;
     text-indent: 20px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: none;
+}
+.KG-Form input::placeholder{
+    font-size: 16px;
 }
 .KG-Form button{
     background-color:var(--clr-sicon);
@@ -76,6 +82,7 @@
     border-radius: 10px;
     border: none;
     font-family: Inter ;
+    font-size: 16px ;
 }
 .KG-Form button:hover{
     transition: 0.5s;
@@ -84,6 +91,7 @@
 }
 .KG-Form button .KG-Search-Icon{
     margin-right: 5px;
+    font-size: 24px;
 }
 .KG-Hero-PartRight{
     position: relative;
@@ -159,6 +167,25 @@
 .KG-Image-cubs{
     width: 62%;
 }
+
+
+@media (max-width:1300px){
+
+    .KG-Form button{
+        font-size: 14px ;
+    }
+    .KG-Form input::placeholder{
+        font-size: 14px;
+    }
+    .KG-Form button .KG-Search-Icon{
+        
+        font-size: 20px;
+    }
+    .KG-Search-Select{
+
+        font-size: 14px;
+    }
+}
 @media(min-width:1201px) and (max-width:1300px){
     .KG-Hero-PartLeft h1{
         font-size: 50px;
@@ -207,8 +234,8 @@
 }
 @media(max-width:788px) and (min-width:567px){
     .KG-HeroHome{
-        padding-top: 100px;
-        padding-bottom: 100px;
+        /* padding-top: 100px; */
+        /* padding-bottom: 100px; */
         justify-content: center;
     }
     .KG-Hero-PartRight{
@@ -237,28 +264,43 @@
     .KG-Search-Select{
         width: 100%;
         height: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 16px;
     }
     .KG-Form input{
         width: 100%;
         margin-top: 10px;
         height: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
     .KG-Form button{
         width: 100%;
         top: 130px;
         height: 50px;
         right: 0;
+        font-size: 16px ;
     }
     .KG-Form{
         width: 100%;
         background-color: transparent;
     }
+
+    .KG-Form input::placeholder{
+        font-size: 16px;
+    }
+    .KG-Form button .KG-Search-Icon{
+        
+        font-size: 24px;
+    }
+
 }
 @media(max-width:566px){
-    .KG-HeroHome{
+    /* .KG-HeroHome{
     padding-top: 100px;
     padding-bottom: 100px;
-    }
+    } */
     .KG-Hero-PartRight{
         width: 90%;
         margin: auto;

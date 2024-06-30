@@ -3,7 +3,7 @@ export default function SectionBecomeApply() {
   return (
     <>
       <section className="BKH-section">
-        <div className="BKH-all-section">
+      
           {/* قسم الصورة  */}
           <div className="BKH-image">
             <img
@@ -55,7 +55,7 @@ export default function SectionBecomeApply() {
             {/*  قسم الثاني للنصوص والقائمة  */}
           </div>
           {/* قسم النصوص الكلي  */}
-        </div>
+      
       </section>
     </>
   );

@@ -16,6 +16,7 @@ export default function KGCardsBooks({ KGTitle }) {
     };
 
     const KGCardsBooks = [
+
         {
             id: 1,
             Image: './public/images/Shop/Shop-Section/Small-Image-1.svg',
@@ -53,6 +54,7 @@ export default function KGCardsBooks({ KGTitle }) {
             price: '39$'
         }
     ];
+
 
     const firstThreeBooks = KGCardsBooks.slice(0, 3); // مصفوفة لأول 
     const secondThreeBooks = KGCardsBooks.slice(3, 6); // مصفوفة الثانية
