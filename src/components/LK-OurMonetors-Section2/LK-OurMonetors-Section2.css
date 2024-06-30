@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.LK-OurMonetors-tabs{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.LK-OurMonitors-tabs-button1{
+    border: none;
+    background: none;
+    color: var(--clr-text);
+    width:max-content;
+    padding: 0 28px;
+    height: 60px;
+    font-family:Inter;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.LK-OurMonitors-tabs-button{
+    background-color: var( --clr-icon);
+    color: var(  --clr-primary);
+    box-shadow: 0px 15px 50px 0px #FF665233;
+    border-radius: 10px;
+    width:max-content;
+    padding: 0 28px;
+    height: 60px;
+    border: none;
+    font-family:Inter;
+    line-height: 20px;
+    font-weight: 500;
+}
+.LK-OurMonetors-sec2-teacher-CardF{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.LK-OurMonetors-cardson{
+   height: 384px;
+}
+.LK-OurMonetors-cardson-img{
+    width: 290px;
+    border-radius: 10px;
+}
+.LK-OurMonetors-cardson-h5{
+    padding-top: 10px;
+    font-family:Inter;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--clr-text);
+}
+.LK-OurMonetors-cardson-h6{
+    font-family:Inter;
+    line-height: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(  --clr-texthome);
+}
+.LK-OurMonetors-cardson-accodione{
+    transition: 0.5s all ease-in-out;
+}
+.LK-OurMonetors-cardson-accodione-on{
+   background-color: var(--clr-primary);
+   border-radius: 0 0 10px 10px;
+   box-shadow: 0px 20px 30px 0px #0000001A;
+   transition: 0.5s all ease-in-out;
+   height: 94px;
+
+}
+.LK-OurMonetors-cardson-accodione-on .LK-OurMonetors-cardson-h5{
+    color: var(--clr-icon) ;
+    padding:12px 0 0 15px;
+}
+.LK-OurMonetors-cardson-accodione-on .LK-OurMonetors-cardson-h6{
+    padding-left: 15px;
+}
+.LK-OurMonetors-cardson-onAcoordione-img{
+    width: 290px;
+}
+.LK-OurMonetors-cardson-accodioneO{
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.LK-OurMonetors-cardson-accodione-hidden{
+    width: 290px;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+}
+.LK-OurMonetors-cardson-accodione-show{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 15px;
+    gap: 5px;
+}
+.LK-OurMonetors-iconAngle{
+    transition: 0.5s all ease-in-out;
+    color: var(--clr-text);
+    padding-right: 9px;
+    cursor: pointer;
+}
+.LK-OurMonetors-iconAngle-rot{
+    color: var(--clr-text);
+    margin-right: 9px;
+    rotate: 180deg;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+.LK-OurMonetors-Accordion-par{
+    margin-bottom: 0px;
+    font-family:Inter;
+    line-height: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(  --clr-texthome);
+}
+.LK-OurMonetors-iconStar{
+    color: var(--clr-stars);
+}
+.LK-OurMonetors-Accordion-span{
+    color: var(  --clr-icon);
+    border-bottom: 1px solid var(  --clr-icon);
+}
+@media(min-width:1400px){
+    .LK-OurMonetors-cardson-img,.LK-OurMonetors-cardson-accodioneO,.LK-OurMonetors-cardson-onAcoordione-img,.LK-OurMonetors-cardson-accodione-hidden{
+        width: 290px;
+    }
+    .LK-OurMonitors-tabs-button1,.LK-OurMonitors-tabs-button{
+        padding: 0 30px;
+        height: 50px;
+    }
+}
+@media(max-width:1200px){
+    .LK-OurMonetors-sec2{
+        overflow: hidden;
+    }
+    .LK-OurMonitors-tabs-button1,.LK-OurMonitors-tabs-button{
+        padding: 0 25px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .LK-OurMonetors-tabs{
+        gap: 25px;
+        width: 150%;
+        padding: 40px 0 50px 0;
+    }
+    .LK-OurMonetors-sec2-teacher-CardF{
+        gap: 15px;
+    }
+    .LK-OurMonetors-cardson:nth-child(4), .LK-OurMonetors-cardson:nth-child(8), .LK-OurMonetors-cardson:nth-child(12){
+        display: none;
+    }
+
+}
+@media(max-width:768px){
+    .LK-OurMonetors-sec2{
+        overflow: hidden;
+    }
+    .LK-OurMonitors-tabs-button1,.LK-OurMonitors-tabs-button{
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        height: 40px;
+    }
+    .LK-OurMonetors-tabs{
+        gap: 15px;
+        width: 280%;
+        padding: 20px 0 30px 0;
+    }
+    .LK-OurMonetors-cardson:nth-child(5),.LK-OurMonetors-cardson:nth-child(6),.LK-OurMonetors-cardson:nth-child(7), .LK-OurMonetors-cardson:nth-child(8),.LK-OurMonetors-cardson:nth-child(9)
+    ,.LK-OurMonetors-cardson:nth-child(10), .LK-OurMonetors-cardson:nth-child(11),.LK-OurMonetors-cardson:nth-child(12){
+        display: none;
+    }
+    .LK-OurMonetors-cardson:nth-child(4){
+        display: block;
+    }
+    .LK-OurMonetors-sec2-teacher-CardF{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
