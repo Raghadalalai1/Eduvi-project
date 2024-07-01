@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './KGCourseHighSchool.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +7,11 @@ import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import KGCourseComponent from '../KGCourseComponent/KGCourseComponent'
 
 export default function KGCourseHighSchool({KGCourseTitle}) {
+    const [search, setSearch] = useState('');
+
+    const handleSearchChange = (event) => {
+      setSearch(event.target.value);
+    };
    
            return (
             <section className='RA-section2-courses'>
@@ -16,8 +21,9 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                     <input
                         type="search"
                         placeholder=" Serach Class, Course "
+                        onChange={handleSearchChange}
                     ></input>
-                    <button>
+                    <button >
                         Search
                         <FontAwesomeIcon icon={faMagnifyingGlass} className='KG-Icon-Glass' />
                     </button>
@@ -27,7 +33,7 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                     <option>Sort by: oldest</option>
                     </select>
                 </form>
-                <KGCourseComponent />
+                <KGCourseComponent onSearchChange={search} />
                 <div className="KG-side">
                     <div className="HS-sidebar">
                         <button>
