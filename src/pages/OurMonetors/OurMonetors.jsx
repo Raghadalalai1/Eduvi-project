@@ -7,26 +7,26 @@ import imageourMonetors from '../../../public/images/OurMentor/OurMentor-Hero/Hr
 export default function OurMonetors() {
   return (
     <>
-    <Navbarr />
-   <div className='main'>
-   <PropsHero
-        Home="Home" 
-        Shop="Our Monetors"
-        Textclass="BKH-text-h4-page-hero"
-        H1="Eduvi has the qualified mentor"
-        Textmainclass="BKH-text-h1-page-OurMonetors"
-        image= {imageourMonetors}
-        imageclass="BKH-image-hero-page-OurMonetors"
-      />
-     <Section />
-     <Footer />
-     
-    
-    
-    
-       
-   </div>
+      <Navbarr />
+      <div className='main'>
+        <PropsHero
+          Home="Home"
+          Shop="Our Monetors"
+          Textclass="BKH-text-h4-page-hero"
+          H1="Eduvi has the qualified mentor"
+          Textmainclass="BKH-text-h1-page-OurMonetors"
+          image={imageourMonetors}
+          imageclass="BKH-image-hero-page-OurMonetors"
+        />
+        <Section />
+        <Footer />
 
-   </>
+
+
+
+
+      </div>
+
+    </>
   )
 }

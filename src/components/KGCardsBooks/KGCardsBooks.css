@@ -1,23 +1,24 @@
-
-.KG-Cards{
+.KG-Cards {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 405px;
+    width: 400px;
     background-color: var(--clr-bg);
     padding-top: 40px;
     padding-bottom: 20px;
 }
-.KG-Card-Book{
-    display:flex;
+
+.KG-Card-Book {
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 15px;
-   
+
 }
-.KG-Card-Title{
+
+.KG-Card-Title {
     width: max-content;
     font-size: 30px;
     font-weight: 600px;
@@ -25,16 +26,18 @@
     color: var(--clr-text);
     font-family: Metropolis-SemiBold;
 }
-.KG-Card-Info-Book{
+
+.KG-Card-Info-Book {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--clr-primary);
     padding: 22px 56px 22px 25px;
     border-radius: 10px;
-     width: 100%;
+    width: 100%;
 }
-.KG-Card-Info-Book img{
+
+.KG-Card-Info-Book img {
     /* width: 100%; */
     width: 75px;
     height: 90px;
@@ -43,36 +46,41 @@
     margin-right: 15px;
 
 }
-.KG-Card-Info-Book .stars{
+
+.KG-Card-Info-Book .stars {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.KG-Star-color{
-    color: var(--clr-stars) ;
+
+.KG-Star-color {
+    color: var(--clr-stars);
     font-size: 16px;
 }
-.KG-Text-Pargraph{
+
+.KG-Text-Pargraph {
     /* width: 100%; */
-    font-family:Metropolis-Bold;
+    font-family: Metropolis-Bold;
     font-weight: 600px;
     font-size: 18px;
     line-height: 20px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     margin-top: 10px;
     width: 228px;
 }
-.KG-Price{
-    font-family:Metropolis-SemiBold ;
+
+.KG-Price {
+    font-family: Metropolis-SemiBold;
     font-weight: 600px;
     font-size: 18px;
     line-height: 20px;
     color: var(--clr-icon);
     margin-bottom: 0;
 }
-.KG-SeeMore{
+
+.KG-SeeMore {
     color: var(--clr-sicon);
-    font-family:Inter !important;
+    font-family: Inter !important;
     font-weight: 500px;
     font-size: 20px;
     line-height: 20px;
@@ -158,24 +166,28 @@ justify-content: space-evenly;
   } */
 
 
-@media(max-width:788px) and (min-width:567px){
-.KG-Card-Info-Book{
-    padding: 22px 20px 22px 25px !important;
-}
-.KG-Card-Title{
-    font-size: 24px;
-    line-height: 24px;
-}
-}
-@media(max-width:566px){
-    .KG-Card-Info-Book{
-        padding: 10px  !important;
+@media(max-width:788px) and (min-width:567px) {
+    .KG-Card-Info-Book {
+        padding: 22px 20px 22px 25px !important;
     }
-    .KG-Card-Title{
+
+    .KG-Card-Title {
         font-size: 24px;
         line-height: 24px;
     }
-    .KG-Text-Pargraph{
+}
+
+@media(max-width:566px) {
+    .KG-Card-Info-Book {
+        padding: 10px !important;
+    }
+
+    .KG-Card-Title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .KG-Text-Pargraph {
         width: 210px;
 
     }

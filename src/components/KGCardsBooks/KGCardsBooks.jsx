@@ -70,6 +70,7 @@ export default function KGCardsBooks({ KGTitle }) {
                                 <div className='KG-Stars'>
                                     {[...Array(5)].map((_, index) => (
                                         <FontAwesomeIcon
+                                            // style={{color:'#5D5A6F'}}
                                             key={index}
                                             icon={faStar}
                                             className={index < ratings[book.id] ? 'KG-Star-color' : ''}

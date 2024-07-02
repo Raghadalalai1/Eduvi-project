@@ -8,26 +8,26 @@ import imageshop from '../../../public/images/Shop/Shop-Hero/bookcase.png'
 export default function Shope() {
   return (
     <>
-    <Navbarr />
-   <div className='main'>
-   <PropsHero 
-      Home="Home"
-      Shop="Shop"
-      Textclass="BKH-text-h4-page-hero"
-      H1="Eduvi Online Book Shop"
-      Textmainclass="BKH-text-h1-page-shop"
-      image= {imageshop}
-      imageclass="BKH-image-hero-page-shop "
-      />
-     <Section2Shop />
-     <Section />
-   
-     
-     <Footer />
+      <Navbarr />
+      <div className='main'>
+        <PropsHero
+          Home="Home"
+          Shop="Shop"
+          Textclass="BKH-text-h4-page-hero"
+          H1="Eduvi Online Book Shop"
+          Textmainclass="BKH-text-h1-page-shop"
+          image={imageshop}
+          imageclass="BKH-image-hero-page-shop "
+        />
+        <Section2Shop />
+        <Section />
 
-       
-   </div>
 
-   </>
+        <Footer />
+
+
+      </div>
+
+    </>
   )
 }

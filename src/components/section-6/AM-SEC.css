@@ -163,24 +163,25 @@
         height: 50px;
     }
 }
+
 @media (max-width:375px) {
 
 
     .AM-container2 {
-     
+
         align-items: start;
-     
+
     }
 
     .AM-container2 h1 {
- 
+
         text-align: left;
     }
 
     .AM-container2 p {
-  
+
         text-align: left;
     }
 
- 
+
 }

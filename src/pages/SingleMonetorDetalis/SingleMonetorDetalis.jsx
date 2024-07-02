@@ -6,14 +6,14 @@ import Section from '../../components/Section/Section6'
 export default function SingleMonetorDetalis() {
   return (
     <>
-    <Navbarr />
-   <div className='main'>
-     <Section />
-     <Footer />
+      <Navbarr />
+      <div className='main'>
+        <Section />
+        <Footer />
 
-       
-   </div>
 
-   </>
+      </div>
+
+    </>
   )
 }
