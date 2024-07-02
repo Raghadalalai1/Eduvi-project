@@ -20,7 +20,7 @@
 .HS-Button1 {
   width: 131px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -33,7 +33,7 @@
 .HS-Button2 {
   width: 152px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -46,8 +46,8 @@
 .HS-Button3 {
   width: 152px;
   height: 60px;
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
+  background-color: var(--clr-icon);
+  color: var(--clr-primary);
   font-size: 16px;
   font-weight: 500;
   font-family: Inter;
@@ -59,7 +59,7 @@
 .HS-Button4 {
   width: 119px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -76,6 +76,12 @@
   transition: 0.5s;
   color: var(--clr-primary);
   background-color: var(--clr-icon);
+  color: var(--clr-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  border-radius: 10px;
+  border: none;
 }
 
 .HS-Form {
