@@ -373,5 +373,7 @@ useEffect (()=>{
         </div>
 
     </div>
+    </div>
   );
+  
 }
