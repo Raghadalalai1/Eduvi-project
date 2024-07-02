@@ -19,7 +19,7 @@ export default function SignUp() {
     </div>,
   ];
 
-  const last = [
+  const last1 = [
     <p>
       Alreay have account?<span className="HS-sign-Span">Sign in</span>{" "}
     </p>,
@@ -31,8 +31,8 @@ export default function SignUp() {
     </div>,
   ];
   return (
-    <div className="HS-signUp ">
-      <LogInPopup name={name} agreed={agreed} last={last} />
+    <div >
+      <LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} />
     </div>
   );
 }

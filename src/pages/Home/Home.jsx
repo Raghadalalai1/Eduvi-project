@@ -29,7 +29,6 @@ export default function Home() {
 
         <Registation />
         <AMSEC />
-        {/* <SECTION6 /> */}
 
 
         <Section />

@@ -16,25 +16,25 @@ import RASimilarCourses from '../../components/RASimilarCourses/RASimilarCourses
 export default function CoursesDetalis() {
   return (
     <>
-    <Navbarr />
-   <div className='main'>
+      <Navbarr />
+      <div className='main'>
 
 
 
-    <KGCourseDetailsPlayList />
-    <AZcompobn />
-    
-
-    <RASimilarCourses/>
+        <KGCourseDetailsPlayList />
+        <AZcompobn />
 
 
+        <RASimilarCourses />
 
-     <Section />
-     <Footer />
 
-       
-   </div>
 
-   </>
+        <Section />
+        <Footer />
+
+
+      </div>
+
+    </>
   )
 }

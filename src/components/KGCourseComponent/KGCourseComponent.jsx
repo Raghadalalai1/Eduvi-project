@@ -145,7 +145,7 @@ export default function KGCourseComponent({ onSearchChange }) {
                    })}
                    </div>
             </div>
-    </>
+        </>
 
-  )
+    )
 }

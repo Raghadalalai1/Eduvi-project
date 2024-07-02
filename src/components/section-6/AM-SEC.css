@@ -11,7 +11,7 @@
 .AM-content1 {
     display: flex;
     margin-top: 150px;
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
 
     align-items: center;
 
@@ -80,7 +80,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 100px;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         height: max-content;
     }
 
@@ -122,7 +122,7 @@
         flex-direction: column;
         margin-top: 70px;
         height: max-content;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
 
     }
 
@@ -163,24 +163,25 @@
         height: 50px;
     }
 }
+
 @media (max-width:375px) {
 
 
     .AM-container2 {
-     
+
         align-items: start;
-     
+
     }
 
     .AM-container2 h1 {
- 
+
         text-align: left;
     }
 
     .AM-container2 p {
-  
+
         text-align: left;
     }
 
- 
+
 }

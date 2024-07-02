@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './KGCourseHighSchool.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import KGCourseComponent from '../KGCourseComponent/KGCourseComponent'
 
 export default function KGCourseHighSchool({KGCourseTitle}) {
@@ -27,8 +27,8 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                         Search
                         <FontAwesomeIcon icon={faMagnifyingGlass} className='KG-Icon-Glass' />
                     </button>
-                    </div>
-                    <select name="School" className="KG-Course-Search-Select">
+                </div>
+                <select name="School" className="KG-Course-Search-Select">
                     <option>Sort by:Latest </option>
                     <option>Sort by: oldest</option>
                     </select>

@@ -358,6 +358,20 @@ useEffect (()=>{
       
       <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} />
 
+
+      <div className="HS-side">
+        <div className="HS-sidebar">
+          <button>
+            <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
+          </button>
+          <p>pages</p>
+          <button className="HS-back">5</button>
+          <p>of 80</p>
+          <button className="HS-background">
+            <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
+          </button>
+        </div>
+
     </div>
   );
 }

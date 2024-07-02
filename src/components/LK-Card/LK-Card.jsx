@@ -4,20 +4,21 @@ import React from 'react'
 import './LK-Card.css'
 
 
-export default function LKCards({data1 ,pages}) {
+export default function LKCards({ data1, pages }) {
   return (
     <>
-   
-    <div className={pages?'LK-COURSES':'LK-CARDS'}>
-      {data1.map(item =>{
-        return(<div className={pages? 'LK-corses-son': 'LK-Card-son '} key={item.id}>  
-            <img className='LK-card-img' src={item.img} /> 
+
+      <div className={pages ? 'LK-COURSES' : 'LK-CARDS'}>
+        {data1.map(item => {
+          return (<div className={pages ? 'LK-corses-son' : 'LK-Card-son '} key={item.id}>
+            <img className='LK-card-img' src={item.img} />
             <h4 className='LK-card-h4'>{item.h4}</h4>
             <p className='LK-card-par'>{item.par}</p>
             <button className='LK-card-Button'>{item.button}</button>
-          
-          
-        </div>)})}
+
+
+          </div>)
+        })}
 
 
         {/* {!lkcards && datas.map(item =>{
@@ -40,15 +41,15 @@ export default function LKCards({data1 ,pages}) {
           
         </div>)})} */}
 
-    </div>
+      </div>
 
-  
-   
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     </>
   )
 }

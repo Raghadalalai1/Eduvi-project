@@ -1,11 +1,18 @@
-/* .RA-S2-Shop{
+.RA-section2shop {
     width: 100%;
-    display: flex !important;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
-} */
-/* @media(max-width:375px){
-    .RA-S2-Shop{
-        flex-wrap: wrap;
+@media(max-width:1060px) {
+    .RA-section2shop {
+        gap: 30px !important;
     }
-} */
+}
+
+@media(max-width:992px) {
+    .RA-section2shop {
+        flex-wrap: wrap-reverse !important;
+    }
+}

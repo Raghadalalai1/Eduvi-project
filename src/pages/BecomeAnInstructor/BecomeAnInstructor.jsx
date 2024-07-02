@@ -12,34 +12,36 @@ export default function BecomeAnInstructor() {
     <>
       <Navbarr />
       <div className='main'>
-      <PropsHero 
-      Home="Home"
-      Shop="Become An Instructor"
-      Textclass="BKH-text-h4-page-hero"
-      H1="Join Eduvi as a Mentor"
-      Textmainclass="BKH-text-h1-page-BecomeAnInstructor"
-      image= {imagebecomeaninstructor}
-      showImage2={true}
-      image2={image3}
-      imageclass="BKH-image-hero-page-BecomeAnInstructor"
-      imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
-      imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
+        <PropsHero
+          Home="Home"
+          Shop="Become An Instructor"
+          Textclass="BKH-text-h4-page-hero"
+          H1="Join Eduvi as a Mentor"
+          Textmainclass="BKH-text-h1-page-BecomeAnInstructor"
+          image={imagebecomeaninstructor}
+          showImage2={true}
+          image2={image3}
+          imageclass="BKH-image-hero-page-BecomeAnInstructor"
+          imageclasstwo="BKH-calssimage-hero-page-BecomeAnInstructor"
+          imageclassthree="BKH-imageplus-hero-page-BecomeAnInstructor"
 
 
-      />
-            <div className='section2'> <SectionBecomeApply /></div>
-  <HSInstructor/>
-       <Section />
+
+        />
+        <div className='section2'> <SectionBecomeApply /></div>
+        <HSInstructor />
+        <Section />
+
 
         <Footer />
-  
-
-       </div>
-
-       
 
 
-     
+      </div>
+
+
+
+
+
     </>
 
   )
