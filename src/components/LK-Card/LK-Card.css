@@ -33,7 +33,7 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--clr-primary);
-
+    box-shadow: 0px 50px 80px 0px #0000000D;
     margin-bottom: 40px;
     border-radius: 15px;
     border: 1px solid var(--clr-primary);
@@ -53,6 +53,7 @@
 
 .LK-card-img {
     margin-top: 30px;
+    width: 50px;
 }
 
 .LK-card-h4 {
@@ -94,41 +95,10 @@
     background-color: var(--clr-sicon);
 }
 
-@media (min-width:1901px) {
-    .LK-CARDS {
-
-        justify-content: space-evenly;
-        gap: 91px;
-    }
-
-
-}
-
-@media (max-width:1898px) {
-    .LK-CARDS {
-        justify-content: space-between !important;
-
-    }
-
-
-}
-
-@media (min-width:1441px) and (max-width:1532px) {
-    .LK-CARDS {
-
-
-        gap: 60px !important;
-    }
-
-
-}
-
-
-
 @media (min-width:1441px) and (max-width:1900px) {
     .LK-CARDS {
-        justify-content: space-evenly;
-        gap: 91px;
+        justify-content:center;
+        gap: 35px;
     }
 
     .LK-home-section3-son3 {
@@ -144,17 +114,7 @@
     }
 
 }
-
-/* @media (max-width:1920px){
-    .LK-CARDS {
-    
-        justify-content: center;
-        gap: 22px;
-    }
-
-    
-} */
-@media(min-width:1201px) and (max-width:1360px) {
+@media(min-width:1201px) and (max-width:1360px){
     .LK-CARDS {
         gap: 30px;
     }
@@ -195,7 +155,7 @@
 
 @media(max-width:992px) {
     .LK-CARDS {
-        justify-content: center !important;
+        justify-content: center;
         column-gap: 30px;
         row-gap: 28px;
 
@@ -216,19 +176,9 @@
     .LK-corses-son:nth-child(12) {
         display: none !important;
     }
-
-}
-
-@media(max-width:991px) {
-    .LK-COURSES {
-
-        justify-content: center;
-
     }
-}
-
-@media(max-width:980px) {
-    .LK-Card-son:nth-child(9) {
+@media(max-width:980px){
+    .LK-Card-son:nth-child(9){
         display: none;
     }
 }
@@ -258,5 +208,6 @@
 
     .LK-corses-son {
         margin-bottom: 15px;
+    }
     }
 }
