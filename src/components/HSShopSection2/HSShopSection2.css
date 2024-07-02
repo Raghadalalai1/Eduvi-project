@@ -14,7 +14,7 @@
 .HS-Button1 {
   width: 131px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -22,10 +22,21 @@
   border-radius: 10px;
   border: none;
 }
-.HS-Button2 {
+.HS-Button1-1 {
+  width: 131px;
+  height: 60px;
+  background-color: var(--clr-icon);
+  color: var(--clr-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  border-radius: 10px;
+  border: none;
+}
+.HS-Button2 ,.HS-Button3  {
   width: 152px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -33,21 +44,23 @@
   border-radius: 10px;
   border: none;
 }
-.HS-Button3 {
+
+.HS-Button2-2 ,.HS-Button3-3  {
   width: 152px;
   height: 60px;
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
+  background-color: var(--clr-icon);
+  color: var(--clr-primary);
   font-size: 16px;
   font-weight: 500;
   font-family: Inter;
   border-radius: 10px;
   border: none;
 }
+
 .HS-Button4 {
   width: 119px;
   height: 60px;
-  background-color: var(--clr-primary);
+  background-color: none;
   color: var(--clr-text);
   font-size: 16px;
   font-weight: 500;
@@ -55,14 +68,19 @@
   border-radius: 10px;
   border: none;
 }
-.HS-Button1:hover,
-.HS-Button2:hover,
-.HS-Button3:hover,
-.HS-Button4:hover {
-  transition: 0.5s;
-  color: var(--clr-primary);
+.HS-Button4-4 {
+  width: 119px;
+  height: 60px;
   background-color: var(--clr-icon);
+  color: var(--clr-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  border-radius: 10px;
+  border: none;
 }
+
+
 .HS-Form {
   padding-top: 30px;
   width: 840px;
@@ -84,7 +102,7 @@
   position: relative;
   font-family: Metropolis-Light;
 }
-.HS-Form button {
+.HS-Form .HS-buttonForm {
   background-color: var(--clr-sicon);
   color: var(--clr-primary);
   position: absolute;
@@ -547,14 +565,7 @@
   border-radius: 10px;
   border: none;
 }
-.HS-Button1:hover,
-.HS-Button2:hover,
-.HS-Button3:hover,
-.HS-Button4:hover {
-  transition: 0.5s;
-  color: var(--clr-primary);
-  background-color: var(--clr-icon);
-}
+
 .HS-Form {
   padding-top: 30px;
   width: 840px;

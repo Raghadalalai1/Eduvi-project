@@ -5,7 +5,7 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./HSShopSection2.css";
 import Pagination from "./Pagination.jsx";
 
@@ -17,7 +17,64 @@ export default function HSShopSection2() {
   const [search, setSearch] = useState("");
  // const [isSearching, setIsSearching] = useState(false);
 
-  
+ // buttun
+
+ const [HSColor1,setLKColor1] =useState(false);
+ const [HSColor2,setLKColor2] =useState(true);
+ const [HSColor3,setLKColor3] =useState(true);
+ const [HSColor4,setLKColor4] =useState(true);
+
+
+ function HSchangcolor1() {
+  setLKColor1(!HSColor1)
+}
+function HSchangcolor2() {
+  setLKColor2(!HSColor2)
+}
+function HSchangcolor3() {
+  setLKColor3(!HSColor3)
+}
+function HSchangcolor4() {
+  setLKColor4(!HSColor4)
+}
+
+useEffect(()=>{
+  if(HSColor1==false){
+    setLKColor2(true)
+    setLKColor3(true)
+    setLKColor4(true)
+  }
+},[HSColor1])
+
+useEffect (()=>{
+    if(HSColor2==false){
+      setLKColor1(true)
+      setLKColor3(true)
+      setLKColor4(true)
+
+    }
+  },[HSColor2])
+
+  useEffect (()=>{
+    if(HSColor3==false){
+      setLKColor1(true)
+      setLKColor2(true)
+      setLKColor4(true)
+    }
+  },[HSColor3])
+
+  useEffect (()=>{
+    if(HSColor4==false){
+      setLKColor1(true)
+      setLKColor2(true)
+      setLKColor3(true)
+    }
+  },[HSColor4])
+
+
+
+
+
 
   const HSCardsBooks = [
     {
@@ -250,10 +307,10 @@ export default function HSShopSection2() {
     
     <div className="HS-LeftSection">
       <div className="HS-LeftSection-Button">
-        <button className="HS-Button1">All Book</button>
-        <button className="HS-Button2">Kindergarten</button>
-        <button className="HS-Button3">High School</button>
-        <button className="HS-Button4">College</button>
+        <button onClick={HSchangcolor1} className={HSColor1 ? 'HS-Button1' : 'HS-Button1-1'}>All Book</button>
+        <button onClick={HSchangcolor2} className={HSColor2 ? 'HS-Button2' : 'HS-Button2-2'}>Kindergarten</button>
+        <button onClick={HSchangcolor3} className={HSColor3 ? 'HS-Button3' : 'HS-Button3-3'}>High School</button>
+        <button onClick={HSchangcolor4} className={HSColor4? 'HS-Button4' : 'HS-Button4-4'}>College</button>
       </div>
 
       <form className="HS-Form">
