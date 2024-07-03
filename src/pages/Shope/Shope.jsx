@@ -6,6 +6,8 @@ import Section from '../../components/Section/Section6'
 import PropsHero from '../../components/PropsHero/PropsHero'
 import imageshop from '../../../public/images/Shop/Shop-Hero/bookcase.png'
 export default function Shope() {
+
+  
   return (
     <>
       <Navbarr />

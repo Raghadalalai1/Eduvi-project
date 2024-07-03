@@ -46,8 +46,8 @@
 .HS-Button3 {
   width: 152px;
   height: 60px;
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
+  background-color: var(--clr-icon);
+  color: var(--clr-primary);
   font-size: 16px;
   font-weight: 500;
   font-family: Inter;
@@ -69,14 +69,20 @@
   padding: 0px 10px;
 }
 
-.HS-Button1:hover,
+/* .HS-Button1:hover,
 .HS-Button2:hover,
 .HS-Button3:hover,
 .HS-Button4:hover {
   transition: 0.5s;
   color: var(--clr-primary);
   background-color: var(--clr-icon);
-}
+  color: var(--clr-primary);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  border-radius: 10px;
+  border: none;
+} */
 
 .HS-Form {
   padding-top: 30px;
