@@ -27,6 +27,7 @@ import homeCardImg21 from './../../../public/images/Home/Home-section4/ball-21.j
 import homeCardImg22 from './../../../public/images/Home/Home-section4/ball-22.jfif'
 import homeCardImg23 from './../../../public/images/Home/Home-section4/ball-23.jfif'
 import homeCardImg24 from './../../../public/images/Home/Home-section4/ball-24.jfif'
+import { Link } from 'react-router-dom'
 export default function LKHomeSection3() {
 
 
@@ -47,7 +48,11 @@ export default function LKHomeSection3() {
     {id:'5',img:homeCardImg13,h4:"Standard Thirten",par:"Standard 13 Learning Resources. Learning Resources ensure that the school has the...",button:"Class Details"},
     {id:'6',img:homeCardImg14,h4:"Standard Fourten",par:"Standard 14 requires an organisation to have a system to resolve complaints...",button:"Class Details"}
     ,{id:'7',img:homeCardImg15,h4:"Standard Fiveten",par:"Standard 15 Blood Management mandates that leaders of health service organisations...",button:"Class Details"},
-    {id:'8',img:homeCardImg16,h4:"Standard Sixten",par:"Standard 16 Course from NCERT Solutions help students to understand...",button:"Class Details"}];
+    {id:'8',img:homeCardImg16,h4:"Standard Sixten",par:"Standard 16 Course from NCERT Solutions help students to understand...",button:"Class Details"},
+    {id:'9',img:homeCardImg16,h4:"Standard Sixten",par:"Standard 16 Course from NCERT Solutions help students to understand...",button:"Class Details"},
+  
+  
+  ];
 
   
     let dataTH=[{id:'1',img:homeCardImg17,h4:"Standard Seventeen",par:"Standard 17 is a foundation Standard that reflects 7 important concepts...",button:"Class Details"}
@@ -57,7 +62,11 @@ export default function LKHomeSection3() {
       {id:'5',img:homeCardImg21,h4:"Standard Twenty-1",par:"Standard 21 Learning Resources. Learning Resources ensure that the school has the...",button:"Class Details"},
       {id:'6',img:homeCardImg22,h4:"Standard Twenty-2",par:"Standard 22 requires an organisation to have a system to resolve complaints...",button:"Class Details"}
       ,{id:'7',img:homeCardImg23,h4:"Standard Twenty-3",par:"Standard 23 Blood Management mandates that leaders of health service organisations...",button:"Class Details"},
-      {id:'8',img:homeCardImg24,h4:"Standard Twenty-4",par:"Standard 24 Course from NCERT Solutions help students to understand...",button:"Class Details"}];
+      {id:'8',img:homeCardImg24,h4:"Standard Twenty-4",par:"Standard 24 Course from NCERT Solutions help students to understand...",button:"Class Details"},
+      {id:'9',img:homeCardImg24,h4:"Standard Twenty-4",par:"Standard 24 Course from NCERT Solutions help students to understand...",button:"Class Details"},
+    
+    
+    ];
   
 
 

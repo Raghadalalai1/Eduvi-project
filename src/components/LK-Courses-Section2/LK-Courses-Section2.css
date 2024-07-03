@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow-x: scroll !important;
+    /* overflow-x: scroll !important; */
     overflow-y: hidden;
     padding-bottom: 15px;
     white-space: nowrap;
@@ -85,6 +85,12 @@
 @media(max-width:1320px){
     .LK-courses-sec3-son1-Buttons{
         gap: 20px;
+    }
+    .LK-courses-sec3-son1-Buttons {
+
+        overflow-x: scroll !important;
+   
+       
     }
 }
 @media(max-width:1200px){

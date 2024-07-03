@@ -14,7 +14,7 @@
   gap: 22px;
   margin: auto;
   white-space: nowrap;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .HS-Button1 {
@@ -103,6 +103,7 @@
   font-size: 16px;
   position: relative;
   font-family: Metropolis-Light;
+  outline: none;
 }
 
 .HS-Form button {
@@ -135,6 +136,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 
 .HS-Search-Select {
@@ -154,7 +156,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 25px; */
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -268,7 +270,7 @@
   }
 
   .HS-input {
-    width: 325px;
+    width: 347px;
   }
 
   /* .HS-Search-Select  {
@@ -626,6 +628,13 @@
   .HS-Cards-Books {
     justify-content: center;
   }
+}
+@media(Max-width:468px) {
+
+ .HS-LeftSection-Button {
+
+  overflow: scroll;
+}
 }
 
 @media(Max-width:370px) {

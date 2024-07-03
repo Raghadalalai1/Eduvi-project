@@ -184,6 +184,9 @@
         align-items: start !important;
 
     }
+    .KG-side{
+        display: none;
+    }
 
 }
 

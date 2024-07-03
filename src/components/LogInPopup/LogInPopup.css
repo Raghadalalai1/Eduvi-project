@@ -232,7 +232,9 @@
   content: "";
   width: 20px;
   height: 1px;
-  color: rgb(18, 0, 119);
+  background-color: rgb(18, 0, 119);
+  top: 11px;
+    right: 0px;
 }
 
 .RA-signin::after {
@@ -240,7 +242,9 @@
   content: "";
   width: 20px;
   height: 1px;
-  color: rgb(18, 0, 119);
+  background-color: rgb(18, 0, 119);
+  top: 11px;
+    left: 0px;
 }
 
 .RA-login-form {
@@ -288,6 +292,7 @@
   position: absolute;
   right: 40px;
   top: 40px;
+  cursor: pointer;
 }
 
 .RA-email-input::placeholder {

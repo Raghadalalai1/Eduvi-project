@@ -13,7 +13,7 @@ import teacher9 from './../../../public/images/OurMentor/OurMentor-Section(1)/Im
 import teacher10 from './../../../public/images/OurMentor/OurMentor-Section(1)/Image(10).png';
 import teacher11 from './../../../public/images/OurMentor/OurMentor-Section(1)/Image(11).png';
 import teacher12 from './../../../public/images/OurMentor/OurMentor-Section(1)/Image(12).png';
-import { faAngleDown, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faChevronLeft, faChevronRight, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
@@ -143,6 +143,22 @@ useEffect(() => {
                             </div>
                         )
                     })}
+
+                    
+      <div className="HS-side">
+        <div className="HS-sidebar">
+          <button>
+            <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
+          </button>
+          <p>pages</p>
+          <button className="HS-back">5</button>
+          <p>of 80</p>
+          <button className="HS-background">
+            <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
+          </button>
+        </div>
+
+      </div>
                 </div>
             </section>
         </>
