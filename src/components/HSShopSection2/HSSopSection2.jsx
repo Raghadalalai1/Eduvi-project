@@ -174,7 +174,7 @@ export default function HSShopSection2() {
       image: "./images/Shop/Shop-Section/book-5.svg",
       text: "The Three Musketeers13",
       price: "$40.00",
-      stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      stars: < FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
     },
 
     {

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import img from "../../../public/images/SignUp/Outline.svg";
 import icon from "../../../public/images/LogIn/checkbox.svg";
 import LogInPopup from '../LogInPopup/LogInPopup';
+import { Link } from 'react-router-dom';
 export default function Navbarr() {
   const [showPopUp, setshowPopUp] = useState(false)
   const [showPopUp1, setshowPopUp1] = useState(false)
@@ -78,7 +79,7 @@ export default function Navbarr() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto KG-Links ">
-          <Nav.Link href="/shope" className='ps-0'>shop</Nav.Link>
+          <Link to={'/shope'} className='ps-0  RA-Link' >shop</Link>
           <NavDropdown title="For Kindergarten" id="collapsible-nav-dropdown">
             <NavDropdown.Item href="#">option1</NavDropdown.Item>
             <NavDropdown.Item href="#">option2</NavDropdown.Item>
@@ -95,8 +96,10 @@ export default function Navbarr() {
             <NavDropdown.Item href="#">option3</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Courses" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
-            <NavDropdown.Item href="/CoursesDetalis">Courses Detalis</NavDropdown.Item>
+          <Link to={'/courses'} className='ps-0 RA-linkitem'>Courses</Link>
+          <Link to={'/CoursesDetalis'} className='ps-0 RA-linkitem'>Courses Detalis</Link>
+            {/* <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
+            <NavDropdown.Item href="/CoursesDetalis">Courses Detalis</NavDropdown.Item> */}
 
           </NavDropdown>
           <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering'>
