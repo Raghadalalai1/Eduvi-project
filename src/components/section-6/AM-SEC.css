@@ -73,6 +73,9 @@
     border: none;
     border-radius: 10px;
 }
+.RA-APLLAY{
+    margin: 0px 10px;
+}
 
 @media (max-width:1024px) {
     .AM-content1 {
@@ -162,6 +165,9 @@
         width: 176px;
         height: 50px;
     }
+    .RA-APLLAY{
+        margin: 10px 10px;
+    }
 }
 
 @media (max-width:375px) {
@@ -171,6 +177,9 @@
 
         align-items: start;
 
+    }
+    .RA-APLLAY{
+        margin: 10px 0px;
     }
 
     .AM-container2 h1 {

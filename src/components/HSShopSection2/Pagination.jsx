@@ -21,7 +21,7 @@ const Pagination = ( {pages ,currentPage , setcurrentPage}) => {
      
       {generatedPages.map(page =>
            <div onClick={() =>
-                  setcurrentPage(page)} className={currentPage === page? "HS-page active " : "HS-page"}
+                  setcurrentPage(page)} className={currentPage === page? "HS-page active1 " : "HS-page"}
                   key={page}>
                  {page}
             </div>  )}

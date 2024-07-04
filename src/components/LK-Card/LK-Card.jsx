@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import './LK-Card.css'
+import { Link } from 'react-router-dom'
 
 
 export default function LKCards({ data1, pages }) {
@@ -14,7 +15,8 @@ export default function LKCards({ data1, pages }) {
             <img className='LK-card-img' src={item.img} />
             <h4 className='LK-card-h4'>{item.h4}</h4>
             <p className='LK-card-par'>{item.par}</p>
-            <button className='LK-card-Button'>{item.button}</button>
+            <Link to={'/CoursesDetalis'}>  <button className='LK-card-Button'>{item.button}</button></Link>
+           
 
 
           </div>)

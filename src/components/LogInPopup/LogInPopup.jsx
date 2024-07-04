@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope, faEye, faLock } from '@fortawesome/free-regular-svg-icons';
 import { faEnvelope, faEye, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
 import { faLock, faXmark } from '@fortawesome/free-solid-svg-icons';
+import img55554 from "../../../public/images/Home/Home-Footer/Logo.svg";
+import img77 from "../../../public/images/LogIn/login.svg";
 export default function LogInPopup({ name, last, agreed, bool1, last1, showPopUp1, setshowPopUp1, setshowPopUp, showPopUp }) {
 
     function HandleShow() {
@@ -32,22 +34,22 @@ export default function LogInPopup({ name, last, agreed, bool1, last1, showPopUp
             <div className={x ? 'RA-parent-LogInPopup' : 'RA-parent1-LogInPopup'} >
                 <FontAwesomeIcon icon={faXmark} onClick={HandleShow} className='RA-exit-icon' />
                 <div className='RA-part1-login'>
-                    <img src="./images/Home/Home-Footer/Logo.svg" alt="logo" className='RA-logologin' />
+                    <img src={img55554} alt="logo" className='RA-logologin' />
                     <h2 className='RA-titel-login'>Welcome to
                         Eduvi Online
                         Learning Platform</h2>
                     <Carousel className='slider'>
                         <Carousel.Item className='RA-slider'>
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img  d-block ' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img  d-block ' />
 
                         </Carousel.Item>
                         <Carousel.Item className='RA-slider'>
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img d-block' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img d-block' />
 
                         </Carousel.Item>
                         <Carousel.Item className='RA-slider'>
 
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img d-block' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img d-block' />
                         </Carousel.Item>
                     </Carousel>
 

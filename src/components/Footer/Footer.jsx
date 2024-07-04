@@ -3,12 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
 import './Footer.css'
+import icon11 from "../../../public/images/Home/Home-Navbar/Logo.svg";
 
 export default function Footer() {
    return (
       <div className='LK-footer d-flex align-items-start justify-content-B'>
          <div className="LK-footer-son1">
-            <img className='LK-footer-img' src="./images/Home/Home-Footer/Logo.svg" alt='eduvi logo' />
+            <img className='LK-footer-img' src={icon11} alt='eduvi logo' />
             <div className='LK-footer-icon d-flex align-items-center justify-content-start'>
                <div className='LK-footer-father-icon2'><FontAwesomeIcon className='LK-footer-icon1' icon={faFacebookF} /></div>
                <div className='LK-footer-father-icon2'><FontAwesomeIcon className='LK-footer-icon1' icon={faInstagram} /></div>

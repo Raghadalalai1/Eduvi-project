@@ -132,7 +132,7 @@
   top: 15px;
 }
 
-.BKH-input-submit input {
+.BKH-input-submit .RA-INPUT {
   background-color: #9c4df4;
   color: white;
   line-height: 20px;

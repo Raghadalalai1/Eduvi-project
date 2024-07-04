@@ -8,6 +8,7 @@ import { faCircleUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import img from "../../../public/images/SignUp/Outline.svg";
 import icon from "../../../public/images/LogIn/checkbox.svg";
+import icon1 from "../../../public/images/Home/Home-Navbar/Logo.svg";
 import LogInPopup from '../LogInPopup/LogInPopup';
 import { Link } from 'react-router-dom';
 export default function Navbarr() {
@@ -62,9 +63,11 @@ export default function Navbarr() {
   // }
   return (
     <Navbar collapseOnSelect expand="lg" className="KG-Navbar Metropolis-font ">
-      <Navbar.Brand href="#home">
+      <Link to={'/'} className=' RA-Link-logo' > <img src={icon1} alt='eduvi logo'></img></Link>
+      {/* <Navbar.Brand href="#home">
+        
         <img src='./images/Home/Home-Navbar/Logo.svg' alt='eduvi logo'></img>
-      </Navbar.Brand>
+      </Navbar.Brand> */}
       <Nav className='KG-Sign-inUp order-lg-2 ms-auto'>
         <Nav.Link href="#" className='pe-4 ps-0 d-flex align-items-center' onClick={() => setshowPopUp1(!showPopUp1)}>
           Log In <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  ' />

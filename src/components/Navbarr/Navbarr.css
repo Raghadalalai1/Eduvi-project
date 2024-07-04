@@ -3,6 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+.RA-Link-logo{
+
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+
+
+}
 
 .KG-Navbar {
     font-family: Metropolis-SemiBold !important;
@@ -37,9 +49,13 @@
     font-weight: 500px !important;
     padding-left: 40px !important;
 }
+
 .RA-Link:hover{
     transition: 0.5s !important;
     color: #9C4DF4 !important;
+}
+.active{
+    background-color: transparent !important;
 }
 .show-registering {
     display: none;

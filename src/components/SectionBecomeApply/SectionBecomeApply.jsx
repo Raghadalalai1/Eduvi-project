@@ -86,7 +86,7 @@ export default function SectionBecomeApply() {
             {/* قسم الزر  */}
             <div className="BKH-input-submit">
               <form action="#">
-                <input type="submit" value="Apply Now" onClick={() => setshowPopUp1(!showPopUp1)} />
+                < input type="submit" value="Apply Now" onClick={() => setshowPopUp(!showPopUp)} className="RA-INPUT"/>
                 {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
               </form>
             </div>

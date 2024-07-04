@@ -35,7 +35,7 @@
     font-size: 16px;
     margin: 0 5px;
 }
-.active{
+.active1{
     background-color: var(--clr-sicon);
     color: var(--clr-bgrecord);
 }

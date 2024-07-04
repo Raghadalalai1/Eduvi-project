@@ -5,6 +5,10 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
 import icon from "../../../public/images/LogIn/checkbox.svg";
 import img from "../../../public/images/SignUp/Outline.svg";
+import img5 from "../../../public/images/Home/Home-section5/section5-Image.png";
+import img55 from "../../../public/images/Home/Home-section5/azcoffe.png";
+import img555 from "../../../public/images/Home/Home-section5/php.png";
+import img5555 from "../../../public/images/Home/Home-section5/html.png";
 import LogInPopup from '../LogInPopup/LogInPopup';
 
 
@@ -65,18 +69,18 @@ export default function Registation() {
         <div className='HS-Regst-Right'>
 
 
-          <img className='student-image' src="./images/Home/Home-section5/section5-Image.png" alt='Sorry , the photo wasn`t uploaded '></img>
+          <img className='student-image' src={img5} alt='Sorry , the photo wasn`t uploaded '></img>
 
 
         </div>
         <div className='HS-icon1'>
-          <img src="./images/Home/Home-section5/azcoffe.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src={img55} alt='Sorry , the photo wasn`t uploaded ' />
         </div>
         <div className='HS-icon2'>
-          <img src="./images/Home/Home-section5/php.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src={img555} alt='Sorry , the photo wasn`t uploaded ' />
         </div>
         <div className='HS-icon3'>
-          <img src="./images/Home/Home-section5/html.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src={img5555} alt='Sorry , the photo wasn`t uploaded ' />
         </div>
 
       </div>
