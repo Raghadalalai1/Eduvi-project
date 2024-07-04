@@ -7,7 +7,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
     const KGCourseHighSchool = [
         {
            id : 1 ,
-           Image : './public/images/Courses/Courses-Section(2)/Image.svg' ,
+           Image : './images/Courses/Courses-Section(2)/Image.svg' ,
            text : "The Three Musketeers1" ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            price : '40$' ,
@@ -15,7 +15,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 2 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(1).svg',
+           Image : './images/Courses//Courses-Section(2)/Image(1).svg',
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers2" ,
            price : '40$' ,
@@ -23,7 +23,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        } ,
        {
            id : 3 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(2).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(2).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers3" ,
            price : '40$' ,
@@ -31,7 +31,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 4 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(3).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(3).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers4" ,
            price : '40$' ,
@@ -39,7 +39,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 5 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(4).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(4).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers5" ,
            price : '40$' ,
@@ -49,7 +49,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
     const KGCourseHighSchooltwo = [
         {
            id : 6 ,
-           Image : './public/images/Courses/Courses-Section(2)/Image(5).svg' ,
+           Image : './images/Courses/Courses-Section(2)/Image(5).svg' ,
            text : "The Three Musketeers6" ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            price : '40$' ,
@@ -57,7 +57,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 7 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(6).svg',
+           Image : './images/Courses//Courses-Section(2)/Image(6).svg',
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers7" ,
            price : '40$',
@@ -65,7 +65,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        } ,
        {
            id : 8 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(7).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(7).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers8" ,
            price : '40$' ,
@@ -73,7 +73,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 9 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(8).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(8).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers9" ,
            price : '40$' ,
@@ -81,7 +81,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
        },
        {
            id : 10 ,
-           Image : './public/images/Courses//Courses-Section(2)/Image(9).svg' ,
+           Image : './images/Courses//Courses-Section(2)/Image(9).svg' ,
            stars : < FontAwesomeIcon icon={faStar} className='KG-Star'/> ,
            text : "The Three Musketeers10" ,
            price : '40$' ,

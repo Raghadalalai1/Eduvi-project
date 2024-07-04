@@ -65,18 +65,18 @@ export default function Registation() {
         <div className='HS-Regst-Right'>
 
 
-          <img className='student-image' src="./public/images/Home/Home-section5/section5-Image.png" alt='Sorry , the photo wasn`t uploaded '></img>
+          <img className='student-image' src="./images/Home/Home-section5/section5-Image.png" alt='Sorry , the photo wasn`t uploaded '></img>
 
 
         </div>
         <div className='HS-icon1'>
-          <img src="./public/images/Home/Home-section5/azcoffe.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src="./images/Home/Home-section5/azcoffe.png" alt='Sorry , the photo wasn`t uploaded ' />
         </div>
         <div className='HS-icon2'>
-          <img src="./public/images/Home/Home-section5/php.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src="./images/Home/Home-section5/php.png" alt='Sorry , the photo wasn`t uploaded ' />
         </div>
         <div className='HS-icon3'>
-          <img src="./public/images/Home/Home-section5/html.png" alt='Sorry , the photo wasn`t uploaded ' />
+          <img src="./images/Home/Home-section5/html.png" alt='Sorry , the photo wasn`t uploaded ' />
         </div>
 
       </div>

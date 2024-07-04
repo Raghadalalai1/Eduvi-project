@@ -37,6 +37,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    animation: move3 1s linear forwards;
 }
 
 .LK-home-section2-son1-h2 {
@@ -62,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: move3 1s linear forwards 0.6s;
 
 }
 
@@ -112,8 +114,8 @@
     border-radius: 20px;
     margin-top: -85px;
     box-shadow: 0px 50px 170px 0px #0000000D;
-
-
+    animation: move4 1s linear forwards;
+    
 }
 
 .LK-home-section2-son2-img2 {
@@ -239,6 +241,8 @@
     gap: 20px;
     background-color: var(--clr-primary);
     border-radius: 10px;
+    animation: move4 1s linear forwards;
+
 
 
 }
@@ -285,6 +289,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.anim3{
+    opacity: 0;
+    transform: translateY(-20px)
+}
+.anim4{
+    opacity: 0;
+    transform: translateX(-100px)
 }
 
 @media(max-width:1356px) {
@@ -591,5 +603,23 @@
 
     70% {
         transform: translatey(-20px);
+    }
+}
+@keyframes move3 {
+
+ 
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes move4 {
+
+ 
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
     }
 }

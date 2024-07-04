@@ -192,14 +192,35 @@
 .KG-Single-Social-Icon{
     font-size: 22px;
     color: var(--clr-text);
-    margin-left: 15px !important;
-    border-radius: 50%;
+    /* margin-left: 15px !important; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+    
 }
-.KG-Single-Social-Icon:hover{
-    color: var(--clr-primary) ;
-    background-color: var(--clr-icon);
-    padding: 11px;
+
+.RA-rounded{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     transition: 0.5s;
+    position: relative;
+    background-color:var(--clr-primary) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RA-rounded:hover{
+
+    background-color:var(--clr-icon) ;
+    cursor: pointer;
+}
+.RA-rounded:hover .KG-Single-Social-Icon{
+
+    color: var(--clr-primary) ;
 }
 
 

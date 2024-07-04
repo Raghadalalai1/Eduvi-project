@@ -1,5 +1,10 @@
 import "./Section6.css";
-
+import img1 from './../../../public/images/Home/Home-section7/Ellipse-2.svg'
+import img2 from './../../../public/images/Home/Home-section7/Ellipse-4.svg'
+import img3 from './../../../public/images/Home/Home-section7/Ellipse-7.svg'
+import img4 from './../../../public/images/Home/Home-section7/Ellipse-1.svg'
+import img5 from './../../../public/images/Home/Home-section7/Ellipse-6.svg'
+import img6 from './../../../public/images/Home/Home-section7/Ellipse-3.svg'
 export default function Section6() {
   return (
     <>
@@ -8,9 +13,9 @@ export default function Section6() {
           <div className="BKH-section-join">
             {/*images part 1*/}
             <div className="BKH-images-1">
-              <img className="img1-part-1" src="../../public/images/Home/Home-section7/Ellipse-2.svg" alt="img-1-part-1" />
-              <img className="img2-part-1" src="../../public/images/Home/Home-section7/Ellipse-4.svg" alt="img-2-part-1" />
-              <img className="img3-part-1" src="../../public/images/Home/Home-section7/Ellipse-7.svg" alt="img-3-part-1"
+              <img className="img1-part-1" src={img1} alt="img-1-part-1" />
+              <img className="img2-part-1" src={img2} alt="img-2-part-1" />
+              <img className="img3-part-1" src={img3} alt="img-3-part-1"
               />
             </div>
             {/*images part 1*/}
@@ -32,9 +37,9 @@ export default function Section6() {
 
             {/*images part 2*/}
             <div className="BKH-images-1">
-              <img className="img1-part-2" src="../../public/images/Home/Home-section7/Ellipse-1.svg" alt="img-1-part-2" />
-              <img className="img2-part-2" src="../../public/images/Home/Home-section7/Ellipse-6.svg" alt="img-2-part-2" />
-              <img className="img3-part-2" src="../../public/images/Home/Home-section7/Ellipse-3.svg" alt="img-3-part-2" />
+              <img className="img1-part-2" src={img4} alt="img-1-part-2" />
+              <img className="img2-part-2" src={img5} alt="img-2-part-2" />
+              <img className="img3-part-2" src={img6} alt="img-3-part-2" />
             </div>
             {/*images part 2*/}
           </div>

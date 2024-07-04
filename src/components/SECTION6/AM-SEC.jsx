@@ -1,6 +1,6 @@
 
 import "./AM-SEC.css";
-
+import imgu from './../../../public/images/Home/Home-section6/ImageYoung.png'
 function AMSEC() {
   return (
     <section>
@@ -9,7 +9,7 @@ function AMSEC() {
 
 
         <div className="AM-ph2">
-          <img src="./../../../../../../public/images/Home/Home-section6/ImageYoung.png" alt="Sorry, the photo wasn't uploaded " />
+          <img src={imgu} alt="Sorry, the photo wasn't uploaded " />
         </div>
 
         <div className="AM-container2">

@@ -19,7 +19,7 @@ export default function HSSectionInstuctor() {
           <div className='HS-Instructor-son2-video'>
             <video controls className='HS-video' >
 
-              <source className='HS-V' src='./public/images/singleMentorDetails/SingleMentor-Hero/video.mp4' type='video/mp4'></source>
+              <source className='HS-V' src='./images/singleMentorDetails/SingleMentor-Hero/video.mp4' type='video/mp4'></source>
             </video>
 
           </div>

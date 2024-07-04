@@ -65,11 +65,11 @@ export default function Navbarr() {
         <img src='./images/Home/Home-Navbar/Logo.svg' alt='eduvi logo'></img>
       </Navbar.Brand>
       <Nav className='KG-Sign-inUp order-lg-2 ms-auto'>
-        <Nav.Link href="" className='pe-4 ps-0 d-flex align-items-center' onClick={() => setshowPopUp1(!showPopUp1)}>
+        <Nav.Link href="#" className='pe-4 ps-0 d-flex align-items-center' onClick={() => setshowPopUp1(!showPopUp1)}>
           Log In <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  ' />
         </Nav.Link>
         {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
-        <Nav.Link href="" className='pe-lg-0 pe-md-4 ps-0 d-flex align-items-center ' onClick={() => setshowPopUp(!showPopUp)} >
+        <Nav.Link href="#" className='pe-lg-0 pe-md-4 ps-0 d-flex align-items-center ' onClick={() => setshowPopUp(!showPopUp)} >
           Sign Up<FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon ' />
         </Nav.Link>
         {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
@@ -80,19 +80,19 @@ export default function Navbarr() {
         <Nav className="m-auto KG-Links ">
           <Nav.Link href="/shope" className='ps-0'>shop</Nav.Link>
           <NavDropdown title="For Kindergarten" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="">option1</NavDropdown.Item>
-            <NavDropdown.Item href="">option2</NavDropdown.Item>
-            <NavDropdown.Item href="">option3</NavDropdown.Item>
+            <NavDropdown.Item href="#">option1</NavDropdown.Item>
+            <NavDropdown.Item href="#">option2</NavDropdown.Item>
+            <NavDropdown.Item href="#">option3</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="For High School" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="">option1</NavDropdown.Item>
-            <NavDropdown.Item href="">option2</NavDropdown.Item>
-            <NavDropdown.Item href="">option3</NavDropdown.Item>
+            <NavDropdown.Item href="#">option1</NavDropdown.Item>
+            <NavDropdown.Item href="#">option2</NavDropdown.Item>
+            <NavDropdown.Item href="#">option3</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="For College" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="">option1</NavDropdown.Item>
-            <NavDropdown.Item href="">option2</NavDropdown.Item>
-            <NavDropdown.Item href="">option3</NavDropdown.Item>
+            <NavDropdown.Item href="#">option1</NavDropdown.Item>
+            <NavDropdown.Item href="#">option2</NavDropdown.Item>
+            <NavDropdown.Item href="#">option3</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Courses" id="collapsible-nav-dropdown">
             <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
@@ -100,19 +100,19 @@ export default function Navbarr() {
 
           </NavDropdown>
           <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering'>
-            <NavDropdown.Item href="" onClick={() => setshowPopUp(!showPopUp1)}> Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon' /> </NavDropdown.Item>
+            <NavDropdown.Item href="#" onClick={() => setshowPopUp(!showPopUp1)}> Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon' /> </NavDropdown.Item>
             {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
 
-            <NavDropdown.Item href="" onClick={() => setshowPopUp1(!showPopUp1)}>Log In  <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  color-icon' /></NavDropdown.Item>
+            <NavDropdown.Item href="#" onClick={() => setshowPopUp1(!showPopUp1)}>Log In  <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  color-icon' /></NavDropdown.Item>
             {/* {showPopUp && <div className='RA-SHOW'><LogInPopup bool1={true} last={last}/></div> } */}
             {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
           </NavDropdown>
           <Nav className='KG-Sign-inUp-hidden '>
-            <Nav.Link href="" className='d-flex' onClick={() => setshowPopUp1(!showPopUp1)}>
+            <Nav.Link href="#" className='d-flex' onClick={() => setshowPopUp1(!showPopUp1)}>
               Log In <FontAwesomeIcon icon={faUser} className='KG-SignInUpIcon' />
             </Nav.Link>
             {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
-            <Nav.Link href="" className='d-flex' onClick={() => setshowPopUp(!showPopUp1)}>
+            <Nav.Link href="#" className='d-flex' onClick={() => setshowPopUp(!showPopUp1)}>
               Sign Up<FontAwesomeIcon icon={faUser} className='KG-SignInUpIcon' />
             </Nav.Link>
             {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}

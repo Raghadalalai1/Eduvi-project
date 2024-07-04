@@ -46,7 +46,7 @@ export default function SectionBecomeApply() {
         {/* قسم الصورة  */}
         <div className="BKH-image">
           <img
-            src="../../../public/images/BecomeAnInstructor/BecomeAnInstructor-Section1/Image.svg"
+            src="./images/BecomeAnInstructor/BecomeAnInstructor-Section1/Image.svg"
             alt="Photo section one"
           />
         </div>

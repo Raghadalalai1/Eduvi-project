@@ -19,37 +19,37 @@ export default function KGCardsBooks({ KGTitle }) {
 
         {
             id: 1,
-            Image: './public/images/Shop/Shop-Section/Small-Image-1.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-1.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         },
         {
             id: 2,
-            Image: './public/images/Shop/Shop-Section/Small-Image-2.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-2.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         },
         {
             id: 3,
-            Image: './public/images/Shop/Shop-Section/Small-Image-3.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-3.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         },
         {
             id: 4,
-            Image: './public/images/Shop/Shop-Section/Small-Image-1.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-1.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         },
         {
             id: 5,
-            Image: './public/images/Shop/Shop-Section/Small-Image-2.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-2.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         },
         {
             id: 6,
-            Image: './public/images/Shop/Shop-Section/Small-Image-3.svg',
+            Image: './images/Shop/Shop-Section/Small-Image-3.svg',
             text: "The Three Musketeers, by Alexandre Dumas",
             price: '39$'
         }

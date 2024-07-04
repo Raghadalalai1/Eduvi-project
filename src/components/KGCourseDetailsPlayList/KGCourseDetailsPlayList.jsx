@@ -8,7 +8,7 @@ export default function KGCourseDetailsPlayList() {
     const videos = [
         {
            id : 1 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/VideoEdu.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/VideoEdu.mp4' ,
            text : "Maths-Introduction" ,
            time : '1:57 ' ,
             title: 'Video 1',
@@ -17,7 +17,7 @@ export default function KGCourseDetailsPlayList() {
        },
         {
            id : 2 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
            text : "Maths-for Standard 1 St.." ,
            time : '5:43 ' ,
           title: 'Video 2',
@@ -25,7 +25,7 @@ export default function KGCourseDetailsPlayList() {
        },
         {
            id : 3 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/Video7.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video7.mp4' ,
            text : "Maths-for Standard 2 St.." ,
            time : '8:11 ',
             title: 'Video 3',
@@ -33,7 +33,7 @@ export default function KGCourseDetailsPlayList() {
        },
         {
            id : 4 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/Video3.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video3.mp4' ,
            text : "Maths-for Standard 3 St.." ,
            time : '6:10 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
@@ -41,7 +41,7 @@ export default function KGCourseDetailsPlayList() {
        },
         {
            id : 5 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
            text : "Maths-for Standard 4 St.." ,
            time : '10:00 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
@@ -50,7 +50,7 @@ export default function KGCourseDetailsPlayList() {
         },
         {
            id : 6 ,
-           url : './public/images/CourseDetails/CourseDetails-Hero/Video5.mp4' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video5.mp4' ,
            text : "Maths-for Standard 5 St.." ,
            time : '7:53 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
