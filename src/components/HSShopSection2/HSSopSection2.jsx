@@ -3,10 +3,11 @@ import {
   faChevronRight,
   faMagnifyingGlass,
   faStar,
-} from "@fortawesome/free-solid-svg-icons";
+}
+from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import "./HSShopSection2.css";
+import { useState } from 'react';
 
 export default function HSShopSection2() {
   const HSCardsBooks = [
@@ -80,6 +81,15 @@ export default function HSShopSection2() {
     },
   ];
 
+  const [ratings, setRatings] = useState({});
+
+  const handleRating = (bookId, rating) => {
+    setRatings({ ...ratings, [bookId]: rating });
+  };
+
+  const firstThreeBooks = HSCardsBooks.slice(0, 3);
+  const secondThreeBooks = HSCardsBooks.slice(3, 6);
+
   return (
     <div className="HS-LeftSection">
       <div className="HS-LeftSection-Button">
@@ -106,7 +116,7 @@ export default function HSShopSection2() {
       </form>
 
       <div className="HS-Cards-Books">
-        {HSCardsBooks.map((book) => {
+        {firstThreeBooks.map((book) => {
           return (
             <div className="HS-Card-Book" key={book.id}>
               <div className="HS-Card-Info-Book">
@@ -115,11 +125,16 @@ export default function HSShopSection2() {
                 <div className="HS-price-stars">
                   <p className="HS-Price">{book.price}</p>
                   <div className="HS-Stars">
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
+                    {[...Array(5)].map((_, index) => (
+                      <FontAwesomeIcon
+                        key={index}
+                        icon={faStar}
+                        className={
+                          index < (ratings[book.id] || 0) ? "HS-Star-color" : "HS-Star-gray"
+                        }
+                        onClick={() => handleRating(book.id, index + 1)}
+                      />
+                    ))}
                   </div>
                 </div>
               </div>
@@ -128,20 +143,46 @@ export default function HSShopSection2() {
         })}
       </div>
 
-
-      <div className="HS-side">
-      <div className="HS-sidebar">
-        <button>
-          <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
-        </button>
-        <p>pages</p>
-        <button className="HS-back">5</button>
-        <p>of 80</p>
-        <button className="HS-background">
-          <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
-        </button>
+      <div className="HS-Cards-Books">
+        {secondThreeBooks.map((book) => {
+          return (
+            <div className="HS-Card-Book" key={book.id}>
+              <div className="HS-Card-Info-Book">
+                <img src={book.image} alt="image-title"></img>
+                <div>
+                  <div className="HS-Stars">
+                    {[...Array(5)].map((_, index) => (
+                      <FontAwesomeIcon
+                        key={index}
+                        icon={faStar}
+                        className={
+                          index < (ratings[book.id] || 0) ? "HS-Star-color" : "HS-Star-gray"
+                        }
+                        onClick={() => handleRating(book.id, index + 1)}
+                      />
+                    ))}
+                  </div>
+                  <p className="HS-Text-Pargraph">{book.text}</p>
+                  <p className="HS-Price">{book.price}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
+      <div className="HS-side">
+        <div className="HS-sidebar">
+          <button>
+            <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
+          </button>
+          <p>pages</p>
+          <button className="HS-back">5</button>
+          <p>of 80</p>
+          <button className="HS-background">
+            <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
+          </button>
+        </div>
       </div>
     </div>
   );
