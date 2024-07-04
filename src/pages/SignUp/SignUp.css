@@ -1,15 +1,17 @@
 .HS-signUp .HS-sign-Span {
   color: var(--clr-semore);
 }
+
 .HS-signUp .HS-paragraph {
   margin-bottom: 25px;
 }
-.RA-login-form{
-    padding-top: 0 !important;
+
+.RA-login-form {
+  padding-top: 0 !important;
 }
+
 .HS-signUp .HS-sign-Span2 {
-    color: var(--clr-text);
-    font-weight: 500;
-    font-size: 14px;
-  }
- 
+  color: var(--clr-text);
+  font-weight: 500;
+  font-size: 14px;
+}

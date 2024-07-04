@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './KGCourseHighSchool.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import KGCourseComponent from '../KGCourseComponent/KGCourseComponent'
+import Pagination from '../HSShopSection2/Pagination'
 
 export default function KGCourseHighSchool({KGCourseTitle}) {
+    const [search, setSearch] = useState('');
+
+    const handleSearchChange = (event) => {
+      setSearch(event.target.value);
+    };
    
            return (
             <section className='RA-section2-courses'>
@@ -16,18 +22,19 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                     <input
                         type="search"
                         placeholder=" Serach Class, Course "
+                        onChange={handleSearchChange}
                     ></input>
-                    <button>
+                    <button >
                         Search
                         <FontAwesomeIcon icon={faMagnifyingGlass} className='KG-Icon-Glass' />
                     </button>
-                    </div>
-                    <select name="School" className="KG-Course-Search-Select">
+                </div>
+                <select name="School" className="KG-Course-Search-Select">
                     <option>Sort by:Latest </option>
                     <option>Sort by: oldest</option>
                     </select>
                 </form>
-                <KGCourseComponent bool={true}/>
+                <KGCourseComponent onSearchChange={search} bool={true}/>
                 <p className='RA-SeeMore'>See More</p>
                 <div className="KG-side">
                     <div className="HS-sidebar">
@@ -42,6 +49,8 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                         </button>
                     </div>
                 </div>
+                 {/* <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} /> */}
+
             </section>
        )
        }

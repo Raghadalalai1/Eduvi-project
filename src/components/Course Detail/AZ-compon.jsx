@@ -1,6 +1,7 @@
 import "./AZ-compobn.css";
-import { faStar} from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 function AZcompobn() {
   return (
     <>
@@ -64,11 +65,11 @@ function AZcompobn() {
             <div className="AZ-course-card3">
               <p>Ratings</p>
               <div className="AZ-cours-stars">
-              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}} />
-              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}}/>
-              <FontAwesomeIcon icon={faStar} style={{color:'var(--clr-stars)'}}/>
-              <FontAwesomeIcon icon={faStar}  style={{color:'var(--clr-stars)'}}/>
-              <FontAwesomeIcon icon={faStar}  style={{color:'var(--clr-stars)'}}/>
+                <FontAwesomeIcon icon={faStar} style={{ color: 'var(--clr-stars)' }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: 'var(--clr-stars)' }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: 'var(--clr-stars)' }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: 'var(--clr-stars)' }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: 'var(--clr-stars)' }} />
               </div>
             </div>
             <div className="AZ-course-card4">
@@ -97,7 +98,7 @@ function AZcompobn() {
             </div>
           </div>
           <div className="AZ-corse-bottom">
-            <button type="submit">Purchase Course</button>
+            <Link to={'/pricing'}><button type="submit">Purchase Course</button></Link>
           </div>
         </div>
       </div>

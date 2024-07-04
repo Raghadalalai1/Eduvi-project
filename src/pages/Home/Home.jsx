@@ -29,7 +29,7 @@ export default function Home() {
 
         <Registation />
         <AMSEC />
-       
+
 
         <Section />
 

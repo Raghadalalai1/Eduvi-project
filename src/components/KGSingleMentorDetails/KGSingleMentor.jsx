@@ -3,19 +3,8 @@ import './KGSingleMentor.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar} from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { useParams } from 'react-router-dom'
-import {dataTeacher} from '../LK-OurMonetors-Section2/LK-OurMentors-section2.jsx'
 
 export default function KGSingleMentor() {
-
-
-
-    const {id} = useParams();
-    const item = dataTeacher.find((i)=>i.id == id)
-
-
-  
-
   return (
     < >
         <div className='KG-Sigle-Mentor-Hero'>
@@ -25,9 +14,9 @@ export default function KGSingleMentor() {
             <div className='KG-Single-Mentor-LeftPart'>
                 <div className='KG-Single-Mentor-Second'>
                     <div className='KG-Single-Mentor-Part1'>
-                        <img src={item.img} alt='KG-Image-Single-Hero'></img>
+                        <img src='./images/SingleMentorDetails/SingleMentor-Hero/mentor.svg' alt='KG-Image-Single-Hero'></img>
                         <div className='KG-Single-Part-Name'>
-                            <h4 className='KG-Single-Name'>{item.h5}</h4>
+                            <h4 className='KG-Single-Name'>Kritsin Watson</h4>
                             <p className='KG-Single-Paraghraph1'>Founder & Mentor</p>
                         </div>
                     </div>
@@ -60,10 +49,10 @@ export default function KGSingleMentor() {
                             <div className='KG-Single-Card-AllParts'>
                                 <p className='KG-Single-Card-LeftPart'>Social</p>
                                 <div className='KG-Single-Social'>
-                                    <div><FontAwesomeIcon icon={faFacebookF} className='KG-Single-Social-Icon'/></div>
-                                    <div><FontAwesomeIcon icon={faInstagram} className='KG-Single-Social-Icon' /></div>
-                                    <div><FontAwesomeIcon icon={faTwitter} className='KG-Single-Social-Icon' /></div>
-                                    <div><FontAwesomeIcon icon={faLinkedin} className='KG-Single-Social-Icon' /></div>
+                                    <div className='RA-rounded'><FontAwesomeIcon icon={faFacebookF} className='KG-Single-Social-Icon'/></div>
+                                    <div className='RA-rounded'><FontAwesomeIcon icon={faInstagram} className='KG-Single-Social-Icon' /></div>
+                                    <div className='RA-rounded'><FontAwesomeIcon icon={faTwitter} className='KG-Single-Social-Icon' /></div>
+                                    <div className='RA-rounded'><FontAwesomeIcon icon={faLinkedin} className='KG-Single-Social-Icon' /></div>
                                 </div>
                             </div>
                         </div>
