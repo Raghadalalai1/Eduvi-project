@@ -169,19 +169,6 @@ let data1=[
       }
 
 
-      const settings = {
-        className: "center",
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 5,
-        swipeToSlide: true,
-        afterChange: function(index) {
-          console.log(
-            `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-          );
-        }
-      };
-
   return (
     <>
     <section className='LK-courses-section2'>

@@ -17,22 +17,24 @@ import { faAngleDown, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
+
+export   let dataTeacher = [
+    {id: '1', img: teacher1, h5: 'Kristin Watson', span: '150',category:"one"},
+    {id: '2', img: teacher2, h5: 'Brooklyn Simmons', span: '200',category:"second"},
+    {id: '3', img: teacher3, h5: 'Robert Fox', span: '170',category:"one"},
+    {id: '4', img: teacher4, h5: 'Wade Warren', span: '110',category:"three"},
+    {id: '5', img: teacher5, h5: 'Bessie Cooper', span: '140',category:"three"},
+    {id: '6', img: teacher6, h5: 'Ronald Richards', span: '190',category:"second"},
+    {id: '7', img: teacher7, h5: 'Guy Hawkins', span: '153',category:"one"},
+    {id: '8', img: teacher8, h5: 'Floyd Miles', span: '230',category:"three"},
+    {id: '9', img: teacher9, h5: 'Theresa Webb', span: '185',category:"one"},
+    {id: '10', img: teacher10, h5: 'Cody Fisher', span: '169',category:"second"},
+    {id: '11', img: teacher11, h5: 'Courtney Henry', span: '190',category:"four"},
+    {id: '12', img: teacher12, h5: 'Jerome Bell', span: '179',category:"second"}
+];
 export default function LKOurMentorssection2() {
     
-    let dataTeacher = [
-        {id: '1', img: teacher1, h5: 'Kristin Watson', span: '150'},
-        {id: '2', img: teacher2, h5: 'Brooklyn Simmons', span: '200'},
-        {id: '3', img: teacher3, h5: 'Robert Fox', span: '170'},
-        {id: '4', img: teacher4, h5: 'Wade Warren', span: '110'},
-        {id: '5', img: teacher5, h5: 'Bessie Cooper', span: '140'},
-        {id: '6', img: teacher6, h5: 'Ronald Richards', span: '190'},
-        {id: '7', img: teacher7, h5: 'Guy Hawkins', span: '153'},
-        {id: '8', img: teacher8, h5: 'Floyd Miles', span: '230'},
-        {id: '9', img: teacher9, h5: 'Theresa Webb', span: '185'},
-        {id: '10', img: teacher10, h5: 'Cody Fisher', span: '169'},
-        {id: '11', img: teacher11, h5: 'Courtney Henry', span: '190'},
-        {id: '12', img: teacher12, h5: 'Jerome Bell', span: '179'}
-    ];
+  
 
     const [openAccordion, setOpenAccordion] = useState(null);
 
@@ -40,9 +42,9 @@ export default function LKOurMentorssection2() {
         setOpenAccordion(openAccordion === id ? null : id);
     }
 
-    const [LKColora, setLKColora] = useState(true);
+    const [LKColora, setLKColora] = useState(false);
     const [LKColorb, setLKColorb] = useState(true);
-    const [LKColorc, setLKColorc] = useState(false);
+    const [LKColorc, setLKColorc] = useState(true);
     const [LKColord, setLKColord] = useState(true);
     const [LKColore, setLKColore] = useState(true);
 
@@ -111,22 +113,28 @@ useEffect(() => {
             setLKColord(true);
         }
     }, [LKColore]);
-    // { pathname: , state: { imge: item.img, h5: item.h5 } }}
+     const [item ,setItem] =useState(dataTeacher)
+    const filterItems =(catItem)=>{
+      const updateItems = dataTeacher.filter((curItem)=>{
+        return curItem.category === catItem
+      })
+      setItem(updateItems)
+    }
     return (
         <>
             <section className='LK-OurMonetors-sec2'>
                 <div className='LK-OurMonetors-tabs'>
-                    <button onClick={LKchangcolora} className={LKColora ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>All Mentors</button>
-                    <button onClick={LKchangcolorb} className={LKColorb ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Kindergarten</button>
-                    <button onClick={LKchangcolorc} className={LKColorc ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For high school</button>
-                    <button onClick={LKchangcolord} className={LKColord ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For college</button>
-                    <button onClick={LKchangcolore} className={LKColore ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Technology</button>
+                    <button onClick={()=>{LKchangcolora();setItem(dataTeacher)}} className={LKColora ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>All Mentors</button>
+                    <button onClick={()=>{LKchangcolorb();filterItems("one")}} className={LKColorb ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Kindergarten</button>
+                    <button onClick={()=>{LKchangcolorc();filterItems("second")}} className={LKColorc ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For high school</button>
+                    <button onClick={()=>{LKchangcolord();filterItems("three")}} className={LKColord ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For college</button>
+                    <button onClick={()=>{LKchangcolore();filterItems("four")}} className={LKColore ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Technology</button>
                 </div>
                 <div className='LK-OurMonetors-sec2-teacher-CardF'>
-                    {dataTeacher.map(item => {
+                    {item.map(item => {
                         return (
                         <div className='LK-OurMonetors-cardson' key={item.id}>
-                        <Link to={'/SingleMonetorDetalis'} imge= {item.img} h5={ item.h5} >
+                        <Link to={`/SingleMonetorDetalis/KGSingleMentor/${item.id}`} data={dataTeacher} imge= {item.img} h5={ item.h5} >
                         <img className={openAccordion === item.id ? 'LK-OurMonetors-cardson-onAcoordione-img' : 'LK-OurMonetors-cardson-img'} src={item.img} alt={item.h5} />
                         </Link>
                                 <div className={openAccordion === item.id ? 'LK-OurMonetors-cardson-accodione-on' : 'LK-OurMonetors-cardson-accodione'}>

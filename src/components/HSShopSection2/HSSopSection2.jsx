@@ -5,7 +5,7 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./HSShopSection2.css";
 
 export default function HSShopSection2() {
@@ -16,6 +16,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+     lkcategory:"second"
     },
 
     {
@@ -24,6 +25,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"one"
     },
 
     {
@@ -32,6 +34,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"one"
     },
 
     {
@@ -40,6 +43,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"second"
     },
 
     {
@@ -48,6 +52,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"three"
     },
 
     {
@@ -56,6 +61,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"three"
     },
     {
       id: 7,
@@ -63,6 +69,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"one"
     },
     {
       id: 8,
@@ -70,6 +77,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"second"
     },
     {
       id: 9,
@@ -77,16 +85,24 @@ export default function HSShopSection2() {
       text: "The Three Musketeers",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      lkcategory:"three"
     },
   ];
+  const [LkItem ,setLkItem] =useState(HSCardsBooks)
+  const filterLkItems=(catItem)=>{
+    const updateItems = HSCardsBooks.filter((curItem)=>{
+      return curItem.lkcategory === catItem
+    })
+    setLkItem(updateItems)
+  }
 
   return (
     <div className="HS-LeftSection">
       <div className="HS-LeftSection-Button">
-        <button className="HS-Button1">All Book</button>
-        <button className="HS-Button2">Kindergarten</button>
-        <button className="HS-Button3">High School</button>
-        <button className="HS-Button4">College</button>
+        <button className="HS-Button1" onClick={()=>{setLkItem(HSCardsBooks)}}>All Book</button>
+        <button className="HS-Button2" onClick={()=>{ filterLkItems("one")}}>Kindergarten</button>
+        <button className="HS-Button3" onClick={()=>{ filterLkItems("second")}}>High School</button>
+        <button className="HS-Button4" onClick={()=>{ filterLkItems("three")}}>College</button>
       </div>
 
       <form className="HS-Form">
@@ -106,7 +122,7 @@ export default function HSShopSection2() {
       </form>
 
       <div className="HS-Cards-Books">
-        {HSCardsBooks.map((book) => {
+        {LkItem.map((book) => {
           return (
             <div className="HS-Card-Book" key={book.id}>
               <div className="HS-Card-Info-Book">
