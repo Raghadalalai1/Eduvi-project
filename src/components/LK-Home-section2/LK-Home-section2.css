@@ -3,20 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: Metropolis;
-    src: url(./../../../public/Fonts/Metropolis-Medium.otf);
-}
-
-.Metropolis-font1 {
-    font-family: Metropolis;
-}
-
-.Metropolis-font {
-    font-family: Metropolis-Thin;
-}
-
 .LK-home-section2 {
     width: 100%;
     /* margin: 90px auto 0 auto; */
@@ -41,21 +27,23 @@
 }
 
 .LK-home-section2-son1-h2 {
-    width: 56%;
+    width: 556px;
     font-size: 45px;
     color: var(--clr-text);
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 55px;
+    font-family: Metropolis-Medium;
 }
 
 .LK-home-section2-son1-par {
-    width: 81%;
+    width: 74%;
     color: var(--clr-texthome);
     line-height: 30px;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    font-family: Metropolis-Regular;
 }
 
 .LK-home-sec2-son2-father-button {
@@ -77,6 +65,7 @@
     border: none;
     margin: 40px auto;
     transition: 0.5s;
+    font-family: Inter;
 }
 
 .LK-home-section2-son1-button:hover {
@@ -251,6 +240,7 @@
     font-size: 25px;
     border: none;
     background-color: var(--clr-primary);
+    font-family: Metropolis-Regular;
 }
 
 .LK-home-section2-son3-Ficon2 {
@@ -309,11 +299,6 @@
     .LK-home-section2-father {
         width: 97%;
     }
-
-    .LK-home-section2 {
-        margin-left: 32px;
-    }
-
     .LK-home-section2-son1-h2 {
         font-size: 35px;
         width: 432px;
@@ -483,7 +468,9 @@
         line-height: 24px;
         text-align: center;
     }
-
+    .LK-home-section2-son1-par-none{
+        display: none;
+    }
     .LK-home-section2-son2-img-up {
         display: none;
     }

@@ -23,25 +23,6 @@ export default function LKCards({ data1, pages }) {
         })}
 
 
-        {/* {!lkcards && datas.map(item =>{
-        return(<div className='LK-Card-son ' key={item.id}>  
-            <img className='LK-card-img' src={item.img} /> 
-            <h4 className='LK-card-h4'>{item.h4}</h4>
-            <p className='LK-card-par'>{item.par}</p>
-            <button className='LK-card-Button'>{item.button}</button>
-          
-          
-        </div>)})} */}
-
-        {/* {dataTH.map(item =>{
-        return(<div className='LK-Card-son ' key={item.id}>  
-            <img className='LK-card-img' src={item.img} /> 
-            <h4 className='LK-card-h4'>{item.h4}</h4>
-            <p className='LK-card-par'>{item.par}</p>
-            <button className='LK-card-Button'>{item.button}</button>
-          
-          
-        </div>)})} */}
 
       </div>
 

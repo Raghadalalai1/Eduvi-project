@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom'
 export default function LKHomeSection2() {
   return (
     <>
-      <section className='LK-home-section2 Metropolis-font1'>
+      <section className='LK-home-section2'>
         <div className='LK-home-section2-father'>
           <div className='LK-home-section2-son1 '>
             <h2 className='LK-home-section2-son1-h2'>High quality video, audio
               & live classes</h2>
-            <p className='LK-home-section2-son1-par'>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video image with considerably more than
-              480 vertical scan lines or 576 vertical lines is considered high-definition.</p>
+            <p className='LK-home-section2-son1-par'>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized <span className='LK-home-section2-son1-par-none' > meaning for high-definition, generally any video image with considerably more than
+              480 vertical scan lines or 576 vertical lines is considered high-definition.</span></p>
           </div>
           <div className='LK-home-section2-son2 '>
 
@@ -42,19 +42,19 @@ export default function LKHomeSection2() {
           <div className='LK-home-section2-son3'>
             <div className='LK-home-section2-son3-P1' style={{animationDelay:'1s'}}>
               <div className='LK-home-section2-son3-Ficon1'><FontAwesomeIcon className='LK-home-section2-son3-icon1' icon={faVolumeHigh} /></div>
-              <button className='LK-home-section2-son3-button1 Metropolis-font'>Audio Classes</button>
+              <button className='LK-home-section2-son3-button1'>Audio Classes</button>
 
             </div>
             <div className='LK-home-section2-son3-P1 '  style={{animationDelay:'0.5s'}}>
               <div className='LK-home-section2-son3-Ficon2'>
                 <img src={live} className='LK-home-section2-son3-icon2' />
               </div>
-              <button className='LK-home-section2-son3-button1 Metropolis-font'>Live Classes</button>
+              <button className='LK-home-section2-son3-button1'>Live Classes</button>
 
             </div>
             <div className='LK-home-section2-son3-P1'>
               <div className='LK-home-section2-son3-Ficon3'><FontAwesomeIcon className='LK-home-section2-son3-icon3' icon={faCirclePlay} /></div>
-              <button className='LK-home-section2-son3-button1 Metropolis-font'>Recorded Class</button>
+              <button className='LK-home-section2-son3-button1'>Recorded Class</button>
 
             </div>
           </div>
