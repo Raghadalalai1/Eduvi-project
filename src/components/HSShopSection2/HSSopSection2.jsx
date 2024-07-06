@@ -284,6 +284,13 @@ export default function HSShopSection2() {
     },
     
   ];
+
+  const [ratings, setRatings] = useState({});
+
+  const handleRating = (bookId, rating) => {
+    setRatings({ ...ratings, [bookId]: rating });
+  };
+
   // pagination
   const PRODUCT_PER_PAGE = 9;
   const pages = Math.ceil (HSCardsBooks.length / PRODUCT_PER_PAGE);
