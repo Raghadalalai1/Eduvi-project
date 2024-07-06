@@ -3,7 +3,8 @@ import {
   faChevronRight,
   faMagnifyingGlass,
   faStar,
-} from "@fortawesome/free-solid-svg-icons";
+}
+from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import "./HSShopSection2.css";
@@ -289,6 +290,13 @@ export default function HSShopSection2() {
     },
     
   ];
+
+  const [ratings, setRatings] = useState({});
+
+  const handleRating = (bookId, rating) => {
+    setRatings({ ...ratings, [bookId]: rating });
+  };
+
   // pagination
   const PRODUCT_PER_PAGE = 9;
   const pages = Math.ceil (HSCardsBooks.length / PRODUCT_PER_PAGE);
@@ -348,11 +356,16 @@ export default function HSShopSection2() {
                 <div className="HS-price-stars">
                   <p className="HS-Price">{book.price}</p>
                   <div className="HS-Stars">
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
-                    {book.stars}
+                    {[...Array(5)].map((_, index) => (
+                      <FontAwesomeIcon
+                        key={index}
+                        icon={faStar}
+                        className={
+                          index < (ratings[book.id] || 0) ? "HS-Star-color" : "HS-Star-gray"
+                        }
+                        onClick={() => handleRating(book.id, index + 1)}
+                      />
+                    ))}
                   </div>
                 </div>
               </div>

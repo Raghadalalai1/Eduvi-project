@@ -13,6 +13,14 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
     const handleSearchChange = (event) => {
       setSearch(event.target.value);
     };
+
+    const [showMore, setShowMore] = useState(false);
+  const coursesToShowInitially = 1;
+  const totalCourses = 3;
+
+  const handleSeeMoreClick = () => {
+    setShowMore(!showMore);
+  };
    
            return (
             <section className='RA-section2-courses'>
@@ -34,9 +42,19 @@ export default function KGCourseHighSchool({KGCourseTitle}) {
                     <option>Sort by: oldest</option>
                     </select>
                 </form>
-                <KGCourseComponent onSearchChange={search} bool={true}/>
-                <p className='RA-SeeMore'>See More</p>
+
+                {[...Array(showMore ? totalCourses : coursesToShowInitially)].map((_, index) => (
+        <KGCourseComponent  onSearchChange={search} key={index} bool={true} />
+      ))}
+      <p className='RA-SeeMore' onClick={handleSeeMoreClick}>
+        {showMore ? 'See Less' : 'See More'}
+      </p>
+                
+
+               
+              
                 <div className="KG-side" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+
                     <div className="HS-sidebar">
                         <button>
                             <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />

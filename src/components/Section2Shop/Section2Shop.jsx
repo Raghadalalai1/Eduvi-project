@@ -1,4 +1,3 @@
-import React from 'react'
 import KGCardsBooks from './../KGCardsBooks/KGCardsBooks'
 import HSShopSection2 from '../HSShopSection2/HSSopSection2'
 import './Section2Shop.css'

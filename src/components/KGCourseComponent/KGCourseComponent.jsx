@@ -1,9 +1,17 @@
-import './KGCourseComponent.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar} from '@fortawesome/free-solid-svg-icons'
-import { faBagShopping} from '@fortawesome/free-solid-svg-icons'
+import './KGCourseComponent.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 export default function KGCourseComponent({ onSearchChange ,bool}) {
+
+    const [ratings, setRatings] = useState({});
+
+    const handleRating = (courseId, rating) => {
+        setRatings({ ...ratings, [courseId]: rating });
+    };
+
     const KGCourseHighSchool = [
         {
            id : 1 ,
@@ -46,6 +54,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
            IconShop : < FontAwesomeIcon icon={faBagShopping} className='KG-Bag-Icon'/> ,
        }
     ];
+    
     const KGCourseHighSchooltwo = [
         {
            id : 6 ,
@@ -107,11 +116,14 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
                                        <div>
                                             <p className='KG-Course-Text'>{course.text}</p>
                                             <div>
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
+                                            {[...Array(5)].map((_, index) => (
+                                                <FontAwesomeIcon
+                                                    key={index}
+                                                    icon={faStar}
+                                                    className={index < ratings[course.id] ? 'KG-Star KG-Star-color' : 'KG-Star'}
+                                                    onClick={() => handleRating(course.id, index + 1)}
+                                                />
+                                            ))}
                                            </div>
                                            <p className='KG-Course-Price'>{course.price}</p>
                                            <div className='KG-BG-Icon'> {course.IconShop} </div>
@@ -130,11 +142,14 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
                                        <div>
                                             <p className='KG-Course-Text'>{course.text}</p>
                                             <div>
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
-                                                {course.stars}
+                                            {[...Array(5)].map((_, index) => (
+                                                <FontAwesomeIcon
+                                                    key={index}
+                                                    icon={faStar}
+                                                    className={index < ratings[course.id] ? 'KG-Star KG-Star-color' : 'KG-Star'}
+                                                    onClick={() => handleRating(course.id, index + 1)}
+                                                />
+                                            ))}
                                            </div>
                                            <p className='KG-Course-Price'>{course.price}</p>
                                            <div className='KG-BG-Icon'> {course.IconShop} </div>
@@ -147,5 +162,4 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
             </div>
         </>
 
-    )
-}
+    )}
