@@ -32,7 +32,7 @@ export default function SignUp() {
   ];
   return (
     <div >
-      <LogInPopup name={name} agreed={agreed} last1={last1} bool1={false}/>
+      <LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} />
     </div>
   );
 }

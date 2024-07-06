@@ -1,0 +1,440 @@
+.KG-Sigle-Mentor-Hero{
+    width: 100%;
+    height: 173px;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-top: 90px;
+    background-image: url(./../../../public/images/SingleMentorDetails/SingleMentor-Hero/BG-Single-Hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.KG-Single-Path{
+    font-family:Metropolis-Regular;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--clr-inputnewletter);
+    padding-top: 22px !important;
+    margin-left: 30px;
+}
+.KG-Single-Path span{
+    color: var(--clr-sicon);
+}
+.KG-Single-Mentor-Second{
+    display: flex;
+    justify-content:space-between ;
+    align-items: start;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+.KG-Single-Mentor-Part1{
+    display: flex;
+    justify-content: space-between ;
+    align-items: start;
+}
+.KG-Single-Part2{
+    display: flex;
+    justify-content: space-between ;
+    align-items: start;
+}
+.KG-Single-Mentor-Part1 img{
+    width: 170px;
+    position: relative;
+    bottom: 50px;
+    bottom: 85px;
+}
+.KG-Single-Part-Name{
+    margin-left: 20px;
+}
+.KG-Single-Name{
+    font-family:Metropolis-Medium;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 29px;
+    color: var(--clr-text);
+}
+.KG-Single-Paraghraph1{
+    font-family:Metropolis-Regular;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--clr-texthome);
+}
+.KG-Single-Mentor-LeftPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+.KG-Single-Collection-Buttons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.KG-Single-Collection-Buttons button{
+    color: var(--clr-text);
+    background-color: var(--clr-primary);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.KG-Single-Collection-Buttons button:hover{
+    color: var(--clr-primary);
+    background-color: var(--clr-icon);
+    transition: 0.5s;
+}
+.KG-Single-InfoName{
+    font-family:  Metropolis-SemiBold;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--clr-text);
+}
+.KG-Single-InfoParagraph{
+    font-family: Metropolis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--clr-texthome);
+    width: 63%;
+}
+.KG-Single-About{
+    margin-bottom: 30px;
+}
+.KG-Single-Button{
+    background-color: var(--clr-sicon);
+    color: var(--clr-primary);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 29px;
+    width: 173px;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    
+}
+.KG-Single-Button:hover{
+    transition: 0.5s;
+    background-color: var(--clr-primary);
+    color:  var(--clr-sicon);
+}
+.KG-Single-Card{
+    width: 400px;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    position: absolute;
+    top: 29px ;
+    right: 28px;
+    /* margin-top: 29px;
+    margin-left: 25px; */
+}
+.KG-Single-Card-AllParts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Metropolis-SemiBold ;
+    margin: 20px 30px 0 30px;
+}
+.KG-Single-Card-LeftPart{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--clr-texthome);
+}
+.KG-Single-Card-RightPart{
+    color: var(--clr-text);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.KG-Single-Number{
+    color: var(--clr-icon);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.KG-Single-Number2{
+    color: var(--clr-icon);
+}
+.KG-Single-Single{
+    font-size: 16px;
+    color:var(--clr-stars);
+}
+.KG-Single-Card-Info-Rating{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--clr-text);
+}
+.KG-Single-Social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.KG-Single-Social-Icon{
+    font-size: 22px;
+    color: var(--clr-text);
+    /* margin-left: 15px !important; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+    
+}
+
+.RA-rounded{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: 0.5s;
+    position: relative;
+    background-color:var(--clr-primary) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RA-rounded:hover{
+
+    background-color:var(--clr-icon) ;
+    cursor: pointer;
+}
+.RA-rounded:hover .KG-Single-Social-Icon{
+
+    color: var(--clr-primary) ;
+}
+
+
+
+@media(min-width:1201px) and (max-width:1390px){
+    .KG-Single-Button{
+        right: 53%;
+        left: 47%;
+        width: 138px;
+        font-size: 14px;
+        padding: 15px 25px !important;
+    }
+    .KG-Single-Card{
+        width: 350px;
+    }
+}
+@media(min-width:992px) and (max-width:1200px){
+    .KG-Single-Mentor-Part1 img{
+        width: 140px;
+        bottom:67px;
+    }
+    .KG-Single-Name{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .KG-Single-Paraghraph1{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .KG-Single-Button{
+        width: 138px;
+        font-size: 14px;
+        padding: 15px 25px !important;
+    }
+    .KG-Single-Card{
+        width: 350px;
+    }
+    .KG-Single-Card-LeftPart {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        }
+        .KG-Single-Card-RightPart{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        }
+        .KG-Single-Number{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+
+        }
+    .KG-Single-Collection-Buttons button{
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+    .KG-Single-InfoName{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .KG-Single-InfoParagraph{
+        font-size: 14px;
+        line-height: 28px;
+        width: 55%;
+    }
+    .KG-Single-Button{
+        left : 40%;
+    }
+}
+@media(min-width:789px) and (max-width:991px){
+    .KG-Single-InfoParagraph{
+        width: 450px !important;
+    }
+    .KG-Single-Card{
+        position: relative;
+        left: 0;
+    }
+    .KG-Single-Button{
+    position: relative;
+        font-size: 16px;
+        padding: 15px 25px !important;
+        left: 0;
+    }
+    .KG-Single-Part2{
+        width: 550px;
+        text-align: start;
+        flex-wrap: wrap;
+    }
+    .KG-Single-BottomPart{
+        padding-top: 70px;
+        flex-wrap: wrap;
+    }
+    .KG-Single-Mentor-LeftPart{
+    margin-left: 0;
+    }
+}
+@media(max-width:788px) and (min-width:567px){ 
+    .KG-Single-InfoParagraph{
+        width: 450px !important;
+    }
+    .KG-Single-Card{
+        position: relative;
+        left: 0;
+    }
+    .KG-Single-Button{
+    position: relative;
+        font-size: 16px;
+        padding: 15px 25px !important;
+        left: 0;
+    }
+    .KG-Single-Part2{
+        width: 500px;
+        text-align: start;
+        flex-wrap: wrap;
+    }
+    .KG-Single-BottomPart{
+        padding-top: 70px;
+        flex-wrap: wrap;
+    }
+    .KG-Single-Mentor-LeftPart{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:566px) {
+    .KG-Single-Mentor-Part1{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
+    }
+    .KG-Single-Mentor-Part1 img{
+        width: 130px;
+        position: absolute;
+        
+    }
+    .KG-Single-Part-Name{
+       margin-left: 0;
+    }
+    .KG-Single-Name{
+       font-size: 24px;
+       font-weight: 500;
+       line-height: 24px;
+    }
+    .KG-Single-Paraghraph1{
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+        .KG-Single-Part2{
+        width: 95%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .KG-Single-Button{
+        width: 173px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 17px 30px;
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        border: 10px;
+    }
+    .KG-Single-Card{
+        width: 335px;
+        position: relative;
+        left: 0;
+    }
+    .KG-Single-Card-LeftPart {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    }
+    .KG-Single-Card-RightPart{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    }
+    .KG-Single-Number{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    }
+    .KG-Single-Social-Icon{
+    font-size: 16px;
+    }
+    .KG-Single-BottomPart{
+        padding-top: 70px;
+        margin: auto;
+    }
+    .KG-Single-Collection-Buttons button{
+        font-size: 14px;
+        padding: 10px 20px;
+        line-height: 20px;
+    }
+    .KG-Single-InfoName {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .KG-Single-InfoParagraph{
+        font-size: 16px;
+        line-height: 24px;
+        width: 315px;
+    }
+    .KG-Single-Mentor-LeftPart{
+        margin-left: 0;
+    }
+    }

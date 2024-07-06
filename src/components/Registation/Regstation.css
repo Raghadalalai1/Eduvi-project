@@ -1,22 +1,24 @@
-
-.HS-Regst{
+.HS-Regst {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 100%;
-      
-    background-color:#EDE9F2 ;
+
+    background-color: #EDE9F2;
     position: relative;
     border-radius: 20px;
 }
-.HS-Regst-left{
+
+.HS-Regst-left {
     width: 500px;
-    padding-left:70px !important;
-    
+    padding-left: 70px !important;
+    padding: 100px 0px;
+
 }
-.HS-Regst-button{
-    background-color:  #E4E2F4 !important;
+
+.HS-Regst-button {
+    background-color: #E4E2F4 !important;
     color: #9C4DF4 !important;
     border: 1px solid #E4E2F4 !important;
     width: 33%;
@@ -24,10 +26,12 @@
     border-radius: 10px;
     margin-bottom: 15px;
 }
-.HS-Regst-title{
+
+.HS-Regst-title {
     width: 447px;
 }
-.HS-Regst-h1{
+
+.HS-Regst-h1 {
     width: 457px;
     font-family: Metropolis-Medium;
     font-size: 44px;
@@ -37,7 +41,8 @@
     margin-bottom: 20px;
     color: #0A033C;
 }
-.HS-Regst-pargraph{
+
+.HS-Regst-pargraph {
     width: 474px;
     font-family: Metropolis-ExtraLight;
     font-size: 16px;
@@ -49,36 +54,41 @@
     margin-bottom: 40px;
 
 }
-.HS-Regst-button2{
+
+.HS-Regst-button2 {
     width: 40%;
     height: 50px;
     background-color: #9C4DF4 !important;
-    color:#FFFFFF !important ;
+    color: #FFFFFF !important;
     border: 1px solid #E4E2F4 !important;
     font-family: Metropolis-ExtraLight;
     transition: 0.5s;
-  
-  
+
+
 }
-.HS-Regst-button2:hover{
+
+.HS-Regst-button2:hover {
     background-color: transparent !important;
-    color:#9C4DF4 !important ;
+    color: #9C4DF4 !important;
     border: 1px solid #9C4DF4 !important;
 }
+
 .HS-Regst-Right {
     width: 50%;
     position: relative;
-  
-    
+
+
 }
+
 .HS-Regst-Right .student-image {
     width: 100%;
 
-       
+
 }
-.HS-icon1{
+
+.HS-icon1 {
     position: absolute;
-    Top:51px;
+    Top: 51px;
     left: 90%;
     width: 50px;
     height: 50px;
@@ -89,23 +99,25 @@
     border-radius: 5px;
     animation: move-down 2s infinite;
 }
-.HS-icon2{
-position: absolute;
-top:198px ;
-left: 85% ; 
-width: 50px;
-height: 50px;
-background-color: #FFFFFF;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 5px;
-animation: move-up 2s infinite;
+
+.HS-icon2 {
+    position: absolute;
+    top: 198px;
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation: move-up 2s infinite;
 
 }
-.HS-icon3{
+
+.HS-icon3 {
     position: absolute;
-    top:169px ;
+    top: 169px;
     left: 54%;
     height: 50px;
     width: 50px;
@@ -119,49 +131,55 @@ animation: move-up 2s infinite;
     animation: move-down 2s infinite;
 
 }
-.HS-icon1 img
-{
+
+.HS-icon1 img {
     width: 26px;
     height: 30px;
 }
-.HS-icon2 img
-{
+
+.HS-icon2 img {
     width: 26px;
     height: 30px;
 }
-.HS-icon3 img
-{
+
+.HS-icon3 img {
     width: 26px;
     height: 30px;
 }
-@media(max-width:1260px){
+
+@media(max-width:1260px) {
     .HS-Regst-Right {
         width: 530px;
-       
-        
+
+
     }
+
     .HS-Regst-left {
         width: 416px;
         padding: 100px 0px;
-        
+
     }
+
     .HS-Regst-button {
 
         width: 130px;
-   
+
     }
+
     .HS-Regst-button2 {
         width: 170px;
-   
+
     }
-    .HS-Regst-h1{
+
+    .HS-Regst-h1 {
         font-size: 35px;
         line-height: 40px;
         width: 355px;
     }
-    .HS-Regst-pargraph{
+
+    .HS-Regst-pargraph {
         margin-bottom: 20px;
-        width: 390px; 
+        width: 390px;
         line-height: 28px;
         padding-top: 0px;
         font-size: 14px;
@@ -174,72 +192,76 @@ animation: move-up 2s infinite;
 
 @media (max-width:1024px) {
 
-    .HS-Regst{
+    .HS-Regst {
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-    .HS-icon1{
+    .HS-icon1 {
 
-    
-        Top:204px;
+
+        Top: 204px;
         left: 839px;
     }
-    .HS-icon2{
 
-        Top:63px;
+    .HS-icon2 {
+
+        Top: 63px;
         left: 796px;
     }
-    .HS-icon3{
 
-        Top:54px;
+    .HS-icon3 {
+
+        Top: 54px;
         left: 529px;
     }
 }
 
-@media (max-width:991px)
-{
-    .HS-Regst{
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       background-color:#EDE9F2 ;
+@media (max-width:991px) {
+    .HS-Regst {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #EDE9F2;
 
     }
 
-    .HS-Regst-left{
+    .HS-Regst-left {
         width: 80%;
-        
-    padding-left:0px !important;
-    
+
+        padding-left: 0px !important;
+
 
         padding: 30px 29px 0 20px !important;
-        
-    }
-    .HS-Regst-Right {
-        width: 100%;  
+
     }
 
-    .HS-Regst-Right .student-image {
-        margin-top: 65px ; 
+    .HS-Regst-Right {
         width: 100%;
     }
 
-    .HS-Regst-title{
-        width:100% !important;
+    .HS-Regst-Right .student-image {
+        margin-top: 65px;
+        width: 100%;
     }
-    .HS-Regst-h1{
-        
-        
+
+    .HS-Regst-title {
+        width: 100% !important;
+    }
+
+    .HS-Regst-h1 {
+
+
         font-size: 25px;
         font-weight: 600;
-         line-height: 30px; 
+        line-height: 30px;
         text-align: left;
         width: 100% !important;
     }
-    .HS-Regst-pargraph{
+
+    .HS-Regst-pargraph {
         width: 100%;
         font-family: Metropolis;
         font-size: 13px;
@@ -247,84 +269,90 @@ animation: move-up 2s infinite;
         line-height: 24px;
         text-align: left;
         color: #5D5A6F;
-       margin: 20px 0px 25px 0px;
-    
+        margin: 20px 0px 25px 0px;
+
     }
-    .HS-Regst-button{
-        background-color:  #E4E2F4 !important;
+
+    .HS-Regst-button {
+        background-color: #E4E2F4 !important;
         color: #9C4DF4 !important;
         border: 1px solid #E4E2F4 !important;
         width: 150px;
         height: 50px;
         border-radius: 10px;
     }
-    .HS-Regst-button2{
+
+    .HS-Regst-button2 {
         width: 160px;
         height: 50px;
         background-color: #9C4DF4 !important;
-        color:#FFFFFF !important ;
+        color: #FFFFFF !important;
         border: 1px solid #E4E2F4 !important;
-      
-      
+
+
     }
 
-    .HS-icon1 img
-    {
+    .HS-icon1 img {
         width: 16px;
         height: 18px;
     }
-    .HS-icon2 img
-    {
+
+    .HS-icon2 img {
         width: 16px;
         height: 18px;
     }
-    .HS-icon3 img
-    {
+
+    .HS-icon3 img {
         width: 16px;
         height: 18px;
     }
-    .HS-icon1{
+
+    .HS-icon1 {
         display: none;
     }
-    .HS-icon2{
+
+    .HS-icon2 {
         display: none;
     }
-    .HS-icon3{
- display: none;
+
+    .HS-icon3 {
+        display: none;
     }
 
 
 }
-@media(max-width:458px){
-    .HS-Regst-left{
+
+@media(max-width:458px) {
+    .HS-Regst-left {
         width: 100%;
-       
-        
+
+
     }
 }
 
 
-@media (max-width:375px)
-{
+@media (max-width:375px) {
 
 
-    .HS-Regst-left{
-        
+    .HS-Regst-left {
+
         padding: 30px 20px 0 10px;
-        
-    } 
+
+    }
+
     .HS-Regst-Right {
-        width: 100%;  
+        width: 100%;
     }
 
     .HS-Regst-Right .student-image {
-        margin-top: 65px ; 
+        margin-top: 65px;
         width: 100%;
     }
-    .HS-icon1{
+
+    .HS-icon1 {
         position: absolute;
         top: 478px;
-        left: 268px ; 
+        left: 268px;
         width: 30px;
         height: 30px;
         background-color: #FFFFFF;
@@ -332,22 +360,24 @@ animation: move-up 2s infinite;
         justify-content: center;
         align-items: center;
     }
-    .HS-icon2{
+
+    .HS-icon2 {
         position: absolute;
 
-    width: 30px;
-    height: 30px;
-    top: 571px;
-    left: 262px ; 
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        width: 30px;
+        height: 30px;
+        top: 571px;
+        left: 262px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .HS-icon3{
+
+    .HS-icon3 {
         position: absolute;
         top: 586px;
-        left: 32px ; 
+        left: 32px;
         height: 30px;
         width: 30px;
 
@@ -357,23 +387,27 @@ animation: move-up 2s infinite;
         align-items: center;
     }
 }
-@keyframes move-up{
-    0% , 100% {
+
+@keyframes move-up {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(20px);
     }
 }
-@keyframes move-down{
-    0% , 100% {
+
+@keyframes move-down {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
 }
-
-
-
-

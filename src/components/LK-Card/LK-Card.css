@@ -41,12 +41,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 7px;
 }
 .LK-corses-son:nth-child(12){
     visibility: hidden;
 }
 .LK-card-img{
     margin-top: 30px;
+    width: 50px;
 }
 .LK-card-h4{
     margin-top: 20px;

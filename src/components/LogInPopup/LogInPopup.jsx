@@ -7,49 +7,49 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope, faEye, faLock } from '@fortawesome/free-regular-svg-icons';
 import { faEnvelope, faEye, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
 import { faLock, faXmark } from '@fortawesome/free-solid-svg-icons';
-export default function LogInPopup({name , last , agreed , bool1 ,last1 ,showPopUp1 , setshowPopUp1 , setshowPopUp , showPopUp}) {
+import img55554 from "../../../public/images/Home/Home-Footer/Logo.svg";
+import img77 from "../../../public/images/LogIn/login.svg";
+export default function LogInPopup({ name, last, agreed, bool1, last1, showPopUp1, setshowPopUp1, setshowPopUp, showPopUp }) {
 
-function HandleShow(){
-    setshowPopUp(false);
-    setshowPopUp1(false);
-    console.log('test');
-}
-const  [ x , setx] = useState(true)
-
-    useEffect(()=>{
-        if(showPopUp1)
-            {
-                setx(true)
-            }
-            else
-                {
-                    setx(false)
-                }
+    function HandleShow() {
+        setshowPopUp(false);
+        setshowPopUp1(false);
+        console.log('test');
     }
-    ,[showPopUp1,setshowPopUp,x])
+    const [x, setx] = useState(true)
+
+    useEffect(() => {
+        if (showPopUp1) {
+            setx(true)
+        }
+        else {
+            setx(false)
+        }
+    }
+        , [showPopUp1, setshowPopUp, x])
 
     return (
-        
-        <div className={x ? 'RA-LogInPopup1':'RA-LogInPopup2'}>
-            <div className={x ? 'RA-parent-LogInPopup':'RA-parent1-LogInPopup'} >
-            <FontAwesomeIcon icon={faXmark}  onClick={HandleShow} className='RA-exit-icon' />
+
+        <div className={x ? 'RA-LogInPopup1' : 'RA-LogInPopup2'}>
+            <div className={x ? 'RA-parent-LogInPopup' : 'RA-parent1-LogInPopup'} >
+                <FontAwesomeIcon icon={faXmark} onClick={HandleShow} className='RA-exit-icon' />
                 <div className='RA-part1-login'>
-                    <img src="./images/Home/Home-Footer/Logo.svg" alt="logo" className='RA-logologin' />
+                    <img src={img55554} alt="logo" className='RA-logologin' />
                     <h2 className='RA-titel-login'>Welcome to
                         Eduvi Online
                         Learning Platform</h2>
                     <Carousel className='slider'>
                         <Carousel.Item className='RA-slider'>
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img  d-block ' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img  d-block ' />
 
                         </Carousel.Item>
                         <Carousel.Item className='RA-slider'>
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img d-block' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img d-block' />
 
                         </Carousel.Item>
                         <Carousel.Item className='RA-slider'>
 
-                            <img src="./images/LogIn/login.svg" alt="HELOO" className='RA-slier-img d-block' />
+                            <img src={img77} alt="HELOO" className='RA-slier-img d-block' />
                         </Carousel.Item>
                     </Carousel>
 
@@ -66,22 +66,22 @@ const  [ x , setx] = useState(true)
 
                         </div>
 
-                           <p className='RA-signin'>Or signin with your email</p>
-                            {name}
+                        <p className='RA-signin'>Or signin with your email</p>
+                        {name}
                         <div className='RA-JOIN'>
                             <label>Email</label>
                             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#5d5a6f", }} className='RA-letter' />
-                                  <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input'/>
+                            <input type="email" placeholder='bill.sanders@example.com' className='RA-email-input' />
 
                         </div>
 
                         <div className='RA-JOIN1'>
                             <label>Password</label>
-                             
-                              <FontAwesomeIcon icon={faLock} style={{ color: "#5d5a6f", }} className='RA-lock' />
-                                  <input type="password" placeholder='***********' className='RA-email-input'/>
-                                  <FontAwesomeIcon icon={faEye} style={{ color: "#5d5a6f", }}   className='RA-eye' />
-                             
+
+                            <FontAwesomeIcon icon={faLock} style={{ color: "#5d5a6f", }} className='RA-lock' />
+                            <input type="password" placeholder='***********' className='RA-email-input' />
+                            <FontAwesomeIcon icon={faEye} style={{ color: "#5d5a6f", }} className='RA-eye' />
+
                         </div>
 
                         {agreed}
@@ -96,6 +96,6 @@ const  [ x , setx] = useState(true)
                 </div>
             </div>
         </div>
-    
+
     )
 }

@@ -1,78 +1,120 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import './KGCourseDetailsPlayList.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 export default function KGCourseDetailsPlayList() {
-    const KGCourseDetailsPlayList = [
+    const videos = [
         {
            id : 1 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
+           url : './images/CourseDetails/CourseDetails-Hero/VideoEdu.mp4' ,
            text : "Maths-Introduction" ,
-           time : '1:57 '
+           time : '1:57 ' ,
+            title: 'Video 1',
+            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
+          
        },
         {
            id : 2 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
-           text : "Maths-for Standard 3 St.." ,
-           time : '5:43 '
+           url : './images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
+           text : "Maths-for Standard 1 St.." ,
+           time : '5:43 ' ,
+          title: 'Video 2',
+          IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
        },
         {
            id : 3 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
-           text : "Maths-for Standard 3 St.." ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video7.mp4' ,
+           text : "Maths-for Standard 2 St.." ,
            time : '8:11 ',
+            title: 'Video 3',
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
        },
         {
            id : 4 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video3.mp4' ,
            text : "Maths-for Standard 3 St.." ,
            time : '6:10 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
+            title: 'Video 4',
        },
         {
            id : 5 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
-           text : "Maths-for Standard 3 St.." ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video6.mp4' ,
+           text : "Maths-for Standard 4 St.." ,
            time : '10:00 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
+          title: 'Video 5',
 
-       },
+        },
         {
            id : 6 ,
-           Image : './public/images/CourseDetails/CourseDetails-Hero/Image.svg' ,
-           text : "Maths-for Standard 3 St.." ,
+           url : './images/CourseDetails/CourseDetails-Hero/Video5.mp4' ,
+           text : "Maths-for Standard 5 St.." ,
            time : '7:53 ' ,
            IconLock : < FontAwesomeIcon icon={faLock}  className='KG-Clock-Icon' /> ,
+            title: 'Video 6',
        },
     ];
-  return (
-    <>
-    <section className='KG-Section-Hero'>
-        <div className='KG-Details-PartLeft'>
-            <p className='KG-Details-Path'>Home | Courses | <span className='KG-Path-Span'>Course Details</span></p>
-            <video controls>
-                <source src='./public/images/CourseDetails/CourseDetails-Hero/VideoEdu.mp4' type='video/mp4'></source>
-            </video>
-            <p className='KG-Details-Video'>Maths - for Standard 3 Students | Episode 2</p>
-        </div>
-        <div className='KG-Details-PartRight'>
+
+    const [mainVideo, setMainVideo] = useState(videos[0]);
+    // const [state, setState] = useState(true);
+
+    const handleVideoClick = (video) => {
+      setMainVideo(video);
+    };
+    
+
+    
+    const [openVideo, setOpenVideo] = useState(null);
+
+    function toggleVideo(id) {
+      setOpenVideo(openVideo === id ? null : id);
+    }
+
+
+
+
+    const MainVideo = ({ video }) => {
+          return (
+            <div>
+                <div className='KG-Details-PartLeft'>
+                <p className='KG-Details-Path'>Home | Courses | <span className='KG-Path-Span'>Course Details</span></p>
+                <iframe width="560" height="315" src={video.url} title={video.title} allowFullScreen></iframe>
+                <p className='KG-Details-Video'>{video.text}</p>
+              </div>
+            </div>
+          );
+        };
+        const VideoList = ({ handleVideoClick }) => {
+          return (  
+            <div className='KG-Details-PartRight'>
             <h3 className='KG-Title-PlayList'>Course Playlist</h3>
-            { KGCourseDetailsPlayList.map((details) => {
-                return(
-                    <div className='KG-PlayList'  key={details.id}>
-                        <img src={details.Image} alt='image-course-title'></img>
+            { videos.map((video) => {
+                return (
+                    <div className={openVideo === video.id ? 'KG-Visible' : 'KG-Hidden'} key={video.id} onClick={() => handleVideoClick(video)}>
+                      <div className='KG-PlayList' onClick={() => toggleVideo(video.id)}>
+                        <video src={video.url}></video>
                         <div>
-                            <p className='KG-Details-CardInfo-Text'>{details.text}</p>
-                            <p className='KG-Details-CardInfo-Time' >{details.time}</p>
+                            <p className='KG-Details-CardInfo-Text'>{video.text}</p>
+                            <p className='KG-Details-CardInfo-Time' >{video.time}</p>
                         </div>
-                        <div className='KG-BG-Clock-Icon'> {details.IconLock} </div>
+                        <div className={openVideo === video.id ? 'KG-BG-Clock-Icon-Hidden' : 'KG-BG-Clock-Icon'}> {video.IconLock} </div>
+                      </div>
                     </div>
                 );
             })}
-        </div>
-    </section>
-    </>
-  )
+            </div>
+          );
+        };
+ 
+
+  return (
+    <section className='KG-Section-Hero'>
+      <MainVideo video={mainVideo} />
+      <VideoList handleVideoClick={handleVideoClick} />
+      </section>
+  );
 }
+

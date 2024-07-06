@@ -1,76 +1,32 @@
-
-:root{
-   --clr-primary :#FFF;
-    --clr-bg: #F7F5FA;
-    --clr-icon:#FF6652;
-    --clr-text:#0A033c;
-    --clr-sicon:#9C4DF4;
-    --clr-texthome:#5D5A6F;
-    --clr-bgrecord:#E5FFF3 ;
-    --clr-iconrecord:#00C968  ;
-    --clr-bglive:#F8F2FF ;
-    --clr-bgaudio:#FFF4F2  ;
-    --clr-CollegeLevel:#EDE9FC;
-    --clr-pnewletter:rgba( 1 , 1 , 1 , 0.7 );
-    --clr-inputnewletter:rgba( 1 , 1 , 1 , 0.2 );
-    --clr-heropages:#EFEBF5;
-    --clr-stars:#FFC107;
-    --clr-arrow:#F2E5FF;
-    --clr-semore:#9C4DFA ;
-    --clr-righticon:#00DF76;
-    --clr-videoicon: rgba(19, 13, 13, 0.2);
-    --clr-columnsignup:rgba( 10 , 3 , 60 , 0 )
-    rgba( 10 , 3 , 60 , 1 )
-    rgba( 10 , 3 , 60 , 0 ) ;
-    --clr-googleicon: #E93E30;
-    --clr-borderinput: #DEDDE4 ;
-    --border-color: linear-gradient( rgba( 10 , 3 , 60 , 0 ), rgba( 10 , 3 , 60 , 1 ), rgba( 10 , 3 , 60 , 0 )) 
+:root {
+        --clr-primary: #FFF;
+        --clr-bg: #F7F5FA;
+        --clr-icon: #FF6652;
+        --clr-text: #0A033c;
+        --clr-sicon: #9C4DF4;
+        --clr-texthome: #5D5A6F;
+        --clr-bgrecord: #E5FFF3;
+        --clr-iconrecord: #00C968;
+        --clr-bglive: #F8F2FF;
+        --clr-bgaudio: #FFF4F2;
+        --clr-CollegeLevel: #EDE9FC;
+        --clr-pnewletter: rgba(1, 1, 1, 0.7);
+        --clr-inputnewletter: rgba(1, 1, 1, 0.2);
+        --clr-heropages: #EFEBF5;
+        --clr-stars: #FFC107;
+        --clr-arrow: #F2E5FF;
+        --clr-semore: #9C4DFA;
+        --clr-righticon: #00DF76;
+        --clr-videoicon: rgba(19, 13, 13, 0.2);
+        --clr-columnsignup: rgba(10, 3, 60, 0) rgba(10, 3, 60, 1) rgba(10, 3, 60, 0);
+        --clr-googleicon: #E93E30;
+        --clr-borderinput: #DEDDE4;
+        --border-color: linear-gradient(rgba(10, 3, 60, 0), rgba(10, 3, 60, 1), rgba(10, 3, 60, 0))
 }
-    
-*{
+
+* {
         padding: 0;
         margin: 0;
-        box-sizing:border-box;
-      
+        box-sizing: border-box;
+
 }
-
-
-
-
-
-
-
-    
-
-
-
-    
- 
- 
- 
- 
-
-
-  
-
-  
-
-
-   
-
- 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
