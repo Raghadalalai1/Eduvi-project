@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 function AMSEC() {
   return (
     <section>
-      <div className="AM-content1">
+      <div className="AM-content1" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
 
 
 
         <div className="AM-ph2">
           <img src={imgv} alt="Sorry, the photo wasn't uploaded " /></div>
 
-        <div className="AM-container2">
-          <h1>Want to share your knowledge ? Join Us a Mentor</h1>
-          <p>
+        <div className="AM-container2" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+          <h1 >Want to share your knowledge ? Join Us a Mentor</h1>
+          <p >
             High-definition video is video of higher resolution and quality than
             standard-definition. While there is no standardized meaning for
             high-definition, generally any video.
           </p>
-          <Link to={'/OurMonetors'}>  <button type="submit">Career Information</button></Link>
-          <Link to={'/BecomeAnInstructor'}>  <button type="submit" className="RA-APLLAY">Applay now</button></Link>
+          <Link to= {'/OurMonetors'}><button className="RA-APLLAY" > Career Information </button> </Link>
+          <Link to= {'/BecomeAnInstructor'}>  <button className="RA-APLLAY" >Applay now</button> </Link>
           
         </div>
       </div>

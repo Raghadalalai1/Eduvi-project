@@ -1,7 +1,7 @@
 .main {
     background-color: var(--clr-bg);
     padding: 0 80px;
-
+overflow-x: hidden;
 }
 
 @media(max-width:1024px) {

@@ -98,7 +98,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
   return (
     <>
                 <div className='KG-Course-Teacher'>
-                <div className={bool ? 'KG-Part-Left' : 'RA-Part-Left'}>
+                <div className={bool ? 'KG-Part-Left' : 'RA-Part-Left'} data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                    { filteredCourses.map((course) => {
                        return(
                                <div className={bool ? 'KG-Course-Part' : 'RA-Course-Part'} key={course.id}>
@@ -121,7 +121,7 @@ export default function KGCourseComponent({ onSearchChange ,bool}) {
                        );
                    })}
                    </div>
-                   <div className={bool ? 'KG-Part-Right' : 'RA-Part-Right'}>
+                   <div className={bool ? 'KG-Part-Right' : 'RA-Part-Right'} data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                    { filteredCoursesTwo.map((course) => {
                        return(
                                <div className={bool ? 'KG-Course-Part' : 'RA-Course-Part'} id='KG-HiddenPart' key={course.id}>

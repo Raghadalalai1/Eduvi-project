@@ -459,6 +459,13 @@
         margin-left: 10px;
     }
 }
+/* @media(max-width:788px) and (min-width:567px) {
+
+    .LK-home-section2 {
+        padding: 100px 0;
+    }
+
+} */
 
 @media(max-width:768px) {
     .LK-home-section2-father {

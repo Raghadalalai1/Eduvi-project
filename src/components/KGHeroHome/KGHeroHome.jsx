@@ -7,11 +7,19 @@ import img666 from "../../../public/images/Home/Home-Hero/four.svg";
 import img6666 from "../../../public/images/Home/Home-Hero/three.svg";
 import img66666 from "../../../public/images/Home/Home-Hero/two.svg";
 import img666666 from "../../../public/images/Home/Home-Hero/one.svg";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 export default function KGHeroHome() {
+
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <>
       <div className='KG-HeroHome Metropolis-font' >
-        <div className='KG-Hero-PartLeft '>
+        <div className='KG-Hero-PartLeft ' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <p className='KG-Paragraph'> Never Stop Learning </p>
           <h1>Grow up your skills by online courses with Eduvi</h1>
           <p className='KG-Paragraph-Eduvi'>Eduvi is a Global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the barriers togetting a degree.</p>
@@ -28,7 +36,7 @@ export default function KGHeroHome() {
             </button>
           </form>
         </div>
-        <div className='KG-Hero-PartRight'>
+        <div className='KG-Hero-PartRight' data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic" >
           <img src={img6} alt='background-hero' className='KG-Image-Background'></img>
           <img src={img66} alt='image-boy' className='KG-Image-Boy'></img>
           <div className='KG-Bg-Small-Image-Cubs'><img src={img666} alt='image-cubs' className='KG-Image-cubs'></img></div>

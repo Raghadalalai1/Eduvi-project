@@ -32,6 +32,7 @@
     font-weight: 500;
     line-height: 16px;
     color: var(--clr-inputnewletter);
+    cursor: pointer;
 }
 
 .KG-Path-Span {

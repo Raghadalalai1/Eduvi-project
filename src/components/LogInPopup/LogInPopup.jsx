@@ -86,7 +86,7 @@ export default function LogInPopup({ name, last, agreed, bool1, last1, showPopUp
 
                         {agreed}
 
-                        <input type="submit" value={'sign in'} className='RA-button-form' />
+                        <input type="submit" value={bool1?'sign in':'sign up'} className='RA-button-form' />
                         {last}
 
                         {last1}

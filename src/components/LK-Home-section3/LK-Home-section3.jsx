@@ -105,9 +105,9 @@ export default function LKHomeSection3() {
       <section className='LK-home-section3'>
         <div className='LK-home-section3-son1'>
 
-          <h2 className='LK-home-sec3-son1-h2 Metropolis-font-R'>Qualified lessons for students</h2>
-          <p className='LK-home-sec3-son1-par Metropolis-font1' >A lesson or class is a structured period of time where learning is intended to occur. It involves one or more students being taught by a teacher or instructor.</p>
-          <div className='LK-home-sec3-son1-Buttons'>
+          <h2 className='LK-home-sec3-son1-h2 Metropolis-font-R' data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">Qualified lessons for students</h2>
+          <p className='LK-home-sec3-son1-par Metropolis-font1' data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">A lesson or class is a structured period of time where learning is intended to occur. It involves one or more students being taught by a teacher or instructor.</p>
+          <div className='LK-home-sec3-son1-Buttons' data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
             <button onClick={LKchangcolorO} className={LKColorO ? 'LK-home-sec3-son1-button1' : 'LK-home-sec3-son1-button'}>Kindergarten</button>
             <button onClick={LKchangcolorS} className={LKColorS ? 'LK-home-sec3-son1-button1' : 'LK-home-sec3-son1-button'}>High School</button>
             <button onClick={LKchangcolorTH} className={LKColorTH ? 'LK-home-sec3-son1-button1' : 'LK-home-sec3-son1-button'}>College</button>
@@ -122,7 +122,7 @@ export default function LKHomeSection3() {
        {LKColorTH  ?'' :  <LKCards data1={dataTH}/>}
 
         <div className='LK-home-section3-son3'>
-          <Link to={'/courses'} ><button className='LK-home-sec3-son3-button'>Visit More Classes</button></Link>
+          <Link to={'/courses'} ><button className='LK-home-sec3-son3-button' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">Visit More Classes</button></Link>
         </div>
         
 

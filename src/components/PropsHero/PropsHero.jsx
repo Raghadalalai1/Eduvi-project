@@ -1,5 +1,7 @@
 import './PropsHero.css'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 export default function PropsHero(props) {
   const {
     Textclass,
@@ -15,9 +17,11 @@ export default function PropsHero(props) {
     showImage2
   } = props;
 
-
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
-    <section className="BKH-Props">
+    <section className="BKH-Props" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
       <div className={Textclass}>
         <h4>{Home} | <span>{Shop}</span></h4>
       </div>

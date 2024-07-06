@@ -2,11 +2,17 @@ import "./AZ-compobn.css";
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 function AZcompobn() {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <>
       <div className="AZ-courseDetails-content1">
-        <div className="AZ-courseDetails-container1">
+        <div className="AZ-courseDetails-container1" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <div className="AZthe-firstpar1">
             <h1>Course Details</h1>
             <p>
@@ -52,7 +58,7 @@ function AZcompobn() {
             </ul>
           </div>
         </div>
-        <div className="AZ-courseDetails-container2">
+        <div className="AZ-courseDetails-container2" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <div className="AZ-corse-top">
             <div className="AZ-course-card1">
               <p>Price</p>

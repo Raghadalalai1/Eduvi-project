@@ -36,6 +36,7 @@
 .BKH-text-h4-page-hero h4 {
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 
 
@@ -1128,7 +1129,7 @@
   animation: slideInLeft 1s ease-in-out forwards;
 }
 
-@keyframes slideInLeft {
+/* @keyframes slideInLeft {
   from {
     transform: translateX(-100px);
   }
@@ -1136,7 +1137,7 @@
   to {
     transform: translateX(0);
   }
-}
+} */
 
 .BKH-image-hero-page-shop,
 .BKH-image-hero-page-Courses,
@@ -1147,7 +1148,7 @@
   animation: bounce 1s ease-in-out forwards;
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   from {
     transform: translateX(100px);
   }
@@ -1155,4 +1156,4 @@
   to {
     transform: translateX(0);
   }
-}
+} */
