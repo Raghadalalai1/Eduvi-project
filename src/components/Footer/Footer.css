@@ -36,7 +36,7 @@
     height: 36px;
     border-radius: 50%;
     position: relative;
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
 
 .LK-footer-father-icon2:hover {
@@ -56,6 +56,7 @@
     top: 50%;
     left: 50%;
     font-size: 22px;
+    transition: 0.5s !important;
 }
 
 .LK-footer-par-son1 {

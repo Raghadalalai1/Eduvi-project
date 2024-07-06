@@ -8,7 +8,7 @@ import icon11 from "../../../public/images/Home/Home-Navbar/Logo.svg";
 export default function Footer() {
    return (
       <div className='LK-footer d-flex align-items-start justify-content-B'>
-         <div className="LK-footer-son1">
+         <div className="LK-footer-son1"  >
             <img className='LK-footer-img' src={icon11} alt='eduvi logo' />
             <div className='LK-footer-icon d-flex align-items-center justify-content-start'>
                <div className='LK-footer-father-icon2'><FontAwesomeIcon className='LK-footer-icon1' icon={faFacebookF} /></div>
@@ -22,7 +22,7 @@ export default function Footer() {
                   trademark of Eduvi.co</p>
             </div>
          </div>
-         <div className="LK-footer-son2">
+         <div className="LK-footer-son2"  >
             <h4 className='LK-footer-h4'>Courses</h4>
             <ul className="LK-footer-ul Metropolis-font">
                <li className="LK-footer-li">Classroom courses</li>
@@ -34,7 +34,7 @@ export default function Footer() {
 
 
          </div>
-         <div className="LK-footer-son3">
+         <div className="LK-footer-son3"  >
             <h4 className='LK-footer-h4'>Community</h4>
             <ul className="LK-footer-ul Metropolis-font">
                <li className="LK-footer-li">Learners</li>
@@ -45,7 +45,7 @@ export default function Footer() {
                <li className="LK-footer-li">Teaching Center</li>
             </ul>
          </div>
-         <div className="LK-footer-son4 ">
+         <div className="LK-footer-son4 "  >
             <h4 className='LK-footer-h4'>Quick links</h4>
             <ul className="LK-footer-ul Metropolis-font">
                <li className="LK-footer-li">Home</li>
@@ -56,7 +56,7 @@ export default function Footer() {
                <li className="LK-footer-li">Programs</li>
             </ul>
          </div>
-         <div className="LK-footer-son5">
+         <div className="LK-footer-son5" >
             <h4 className='LK-footer-h4'>More</h4>
             <ul className="LK-footer-ul Metropolis-font">
                <li className="LK-footer-li">Press</li>

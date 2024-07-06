@@ -2,9 +2,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import priceTag from './../../../public/images/Pricing/Pricing-section2/price-tag.svg'
 import './LK-Pricing-Section2.css'
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 export default function LKPricingSection2() {
+    useEffect(()=>{
+        Aos.init()
+      },[])
     let cardData = [
         {
             id: '1',
@@ -34,13 +38,13 @@ export default function LKPricingSection2() {
     return (
         <>
             <section className='LK-pricing-section2'>
-                <div className='LK-pricing-sec2-son1'>
+                <div className='LK-pricing-sec2-son1' data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                     <h2 className='LK-pricing-sec2-son1-h2'>We create a monthly pricing package for all standard students</h2>
                     <p className='LK-pricing-sec2-son1-par'>Basically we create this package for those who are really interested and get benifited from our courses or books.<span className='LK-temporary-solution'> We want to make a low cost package for them. So that they can purchase any courses with the package they buy from us. Also will get free books from every packages.</span></p>
                 </div>
                 <div className='LK-pricing-sec2-sonT-card-F'>
                     {cardData.map(elemnt => {
-                        return (<div className='LK-pricing-sec2-sonT-card-S' key={elemnt.id}>
+                        return (<div className='LK-pricing-sec2-sonT-card-S' key={elemnt.id} data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                             <img className='LK-pricing-sec2-icon-priceTag' src={priceTag} />
                             <h4 className='LK-pricing-sec2-sonT-h4'>{elemnt.h4}</h4>
                             <ul className='LK-pricing-sec2-sonT-ul'>

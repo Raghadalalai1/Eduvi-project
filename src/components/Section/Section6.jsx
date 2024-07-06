@@ -8,8 +8,8 @@ import img6 from './../../../public/images/Home/Home-section7/Ellipse-3.svg'
 export default function Section6() {
   return (
     <>
-      <section className="RA-section6-homepage">
-        <div className="BKH-section-6">
+      <section className="RA-section6-homepage" >
+        <div className="BKH-section-6"  data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <div className="BKH-section-join">
             {/*images part 1*/}
             <div className="BKH-images-1">

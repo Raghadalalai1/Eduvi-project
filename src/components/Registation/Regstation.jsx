@@ -53,7 +53,7 @@ export default function Registation() {
     <>
       <div className=' HS-Regst '>
 
-        <div className=' HS-Regst-left'>
+        <div className=' HS-Regst-left' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <Button className='HS-Regst-button' variant="secondary">College Level</Button>
           <div className='HS-Regst-title'>
             <h1 className='HS-Regst-h1' >Don’t waste time in
@@ -66,7 +66,7 @@ export default function Registation() {
           {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
         </div>
 
-        <div className='HS-Regst-Right'>
+        <div className='HS-Regst-Right' data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
 
 
           <img className='student-image' src={img5} alt='Sorry , the photo wasn`t uploaded '></img>

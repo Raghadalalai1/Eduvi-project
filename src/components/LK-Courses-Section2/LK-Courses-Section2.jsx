@@ -18,9 +18,12 @@ import homeCardImg9 from './../../../public/images/Home/Home-section4/ball-9.svg
 import homeCardImg10 from './../../../public/images/Home/Home-section4/levelA.svg'
 import homeCardImg11 from './../../../public/images/Home/Home-section4/levelO.svg'
 
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 export default function LKCoursesSection2() {
-       
+  useEffect(()=>{
+    Aos.init()
+  },[])
 let data1=[
      {id:'1',img:homeCardImg,h4:"Standard One",par:"Standard 1 is a foundation Standard that reflects 7 important concepts...",button:"Class Details",category:"one"}
     ,{id:'2',img:homeCardImg2,h4:"Standard Two",par:"Standard 2 builds on the foundations of Standard 1 and includes requirements...",button:"Class Details",category:"one"}
@@ -185,7 +188,7 @@ let data1=[
   return (
     <>
     <section className='LK-courses-section2'>
-    <div className='LK-courses-sec3-son1-Buttons'>
+    <div className='LK-courses-sec3-son1-Buttons' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                 <button onClick={()=>{LKchangcolorO();setItem(data1)}} className={LKColorO ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>All Courses</button>
                 <button onClick={()=>{LKchangcolorS();filterItems("one")}} className={LKColorS ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>Kindergarten</button>
                 <button onClick={()=>{LKchangcolorTH();filterItems("second")}} className={LKColorTH ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>High School</button>
@@ -196,7 +199,7 @@ let data1=[
                 <button onClick={()=>{LKchangcolorE();filterItems("seven")}} className={LKColorE ? 'LK-courses-sec3-son1-button1' : 'LK-courses-sec3-son1-button'}>More Courses</button>
             
             </div>
-            <div className='LK-courses-sec3-son2-father-h2'><h2 className='LK-courses-sec3-son2-h2'>Standard Classes</h2></div>
+            <div className='LK-courses-sec3-son2-father-h2'><h2 className='LK-courses-sec3-son2-h2' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">Standard Classes</h2></div>
             <LKCards data1={item} pages={true}/>
 
         

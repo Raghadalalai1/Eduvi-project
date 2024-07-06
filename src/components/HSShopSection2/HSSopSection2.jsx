@@ -9,11 +9,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import "./HSShopSection2.css";
 import Pagination from "./Pagination.jsx";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 
 export default function HSShopSection2() {
-  
+  useEffect(()=>{
+    Aos.init()
+  },[])
   const [currentPage , setcurrentPage] = useState(1);
   const [search, setSearch] = useState("");
  // const [isSearching, setIsSearching] = useState(false);
@@ -228,6 +232,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers20",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+
     },
 
     {
@@ -252,6 +257,7 @@ export default function HSShopSection2() {
       text: "The Three Musketeers23",
       price: "$40.00",
       stars: <FontAwesomeIcon icon={faStar} className="HS-Star-color" />,
+      
     },
 
     {
@@ -313,7 +319,7 @@ export default function HSShopSection2() {
 
   return (
     
-    <div className="HS-LeftSection">
+    <div className="HS-LeftSection" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
       <div className="HS-LeftSection-Button">
         <button onClick={ ()=> HSchangcolor1(1)} className={HSColor1 == 1 ? 'HS-Button3' : 'HS-Button1'}>All Book</button>
         <button onClick={()=> HSchangcolor1(2)} className={HSColor1 == 2 ? 'HS-Button3' : 'HS-Button1'}>Kindergarten</button>
@@ -339,7 +345,7 @@ export default function HSShopSection2() {
       </form>
 
       <div className="HS-Cards-Books">
-        
+      
         {filteredBooks.slice(startIndex, startIndex + PRODUCT_PER_PAGE).map((book) => {
           return (
             <>

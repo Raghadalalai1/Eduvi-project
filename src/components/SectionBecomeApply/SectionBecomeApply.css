@@ -39,7 +39,7 @@
 .BKH-part-one h1 {
   margin: 0;
   /* width: 285px; */
-  height: 30px;
+  /* height: 30px; */
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
@@ -50,7 +50,7 @@
   margin-top: 20px;
   width: 100%;
   max-width: 607px;
-  height: max-content;
+  /* height: max-content; */
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;
@@ -59,21 +59,22 @@
 
 .BKH-part-two {
   width: 100%;
-  height: 60%;
+  /* height: max-content; */
+  /* height: 60%; */
   font-family: "Inter", sans-serif;
 }
 
 .BKH-span {
   width: 342px;
-  height: 31px;
+  /* height: 31px; */
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .BKH-span-one {
   margin: 0;
-  height: 31px;
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
@@ -91,7 +92,6 @@
 
 .BKH-span-two {
   margin: 0;
-  height: 31px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -113,6 +113,7 @@
   margin-top: 20px;
   position: relative;
   right: 15px;
+  margin-bottom: 5px;
 }
 
 .BKH-unordered li::marker {
@@ -127,28 +128,33 @@
   color: #0a033c;
 }
 
-.BKH-input-submit {
+/* .BKH-input-submit {
   position: relative;
   top: 15px;
-}
+} */
 
 .BKH-input-submit .RA-INPUT {
   background-color: #9c4df4;
   color: white;
-  line-height: 20px;
   font-size: 16px;
   padding: 17px 30px;
   border-radius: 10px;
   border: none;
   transition: 0.5s;
 }
+.BKH-input-submit .RA-INPUT:hover{
+  background-color: transparent;
+  color: #9c4df4;
+  border: 1px solid #9c4df4;
+  /* padding: 15px 30px; */
+}
 
-.BKH-input-submit input:hover {
+/* .BKH-input-submit .RA-INPUT:hover {
   background-color: transparent;
   border: 1px solid #9c4df4;
   color: #9c4df4;
 
-}
+} */
 
 @media(max-width:1024px) {
   .BKH-section {
@@ -156,9 +162,6 @@
     flex-wrap: wrap;
     margin-top: 49px;
   }
-
-
-
 
 }
 
@@ -471,7 +474,7 @@
 
   .BKH-span {
     width: 250px;
-    height: 31px;
+    /* height: 31px; */
   }
 
   .BKH-span-one {
@@ -544,7 +547,7 @@
   .BKH-span {
     margin-top: 15px;
     width: 290px;
-    height: 31px;
+    /* height: 31px; */
   }
 
   .BKH-span-one {
@@ -582,7 +585,7 @@
     font-size: 15px;
   }
 
-  .BKH-input-submit {
+  /* .BKH-input-submit {
     top: 0px;
   }
 
@@ -591,7 +594,7 @@
     font-size: 14px;
     padding: 15px 25px;
     border-radius: 5px;
-  }
+  } */
 }
 
 @media (min-width: 901px) and (max-width: 1020px) {

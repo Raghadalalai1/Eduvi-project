@@ -1,10 +1,14 @@
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './KGCourseDetailsPlayList.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 export default function KGCourseDetailsPlayList() {
+  useEffect(()=>{
+    Aos.init()
+  },[])
     const videos = [
         {
            id : 1 ,
@@ -79,7 +83,7 @@ export default function KGCourseDetailsPlayList() {
     const MainVideo = ({ video }) => {
           return (
             <div>
-                <div className='KG-Details-PartLeft'>
+                <div className='KG-Details-PartLeft' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                 <p className='KG-Details-Path'>Home | Courses | <span className='KG-Path-Span'>Course Details</span></p>
                 <iframe width="560" height="315" src={video.url} title={video.title} allowFullScreen></iframe>
                 <p className='KG-Details-Video'>{video.text}</p>
@@ -90,11 +94,11 @@ export default function KGCourseDetailsPlayList() {
         const VideoList = ({ handleVideoClick }) => {
           return (  
             <div className='KG-Details-PartRight'>
-            <h3 className='KG-Title-PlayList'>Course Playlist</h3>
+            <h3 className='KG-Title-PlayList' data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">Course Playlist</h3>
             { videos.map((video) => {
                 return (
                     <div className={openVideo === video.id ? 'KG-Visible' : 'KG-Hidden'} key={video.id} onClick={() => handleVideoClick(video)}>
-                      <div className='KG-PlayList' onClick={() => toggleVideo(video.id)}>
+                      <div className='KG-PlayList' onClick={() => toggleVideo(video.id)} data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                         <video src={video.url}></video>
                         <div>
                             <p className='KG-Details-CardInfo-Text'>{video.text}</p>

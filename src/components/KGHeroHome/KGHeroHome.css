@@ -1,6 +1,7 @@
 .KG-HeroHome {
     background-color: var(--clr-bg);
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -297,7 +298,9 @@
         padding-top: 100px;
         /* padding-bottom: 100px; */
         justify-content: center;
+        /* height: max-content; */
     }
+ 
 
     .KG-Hero-PartRight {
         width: 70%;

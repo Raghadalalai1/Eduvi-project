@@ -19,8 +19,13 @@ import { faAngleDown, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import Pagination from "../HSShopSection2/Pagination";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 export default function LKOurMentorssection2() {
+    useEffect(()=>{
+        Aos.init()
+      },[])
     const [currentPage , setcurrentPage] = useState(1);
     
     let dataTeacher = [
@@ -141,24 +146,24 @@ useEffect(() => {
     // { pathname: , state: { imge: item.img, h5: item.h5 } }}
     return (
         <>
-            <section className='LK-OurMonetors-sec2'>
-                <div className='LK-OurMonetors-tabs'>
+            <section className='LK-OurMonetors-sec2' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+                <div className='LK-OurMonetors-tabs' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                     <button onClick={LKchangcolora} className={LKColora ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>All Mentors</button>
                     <button onClick={LKchangcolorb} className={LKColorb ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Kindergarten</button>
                     <button onClick={LKchangcolorc} className={LKColorc ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For high school</button>
                     <button onClick={LKchangcolord} className={LKColord ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For college</button>
                     <button onClick={LKchangcolore} className={LKColore ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Technology</button>
                 </div>
-                <div className='LK-OurMonetors-sec2-teacher-CardF'>
+                <div className='LK-OurMonetors-sec2-teacher-CardF' >
                 {dataTeacher.slice(startIndex, startIndex + PRODUCT_PER_PAGE).map((item) => {
                    
                         return (
-                        <div className='LK-OurMonetors-cardson' key={item.id}>
+                        <div className='LK-OurMonetors-cardson' key={item.id} data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic" data-aos-delay="300">
                         <Link to={'/SingleMonetorDetalis'} imge= {item.img} h5={ item.h5} >
                         <img className={openAccordion === item.id ? 'LK-OurMonetors-cardson-onAcoordione-img' : 'LK-OurMonetors-cardson-img'} src={item.img} alt={item.h5} />
                         </Link>
                                 <div className={openAccordion === item.id ? 'LK-OurMonetors-cardson-accodione-on' : 'LK-OurMonetors-cardson-accodione'}>
-                                    <div className='LK-OurMonetors-cardson-accodioneO'>
+                                    <div className='LK-OurMonetors-cardson-accodioneO' >
                                         <h5 className='LK-OurMonetors-cardson-h5'>{item.h5}</h5>
                                         <FontAwesomeIcon className={openAccordion === item.id ? 'LK-OurMonetors-iconAngle-rot' : 'LK-OurMonetors-iconAngle'} icon={faAngleDown} onClick={() => toggleAccordion(item.id)} />
                                     </div>
@@ -172,7 +177,7 @@ useEffect(() => {
                         )
                     })}
                 </div>
-                <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} />
+                <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage}  />
                
             </section>
            

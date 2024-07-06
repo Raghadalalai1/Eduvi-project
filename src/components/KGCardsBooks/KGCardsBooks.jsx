@@ -2,8 +2,13 @@ import './KGCardsBooks.css'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 export default function KGCardsBooks({ KGTitle }) {
+    useEffect(()=>{
+        Aos.init()
+      },[])
     const [showAllBooks, setShowAllBooks] = useState(false);
     const [ratings, setRatings] = useState({});
 
@@ -59,7 +64,7 @@ export default function KGCardsBooks({ KGTitle }) {
     const firstThreeBooks = KGCardsBooks.slice(0, 3); // مصفوفة لأول 
     const secondThreeBooks = KGCardsBooks.slice(3, 6); // مصفوفة الثانية
     return (
-        <div className='KG-Cards'>
+        <div className='KG-Cards'  data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
             <h3 className='KG-Card-Title'>{KGTitle}</h3>
             {firstThreeBooks.map((book) => {
                 return (
