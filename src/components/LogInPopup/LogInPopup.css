@@ -140,7 +140,7 @@
   content: "";
   background: linear-gradient(0, rgba(10, 3, 60, 0), rgba(10, 3, 60, 1), rgba(10, 3, 60, 0));
   width: 1px;
-  height: 641px;
+  height: 550px;
   right: calc(100% - 460px);
 
 }
