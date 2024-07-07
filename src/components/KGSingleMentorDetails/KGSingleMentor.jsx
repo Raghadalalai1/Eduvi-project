@@ -88,7 +88,7 @@ export default function KGSingleMentor() {
   return (
     < >
         <div className='KG-Sigle-Mentor-Hero'>
-            <p className='KG-Single-Path'>Home | Mentor | <span> Kristin Watson </span></p>
+            <p className='KG-Single-Path'>Home | Mentor | <span> {item.h5} </span></p>
         </div>
 
             <div className='KG-Single-Mentor-LeftPart'>

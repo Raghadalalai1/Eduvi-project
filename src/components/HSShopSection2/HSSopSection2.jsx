@@ -296,6 +296,7 @@ export default function HSShopSection2() {
   const pages = Math.ceil (HSCardsBooks.length / PRODUCT_PER_PAGE);
   const startIndex =(currentPage - 1)*PRODUCT_PER_PAGE;
 
+  const [newArray , setnewArray] = useState(HSCardsBooks)
   // search
   const filteredBooks = HSCardsBooks.filter(book =>
     book.text.toLowerCase().includes(search.toLowerCase())
@@ -308,6 +309,7 @@ export default function HSShopSection2() {
       return curItem.lkcategory === catItem
     })
     setLkItem(updateItems)
+    setnewArray(updateItems);
   }
   // const clickSearch = () => {
   //   setIsSearching(true); 
@@ -323,7 +325,7 @@ export default function HSShopSection2() {
     
     <div className="HS-LeftSection">
       <div className="HS-LeftSection-Button">
-        <button onClick={()=> {HSchangcolor1(1);setLkItem(HSCardsBooks)}} className={HSColor1 == 1 ? 'HS-Button3' : 'HS-Button1'}>All Book</button>
+        <button onClick={()=> {HSchangcolor1(1);setLkItem(HSCardsBooks);setnewArray(HSCardsBooks);}} className={HSColor1 == 1 ? 'HS-Button3' : 'HS-Button1'}>All Book</button>
         <button onClick={()=> {HSchangcolor1(2);filterLkItems("one")}} className={HSColor1 == 2 ? 'HS-Button3' : 'HS-Button1'}>Kindergarten</button>
         <button onClick={()=> {HSchangcolor1(3);filterLkItems("second")}} className={HSColor1 == 3 ? 'HS-Button3' : 'HS-Button1'}>High School</button>
         <button onClick={()=> {HSchangcolor1(4);filterLkItems("three")}} className={HSColor1 == 4 ? 'HS-Button3' : 'HS-Button1'}>College</button>
@@ -348,7 +350,7 @@ export default function HSShopSection2() {
 
       <div className="HS-Cards-Books">
         
-        {filteredBooks.slice(startIndex, startIndex + PRODUCT_PER_PAGE).map((book) => {
+        {newArray.slice(startIndex, startIndex + PRODUCT_PER_PAGE).map((book) => {
           return (
             <>
             <div className="HS-Card-Book" key={book.id}>

@@ -3,19 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.Metropolis-font-M {
-    font-family: Metropolis-Medium;
-}
-
-.Metropolis-font-THin {
-    font-family: Metropolis-Thin;
-}
-
-.Metropolis-font-R {
-    font-family: Metropolis-Regular;
-}
-
 .LK-home-section3 {
     width: 100%;
 }
@@ -36,6 +23,7 @@
     line-height: 55px;
     margin-bottom: 20px;
     text-align: center;
+    font-family: Metropolis-Regular;
 }
 
 .LK-home-sec3-son1-par {
@@ -47,6 +35,7 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 50px;
+    font-family: Metropolis-Regular;
 }
 
 .LK-home-sec3-son1-Buttons {
@@ -116,32 +105,35 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
-        width: 550px;
+        width: 700px;
     }
 
     .LK-home-sec3-son1-button1 {
-        width: 134px;
+        width: 141px;
         height: 50px;
         line-height: 20px;
         font-size: 14px;
         font-weight: 500;
+        border-radius: 5px;
     }
 
     .LK-home-sec3-son1-button {
-        width: 134px;
+        width:141px;
         height: 50px;
         line-height: 20px;
         font-size: 14px;
         font-weight: 500;
+        border-radius: 5px;
     }
 
     .LK-home-sec3-son3-button {
-        width: 174px;
+        width: 184px;
         height: 50px;
         line-height: 20px;
         font-size: 14px;
         font-weight: 500;
         margin-top: 50px;
+        border-radius: 5px;
     }
 
     .LK-home-sec3-son1-Buttons,
@@ -171,6 +163,9 @@
         left: 24px;
         margin-bottom: 25px
     }
+    .LK-home-sec3-son1-Buttons {
+        gap: 20px;
+    }
 
     .LK-home-sec3-son1-button1 {
         height: 50px;
@@ -189,10 +184,6 @@
 }
 
 @media(max-width:567px) {
-    .LK-home-sec3-son1-Buttons {
-        gap: 20px;
-    }
-
     .LK-home-section3-son3 {
         margin: 0 0 70px 0;
     }

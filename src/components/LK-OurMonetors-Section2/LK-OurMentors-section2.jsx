@@ -17,7 +17,7 @@ import teacher12 from './../../../public/images/OurMentor/OurMentor-Section(1)/I
 import { faAngleDown, faChevronLeft, faChevronRight, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-// import Pagination from "../HSShopSection2/Pagination";
+import Pagination from "../HSShopSection2/Pagination";
 
 
 export   let dataTeacher = [
@@ -34,23 +34,23 @@ export   let dataTeacher = [
     {id: '11', img: teacher11, h5: 'Courtney Henry', span: '190',category:"four"},
     {id: '12', img: teacher12, h5: 'Jerome Bell', span: '179',category:"second"},
 
-    // {id: '1', img: teacher1, h5: 'Kristin Watson', span: '150'},
-    // {id: '2', img: teacher2, h5: 'Brooklyn Simmons', span: '200'},
-    // {id: '3', img: teacher3, h5: 'Robert Fox', span: '170'},
-    // {id: '4', img: teacher4, h5: 'Wade Warren', span: '110'},
-    // {id: '5', img: teacher5, h5: 'Bessie Cooper', span: '140'},
-    // {id: '6', img: teacher6, h5: 'Ronald Richards', span: '190'},
-    // {id: '7', img: teacher7, h5: 'Guy Hawkins', span: '153'},
-    // {id: '8', img: teacher8, h5: 'Floyd Miles', span: '230'},
-    // {id: '9', img: teacher9, h5: 'Theresa Webb', span: '185'},
-    // {id: '10', img: teacher10, h5: 'Cody Fisher', span: '169'},
-    // {id: '11', img: teacher11, h5: 'Courtney Henry', span: '190'},
-    // {id: '12', img: teacher12, h5: 'Jerome Bell', span: '179'},
-  
+    {id: '13', img: teacher5, h5: 'Bessie Cooper', span: '140',category:"second"},
+    {id: '14', img: teacher6, h5: 'Ronald Richards', span: '190',category:"four"},
+    {id: '15', img: teacher11, h5: 'Courtney Henry', span: '190',category:"second"},
+    {id: '16', img: teacher12, h5: 'Jerome Bell', span: '179',category:"four"},
+    {id: '17', img: teacher1, h5: 'Kristin Watson', span: '150',category:"three"},
+    {id: '18', img: teacher2, h5: 'Brooklyn Simmons', span: '200',category:"four"},
+    {id: '19', img: teacher3, h5: 'Robert Fox', span: '170',category:"three"},
+    {id: '20', img: teacher4, h5: 'Wade Warren', span: '110',category:"one"},
+    {id: '21', img: teacher7, h5: 'Guy Hawkins', span: '153',category:"second"},
+    {id: '22', img: teacher8, h5: 'Floyd Miles', span: '230',category:"one"},
+    {id: '23', img: teacher9, h5: 'Theresa Webb', span: '185',category:"four"},
+    {id: '24', img: teacher10, h5: 'Cody Fisher', span: '169',category:"one"},
+
 ];
 
 export default function LKOurMentorssection2() {
-    // const [currentPage , setcurrentPage] = useState(1);
+    const [currentPage , setcurrentPage] = useState(1);
     
 
 
@@ -131,10 +131,10 @@ useEffect(() => {
         }
     }, [LKColore]);
     // pagination
-    // const PRODUCT_PER_PAGE = 12;
-    // const pages = Math.ceil (dataTeacher.length / PRODUCT_PER_PAGE);
-    // const startIndex =(currentPage - 1)*PRODUCT_PER_PAGE;
-    //.slice(startIndex, startIndex + PRODUCT_PER_PAGE)
+    const PRODUCT_PER_PAGE = 12;
+    const pages = Math.ceil (dataTeacher.length / PRODUCT_PER_PAGE);
+    const startIndex =(currentPage - 1)*PRODUCT_PER_PAGE;
+  
 
 
     // filter 
@@ -156,7 +156,7 @@ useEffect(() => {
                     <button onClick={()=>{LKchangcolore();filterItems("four")}} className={LKColore ? 'LK-OurMonitors-tabs-button1' : 'LK-OurMonitors-tabs-button'}>For Technology</button>
                 </div>
                 <div className='LK-OurMonetors-sec2-teacher-CardF'>
-                {item.map((item) => {
+                {item.slice(startIndex, startIndex + PRODUCT_PER_PAGE).map((item) => {
                         return (
                         <div className='LK-OurMonetors-cardson' key={item.id}>
                         <Link to={`/SingleMonetorDetalis/KGSingleMentor/${item.id}`} >
@@ -177,18 +177,7 @@ useEffect(() => {
                         )
                     })}
                 </div>
-                <div className="HS-sidebar">
-                        <button>
-                            <FontAwesomeIcon icon={faChevronLeft} style={{ color: "#9c4dfa" }} />
-                        </button>
-                        <p>pages</p>
-                        <button className="HS-back">1</button>
-                        <p>of 13</p>
-                        <button className="HS-background">
-                            <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ffffff" }} />
-                        </button>
-                    </div>
-                {/* <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} /> */}
+                <Pagination   pages ={pages} currentPage={currentPage} setcurrentPage={setcurrentPage} />
                
             </section>
            
