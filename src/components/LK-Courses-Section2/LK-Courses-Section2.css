@@ -40,7 +40,7 @@
 .LK-courses-sec3-son1-button {
     background-color: var(--clr-icon);
     color: var(--clr-primary);
-    box-shadow: 0px 15px 50px 0px #FF665233;
+    /* box-shadow: 0px 15px 50px 0px #FF665233; */
     border-radius: 10px;
     width: max-content;
     padding: 0 28px;
@@ -64,9 +64,9 @@
     width: 8%;
     box-shadow: 0 2px 5px var( --clr-texthome);
 }
-.LK-courses-sec3-son1-button1:hover{
+/* .LK-courses-sec3-son1-button1:hover{
     color: var(--clr-sicon);
-}
+} */
 
 .LK-courses-sec3-son2-father-h2 {
     display: flex;

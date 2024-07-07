@@ -55,6 +55,7 @@
     font-weight: 600;
     line-height: 25px;
     margin-bottom: 20px;
+   
 }
 
 .KG-PlayList {
@@ -67,6 +68,7 @@
     margin-right: 18px;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 .KG-PlayList video{
     width: 80px;

@@ -135,6 +135,7 @@
     transition: 0.5s;
     background-color: var(--clr-primary);
     color:  var(--clr-sicon);
+    /* border: 1px solid var(--clr-sicon); */
 }
 .KG-Single-Card{
     width: 400px;

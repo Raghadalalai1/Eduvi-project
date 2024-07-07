@@ -207,13 +207,14 @@
   border-radius: 10px;
   outline: none;
   border: 1px solid rgba(222, 221, 228, 1);
+   padding-left: 65px;
 }
 
 .RA-gool::placeholder {
   font-family: Metropolis-ExtraLight;
   font-weight: 400;
   font-size: 16px;
-  padding-left: 65px;
+ 
 }
 
 .RA-login-form .RA-signin {
@@ -234,7 +235,7 @@
   height: 1px;
   background-color: rgb(18, 0, 119);
   top: 11px;
-    right: 0px;
+    right: 14px;
 }
 
 .RA-signin::after {
@@ -244,7 +245,7 @@
   height: 1px;
   background-color: rgb(18, 0, 119);
   top: 11px;
-    left: 0px;
+    left: 14px;
 }
 
 .RA-login-form {
@@ -283,6 +284,7 @@
   outline: none;
   border: 1px solid rgba(222, 221, 228, 1);
   border-radius: 10px;
+  padding-left: 51px;
 
 }
 
@@ -299,7 +301,7 @@
   font-weight: 400;
   font-family: Metropolis-ExtraLight;
   font-size: 16px;
-  padding-left: 51px;
+  
 }
 
 .RA-letter {
@@ -324,6 +326,7 @@
   right: 18px;
   top: 45px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 label {
