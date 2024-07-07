@@ -207,14 +207,14 @@
   border-radius: 10px;
   outline: none;
   border: 1px solid rgba(222, 221, 228, 1);
-   padding-left: 65px;
+  padding-left: 65px;
 }
 
 .RA-gool::placeholder {
   font-family: Metropolis-ExtraLight;
   font-weight: 400;
   font-size: 16px;
- 
+
 }
 
 .RA-login-form .RA-signin {
@@ -592,14 +592,14 @@ label {
   .RA-gool::placeholder {
     font-weight: 500;
     font-size: 14px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
   }
 
   .RA-email-input::placeholder {
     font-weight: 500;
 
     font-size: 14px;
-    padding-left: 51px;
+    /* padding-left: 51px; */
   }
 }
 
@@ -678,14 +678,14 @@ label {
   .RA-gool::placeholder {
     font-weight: 600;
     font-size: 14px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
   }
 
   .RA-email-input::placeholder {
     font-weight: 600;
 
     font-size: 14px;
-    padding-left: 51px;
+    /* padding-left: 51px; */
   }
 
   .RA-parent1-LogInPopup {
@@ -710,13 +710,13 @@ label {
   .RA-gool::placeholder {
     font-weight: 600;
     font-size: 12px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
   }
 
   .RA-email-input::placeholder {
     font-weight: 600;
     font-size: 12px;
-    padding-left: 51px;
+    /* padding-left: 51px; */
   }
 }
 
@@ -724,14 +724,14 @@ label {
   .RA-gool::placeholder {
     font-weight: 600;
     font-size: 12px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
   }
 
   .RA-email-input::placeholder {
     font-weight: 600;
 
     font-size: 12px;
-    padding-left: 51px;
+    /* padding-left: 51px; */
   }
 }
 
@@ -792,14 +792,14 @@ label {
   .RA-gool::placeholder {
     font-weight: 600;
     font-size: 14px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
   }
 
   .RA-email-input::placeholder {
     font-weight: 600;
 
     font-size: 14px;
-    padding-left: 51px;
+    /* padding-left: 51px; */
   }
 
 }
@@ -887,13 +887,13 @@ label {
       font-weight: 600;
 
       font-size: 14px !important;
-      padding-left: 51px;
+      /* padding-left: 51px; */
     }
 
     .RA-gool::placeholder {
       font-weight: 600;
       font-size: 14px !important;
-      padding-left: 65px;
+      /* padding-left: 65px; */
     }
   }
 }
