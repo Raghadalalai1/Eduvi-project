@@ -26,7 +26,7 @@ function App() {
         <Route path='/courses' element={<Courses />} />
         <Route path='/login' element={<LogIn />} />
         <Route path='/pricing' element={< Pricing />} />
-        <Route path='/SingleMonetorDetalis' element={< SingleMonetorDetalis />} />
+        <Route path='/SingleMonetorDetalis/KGSingleMentor/:id' element={< SingleMonetorDetalis />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/BecomeAnInstructor' element={<BecomeAnInstructor />} />
         <Route path='/CoursesDetalis' element={<CoursesDetalis />} />

@@ -105,8 +105,8 @@ export default function Navbarr() {
             <NavDropdown.Item href="/CoursesDetalis">Courses Detalis</NavDropdown.Item> */}
 
           </NavDropdown>
-          <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering'>
-            <NavDropdown.Item href="#" onClick={() => setshowPopUp(!showPopUp1)}> Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon' /> </NavDropdown.Item>
+          <NavDropdown title="Regestering" id="collapsible-nav-dropdown" className='show-registering '>
+            <NavDropdown.Item href="#" onClick={() => setshowPopUp(!showPopUp1)}> Sign Up <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon color-icon ' /> </NavDropdown.Item>
             {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
 
             <NavDropdown.Item href="#" onClick={() => setshowPopUp1(!showPopUp1)}>Log In  <FontAwesomeIcon icon={faCircleUser} className='KG-SignInUpIcon  color-icon' /></NavDropdown.Item>

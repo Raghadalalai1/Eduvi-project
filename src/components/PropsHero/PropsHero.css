@@ -37,6 +37,7 @@
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
+  font-family: Metropolis-Light;
 }
 
 
@@ -58,6 +59,7 @@
   font-size: 45px;
   line-height: 50px;
   color: #0A033C;
+ 
 }
 
 .BKH-image-hero-page-shop {
@@ -85,6 +87,7 @@
   font-size: 45px;
   line-height: 50px;
   color: #0A033C;
+  font-family: Metropolis-Medium;
 }
 
 .BKH-image-hero-page-Courses {

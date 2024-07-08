@@ -30,6 +30,33 @@
     position: relative;
     flex-wrap: wrap;
 }
+.LK-single-sec3-son1-button1{
+    border: none;
+    background: none;
+    color: var(--clr-text);
+    width:max-content;
+    padding: 0 28px;
+    height: 60px;
+    font-family:Inter;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    line-height: 20px;
+    font-weight: 500;
+}
+.LK-single-sec3-son1-button{
+    background-color: var( --clr-icon);
+    color: var(  --clr-primary);
+    box-shadow: 0px 15px 50px 0px #FF665233;
+    border-radius: 10px;
+    width:max-content;
+    padding: 0 28px;
+    height: 60px;
+    border: none;
+    font-family:Inter;
+    line-height: 20px;
+    font-weight: 500;
+}
 .KG-Single-Mentor-Part1{
     display: flex;
     justify-content: space-between ;
@@ -135,7 +162,6 @@
     transition: 0.5s;
     background-color: var(--clr-primary);
     color:  var(--clr-sicon);
-    /* border: 1px solid var(--clr-sicon); */
 }
 .KG-Single-Card{
     width: 400px;
@@ -194,35 +220,14 @@
 .KG-Single-Social-Icon{
     font-size: 22px;
     color: var(--clr-text);
-    /* margin-left: 15px !important; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-
-    
-}
-
-.RA-rounded{
-    width: 35px;
-    height: 35px;
+    margin-left: 15px !important;
     border-radius: 50%;
-    transition: 0.5s;
-    position: relative;
-    background-color:var(--clr-primary) ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.RA-rounded:hover{
-
-    background-color:var(--clr-icon) ;
-    cursor: pointer;
-}
-.RA-rounded:hover .KG-Single-Social-Icon{
-
+.KG-Single-Social-Icon:hover{
     color: var(--clr-primary) ;
+    background-color: var(--clr-icon);
+    padding: 11px;
+    transition: 0.5s;
 }
 
 
@@ -439,4 +444,15 @@
     .KG-Single-Mentor-LeftPart{
         margin-left: 0;
     }
+    .LK-single-sec3-son1-button1,.LK-single-sec3-son1-button{
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        height: 40px;}
+    
+
+
+
+
     }

@@ -18,6 +18,7 @@ export default function HSShopSection2() {
   useEffect(()=>{
     Aos.init()
   },[])
+  // const [newArray , setnewArray] = useState(HSCardsBooks);
   const [currentPage , setcurrentPage] = useState(1);
   const [search, setSearch] = useState("");
  // const [isSearching, setIsSearching] = useState(false);
@@ -84,6 +85,7 @@ export default function HSShopSection2() {
   const HSCardsBooks = [
     {
       id: 1,
+      lkcategory:"second",
       image: "./images/Shop/Shop-Section/book-5.svg",
       text: "The Three Musketeers1",
       price: "$40.00",
@@ -92,6 +94,7 @@ export default function HSShopSection2() {
 
     {
       id: 2,
+         lkcategory:"one",
       image: "./images/Shop/Shop-Section/book-6.svg",
       text: "The Three Musketeers2",
       price: "$40.00",
@@ -100,6 +103,7 @@ export default function HSShopSection2() {
 
     {
       id: 3,
+        lkcategory:"one",
       image: "./images/Shop/Shop-Section/book-1.svg",
       text: "The Three Musketeers3",
       price: "$40.00",
@@ -108,6 +112,7 @@ export default function HSShopSection2() {
 
     {
       id: 4,
+       lkcategory:"second",
       image: "./images/Shop/Shop-Section/book-2.svg",
       text: "The Three Musketeers4",
       price: "$40.00",
@@ -116,6 +121,7 @@ export default function HSShopSection2() {
 
     {
       id: 5,
+       lkcategory:"three",
       image: "./images/Shop/Shop-Section/book-3.svg",
       text: "The Three Musketeers5",
       price: "$40.00",
@@ -124,6 +130,7 @@ export default function HSShopSection2() {
 
     {
       id: 6,
+        lkcategory:"three",
       image: "./images/Shop/Shop-Section/book-4.svg",
       text: "The Three Musketeers6",
       price: "$40.00",
@@ -131,6 +138,7 @@ export default function HSShopSection2() {
     },
     {
       id: 7,
+          lkcategory:"one",
       image: "./images/Shop/Shop-Section/book-6.svg",
       text: "The Three Musketeers7",
       price: "$40.00",
@@ -138,6 +146,7 @@ export default function HSShopSection2() {
     },
     {
       id: 8,
+        lkcategory:"second",
       image: "./images/Shop/Shop-Section/book-5.svg",
       text: "The Three Musketeers8",
       price: "$40.00",
@@ -307,6 +316,16 @@ export default function HSShopSection2() {
     book.text.toLowerCase().includes(search.toLowerCase())
   );
 
+  const [LkItem ,setLkItem] =useState(HSCardsBooks)
+  const filterLkItems=(catItem)=>{
+    const updateItems = HSCardsBooks.filter((curItem)=>{
+      return curItem.lkcategory === catItem
+    })
+    setLkItem(updateItems)
+    setnewArray(updateItems);
+  }
+  
+
   // const clickSearch = () => {
   //   setIsSearching(true); 
   // };
@@ -321,10 +340,10 @@ export default function HSShopSection2() {
     
     <div className="HS-LeftSection" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
       <div className="HS-LeftSection-Button">
-        <button onClick={ ()=> HSchangcolor1(1)} className={HSColor1 == 1 ? 'HS-Button3' : 'HS-Button1'}>All Book</button>
-        <button onClick={()=> HSchangcolor1(2)} className={HSColor1 == 2 ? 'HS-Button3' : 'HS-Button1'}>Kindergarten</button>
-        <button onClick={()=> HSchangcolor1(3)} className={HSColor1 == 3 ? 'HS-Button3' : 'HS-Button1'}>High School</button>
-        <button onClick={()=> HSchangcolor1(4)} className={HSColor1 == 4 ? 'HS-Button3' : 'HS-Button1'}>College</button>
+        <button onClick={()=> {HSchangcolor1(1);setLkItem(HSCardsBooks);setnewArray(HSCardsBooks);}} className={HSColor1 == 1 ? 'HS-Button3' : 'HS-Button1'}>All Book</button>
+        <button onClick={()=> {HSchangcolor1(2);filterLkItems("one")}} className={HSColor1 == 2 ? 'HS-Button3' : 'HS-Button1'}>Kindergarten</button>
+        <button onClick={()=> {HSchangcolor1(3);filterLkItems("second")}} className={HSColor1 == 3 ? 'HS-Button3' : 'HS-Button1'}>High School</button>
+        <button onClick={()=> {HSchangcolor1(4);filterLkItems("three")}} className={HSColor1 == 4 ? 'HS-Button3' : 'HS-Button1'}>College</button>
       </div>
 
       <form className="HS-Form">
