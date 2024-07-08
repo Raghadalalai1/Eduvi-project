@@ -62,11 +62,12 @@
 .LK-footer-par-son1 {
     margin-bottom: 15px;
     color: #5D5A6F;
-    font-family: "Inter", sans-serif;
+    font-family: Inter;
 }
 
 .LK-footer-par-son2 {
     color: #5D5A6F;
+    font-family: Inter !important;
 }
 
 .LK-footer-icon {
@@ -76,7 +77,7 @@
 .LK-footer-h4 {
     font-size: 22px;
     margin-bottom: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: Inter;
     color: #0A033C;
 }
 
@@ -85,7 +86,7 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.5s;
-
+    font-family: Inter;
 
 }
 

@@ -93,7 +93,7 @@ export default function KGSingleMentor() {
 
         <div className='KG-Single-Mentor-LeftPart'>
             <div className='KG-Single-Mentor-Second'>
-                <div className='KG-Single-Mentor-Part1' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+                <div className='KG-Single-Mentor-Part1' >
                     <img src={item.img} alt='KG-Image-Single-Hero'></img>
                     <div className='KG-Single-Part-Name'>
                         <h4 className='KG-Single-Name'>{item.h5}</h4>
@@ -101,8 +101,8 @@ export default function KGSingleMentor() {
                     </div>
                 </div>
                 <div className='KG-Single-Part2'>
-                    <button className='KG-Single-Button' data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">Contact Now</button>
-                    <div className='KG-Single-Card' data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+                    <button className='KG-Single-Button' >Contact Now</button>
+                    <div className='KG-Single-Card' >
                         <div className='KG-Single-Card-AllParts'>
                             <p className='KG-Single-Card-LeftPart'>Total Course</p>
                             <p className='KG-Single-Number'>30</p>
@@ -138,7 +138,7 @@ export default function KGSingleMentor() {
                     </div>
                 </div>
             </div>
-            <div className='KG-Single-BottomPart' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+            <div className='KG-Single-BottomPart' >
                 <div className='KG-Single-Collection-Buttons'>
                 <button onClick={()=>{LKchangcolorO(); setLKAboutData(LKAboutDataO)}} className={LKColorO ? 'LK-single-sec3-son1-button1' : 'LK-single-sec3-son1-button'}>About</button>
                     <button onClick={()=>{LKchangcolorS(); setLKAboutData(LKAboutDataS)}} className={LKColorS ? 'LK-single-sec3-son1-button1' : 'LK-single-sec3-son1-button'}>Review</button>

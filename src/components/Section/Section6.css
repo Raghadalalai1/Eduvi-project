@@ -50,6 +50,7 @@
   line-height: 55px;
   margin: 0;
   color: #ffffff;
+  font-family:  Metropolis-Medium;
 }
 
 .BKH-text-sub {
@@ -59,6 +60,7 @@
   position: relative;
   bottom: 40px;
   color: rgba(181, 179, 196, 0.7);
+  font-family:Metropolis-Light;
 }
 
 .BKH-joining {
@@ -81,6 +83,7 @@
   border-radius: 10px 0 0 10px;
   padding-left: 20px;
   transition: box-shadow 0.3s ease ease;
+  font-family:Metropolis-Light;
 }
 
 .BKH-input-1:focus {
@@ -98,6 +101,7 @@
   border-radius: 0 10px 10px 0;
   border: 0px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family:Inter;
 }
 
 .BKH-input-2:hover {

@@ -53,7 +53,7 @@ export default function Registation() {
     <>
       <div className=' HS-Regst '>
 
-        <div className=' HS-Regst-left' data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+        <div className=' HS-Regst-left' >
           <Button className='HS-Regst-button' variant="secondary">College Level</Button>
           <div className='HS-Regst-title'>
             <h1 className='HS-Regst-h1' >Don’t waste time in
@@ -63,10 +63,10 @@ export default function Registation() {
               meaning for high-definition, generally any video.</p>
           </div>
           <Button className='HS-Regst-button2' variant="secondary" onClick={() => setshowPopUp1(!showPopUp1)}>Registation Now</Button>
-          {/* {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>} */}
+          {showPopUp1 && <div className='RA-SHOW'><LogInPopup bool1={true} last={last} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
         </div>
 
-        <div className='HS-Regst-Right' data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+        <div className='HS-Regst-Right' >
 
 
           <img className='student-image' src={img5} alt='Sorry , the photo wasn`t uploaded '></img>

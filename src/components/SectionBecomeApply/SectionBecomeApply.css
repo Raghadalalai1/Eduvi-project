@@ -44,6 +44,7 @@
   font-weight: 600;
   line-height: 30px;
   color: #0a033c;
+  font-family: Metropolis-Regular;
 }
 
 .BKH-part-one p {
@@ -55,13 +56,14 @@
   line-height: 30px;
   font-weight: 600;
   color: #5d5a6f;
+  font-family:  Metropolis-Light;
 }
 
 .BKH-part-two {
   width: 100%;
   /* height: max-content; */
   /* height: 60%; */
-  font-family: "Inter", sans-serif;
+  font-family: Inter;
 }
 
 .BKH-span {
@@ -114,6 +116,7 @@
   position: relative;
   right: 15px;
   margin-bottom: 5px;
+  font-family:  Metropolis-Light;
 }
 
 .BKH-unordered li::marker {

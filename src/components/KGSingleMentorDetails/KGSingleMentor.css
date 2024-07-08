@@ -90,6 +90,7 @@
     font-weight: 500;
     line-height: 18px;
     color: var(--clr-texthome);
+    margin-bottom: 20px !important;
 }
 .KG-Single-Mentor-LeftPart{
     display: flex;

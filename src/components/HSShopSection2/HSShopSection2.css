@@ -138,7 +138,7 @@
   border: none !important;
   font-size: 16px;
   color: var(--clr-texthome);
-  font-family: Metropolis-Light;
+  font-family:Metropolis-Light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@
 }
 
 .HS-Search-Select {
-  font-family: Metropolis;
+  font-family:Metropolis-Light;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;

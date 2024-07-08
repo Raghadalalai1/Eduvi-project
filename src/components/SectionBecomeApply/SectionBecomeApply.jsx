@@ -49,7 +49,7 @@ export default function SectionBecomeApply() {
       <section className="BKH-section">
 
         {/* قسم الصورة  */}
-        <div className="BKH-image" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+        <div className="BKH-image" >
           <img
             src="./images/BecomeAnInstructor/BecomeAnInstructor-Section1/Image.svg"
             alt="Photo section one"
@@ -58,7 +58,7 @@ export default function SectionBecomeApply() {
         {/* قسم الصورة  */}
 
         {/* قسم النصوص الكلي  */}
-        <div className="BKH-text-all" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+        <div className="BKH-text-all" >
           {/*  قسم الأول النص الرئيسي والفرعي  */}
           <div className="BKH-part-one">
             <h1>Apply As Instructor</h1>
@@ -92,7 +92,7 @@ export default function SectionBecomeApply() {
             <div className="BKH-input-submit">
               <form action="#">
                 <input type="submit" value="Apply Now" onClick={() => setshowPopUp(!showPopUp)} className="RA-INPUT"/>
-                {/* {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>} */}
+                {showPopUp && <div className='RA-SHOW1'><LogInPopup name={name} agreed={agreed} last1={last1} bool1={false} showPopUp={showPopUp} showPopUp1={showPopUp1} setshowPopUp={setshowPopUp} setshowPopUp1={setshowPopUp1} /></div>}
               </form>
             </div>
             {/* قسم الزر  */}
