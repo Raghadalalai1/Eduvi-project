@@ -105,8 +105,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 30px;
+    gap:20px ;
 }
-.KG-Single-Collection-Buttons button{
+/* .KG-Single-Collection-Buttons button{
     color: var(--clr-text);
     background-color: var(--clr-primary);
     padding: 20px 30px;
@@ -117,12 +118,26 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-}
-.KG-Single-Collection-Buttons button:hover{
+} */
+/* .LK-single-sec3-son1-button1{
+    border: none;
+    background: none;
+    color: var(--clr-text);
+    width:max-content;
+    padding: 0 28px;
+    height: 60px;
+    font-family:Inter;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    line-height: 20px;
+    font-weight: 500;
+} */
+/* .KG-Single-Collection-Buttons button:hover{
     color: var(--clr-primary);
     background-color: var(--clr-icon);
     transition: 0.5s;
-}
+} */
 .KG-Single-InfoName{
     font-family:  Metropolis-SemiBold;
     font-size: 30px;
