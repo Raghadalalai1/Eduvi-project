@@ -54,7 +54,6 @@
     border-radius: 20px;
     background-color: var(--clr-primary);
     box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.051);
-    margin: 20px 0px;
 }
 
 .LK-pricing-sec2-icon-priceTag {
@@ -238,11 +237,11 @@
 
     .LK-pricing-sec2-sonT-card-F {
         column-gap: 10px;
-        row-gap: 0px;
+        row-gap: 20px;
     }
 
     .LK-pricing-sec2-sonT-card-S {
-        width: 300px;
+        width: 305px;
         padding-left: 20px;
     }
 
@@ -284,7 +283,7 @@
     }
 
     .LK-pricing-sec2-sonT-button {
-        width: 261px;
+        width: 265px;
         border-radius: 5px;
         height: 50px;
         font-size: 16px;
@@ -327,7 +326,7 @@
     .LK-pricing-sec2-sonT-card-F {
         justify-content: center;
         column-gap: 20px;
-        row-gap: 0px;
+        row-gap: 20px;
     }
 
     .LK-pricing-sec2-sonT-card-S {
@@ -366,7 +365,7 @@
     }
 
     .LK-pricing-sec2-sonT-button {
-        width: 280px;
+        width: 295px;
     }
 }
 
